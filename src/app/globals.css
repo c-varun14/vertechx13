@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss";
+@import "tw-animate-css";
+@tailwind utilities;
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    cursor: url('/cursor.png') 16 16, auto;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #0f131d;
+    color: #fff;
+    overflow-x: hidden;
+    overflow-y: auto; /* ALLOW VERTICAL SCROLLING */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#root {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* ========================================
+   APP CONTAINER
+   ======================================== */
+
+.app {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* ========================================
+   PIXEL GRID BACKGROUND - FIXED POSITION
+   ======================================== */
+
+.pixel-wrapper {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-gap: 0;
+    pointer-events: auto;
+    overflow: hidden;
+    z-index: 1 !important; /* Behind everything */
+}
+
+.pixel-cell {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    pointer-events: auto;
+    will-change: transform, opacity, box-shadow;
+}
+
+/* ========================================
+   HOVER EFFECTS
+   ======================================== */
+
+.pixel-cell.hovered {
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.06) 0%,
+            rgba(255, 255, 255, 0.04) 50%,
+            rgba(255, 255, 255, 0.02) 100%);
+    box-shadow:
+        0 0 8px rgba(255, 255, 255, 0.05),
+        0 0 15px rgba(255, 255, 255, 0.03),
+        0 0 25px rgba(255, 255, 255, 0.01),
+        inset 0 0 3px rgba(255, 255, 255, 0.03);
+    transform: scale(1.02);
+    border: none;
+    z-index: 10;
+    animation: subtleHoverPulse 2s ease-in-out infinite;
+}
+
+.pixel-cell.hovered:nth-child(odd) {
+    animation-delay: 0.2s;
+    transform: scale(1.01) rotate(0.2deg);
+}
+
+.pixel-cell.hovered:nth-child(even) {
+    animation-delay: 0.4s;
+    transform: scale(1.03) rotate(-0.1deg);
+}
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+
+@keyframes subtleHoverPulse {
+    0%,
+    100% {
+        box-shadow:
+            0 0 8px rgba(255, 255, 255, 0.05),
+            0 0 15px rgba(255, 255, 255, 0.03),
+            0 0 25px rgba(255, 255, 255, 0.01),
+            inset 0 0 3px rgba(255, 255, 255, 0.03);
+        transform: scale(1.02);
+    }
+
+    50% {
+        box-shadow:
+            0 0 10px rgba(255, 255, 255, 0.06),
+            0 0 18px rgba(255, 255, 255, 0.04),
+            0 0 30px rgba(255, 255, 255, 0.02),
+            inset 0 0 4px rgba(255, 255, 255, 0.04);
+        transform: scale(1.03);
+    }
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .pixel-cell {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .pixel-cell {
+        width: 40px;
+        height: 40px;
+    }
+
+    .pixel-cell.hovered {
+        transform: scale(1.01);
+    }
+
+    .pixel-cell.hovered:nth-child(odd) {
+        transform: scale(1.005) rotate(0.1deg);
+    }
+
+    .pixel-cell.hovered:nth-child(even) {
+        transform: scale(1.015) rotate(-0.05deg);
+    }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+    .pixel-cell {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* ========================================
+   PERFORMANCE OPTIMIZATIONS
+   ======================================== */
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    .pixel-cell {
+        transition: none;
+    }
+
+    .pixel-cell.hovered {
+        animation: none;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .pixel-cell {
+        background-color: transparent;
+        border: none;
+    }
+
+    .pixel-cell.hovered {
+        background: rgba(255, 255, 255, 0.2);
+        border: none;
+    }
+}
+

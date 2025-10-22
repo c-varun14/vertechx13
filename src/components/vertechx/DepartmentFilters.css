@@ -1,0 +1,224 @@
+/* ========================================
+   DEPARTMENT FILTERS STYLES
+   ======================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap");
+
+.department-filters {
+    margin-bottom: 3rem;
+}
+
+.filters-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.filters-container::-webkit-scrollbar {
+    display: none;
+    /* WebKit */
+}
+
+.filter-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    color: #fff;
+    text-decoration: none;
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    text-transform: uppercase;
+    padding: 0.5rem 0.8rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 600;
+    flex: 1;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    max-width: 100%;
+}
+
+/* Active filter button styling */
+.filter-btn.active {
+    background: rgba(255, 107, 107, 0.3);
+    box-shadow: 0 0 20px rgba(255, 107, 107, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 107, 107, 0.6);
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(255, 107, 107, 0.8), 0 0 5px rgba(255, 255, 255, 0.5);
+    transform: translateY(-1px);
+    font-weight: 700;
+    padding: 0.6rem 1rem;
+}
+
+/* Glitch hover effect */
+.filter-btn::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #0ff;
+    text-shadow: -2px -2px 0 #f0f, 2px 2px 0 #ff0;
+    clip-path: inset(50% 50% 50% 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+
+.filter-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
+}
+
+.filter-btn:hover::after {
+    animation: glitch 1s steps(2, end) infinite;
+}
+
+@keyframes glitch {
+    0% {
+        clip-path: inset(80% -6px 0 0);
+        transform: translate(-10px, -5px);
+    }
+
+    10% {
+        clip-path: inset(10% -6px 85% 0);
+        transform: translate(5px, 5px);
+    }
+
+    20% {
+        clip-path: inset(80% -6px 0 0);
+        transform: translate(-5px, 5px);
+    }
+
+    30% {
+        clip-path: inset(10% -6px 85% 0);
+        transform: translate(0, 3px);
+    }
+
+    40% {
+        clip-path: inset(50% -6px 30% 0);
+        transform: translate(-3px, 0);
+    }
+
+    50% {
+        clip-path: inset(10% -6px 85% 0);
+        transform: translate(3px, 0);
+    }
+
+    60% {
+        clip-path: inset(40% -6px 43% 0);
+        transform: translate(3px, 5px);
+    }
+
+    70% {
+        clip-path: inset(50% -6px 30% 0);
+        transform: translate(-5px, 5px);
+    }
+
+    80% {
+        clip-path: inset(80% -6px 5% 0);
+        transform: translate(10px, -5px);
+    }
+
+    90% {
+        clip-path: inset(80% -6px 0 0);
+        transform: translate(-5px, 0);
+    }
+
+    100% {
+        clip-path: inset(80% -6px 0 0);
+        transform: translate(0);
+    }
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .filters-container {
+        gap: 0.75rem;
+    }
+
+    .filter-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .filters-container {
+        gap: 0.3rem;
+        padding: 0.5rem 0;
+        justify-content: space-between;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .filters-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filter-btn {
+        padding: 0.4rem 0.6rem;
+        font-size: clamp(0.6rem, 1.5vw, 0.8rem);
+        border-radius: 6px;
+        flex: 1;
+        min-width: fit-content;
+        flex-shrink: 0;
+    }
+
+    .filter-btn.active {
+        padding: 0.5rem 0.8rem;
+        font-size: clamp(0.65rem, 1.5vw, 0.85rem);
+    }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+    .filters-container {
+        gap: 0.2rem;
+        padding: 0.3rem 0;
+        justify-content: space-between;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .filters-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filter-btn {
+        padding: 0.3rem 0.5rem;
+        font-size: clamp(0.5rem, 1.2vw, 0.7rem);
+        border-radius: 4px;
+        flex: 1;
+        min-width: fit-content;
+        flex-shrink: 0;
+    }
+
+    .filter-btn.active {
+        padding: 0.4rem 0.6rem;
+        font-size: clamp(0.55rem, 1.2vw, 0.75rem);
+    }
+}
