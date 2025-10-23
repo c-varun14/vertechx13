@@ -40,6 +40,7 @@
 .event-card-content {
     position: relative;
     padding: 1px;
+    margin-top: 20px;
     border-radius: 20px;
     background: rgba(12, 8, 28, 0.43);
     overflow: hidden;
@@ -51,6 +52,7 @@
     content: '';
     position: absolute;
     left: 50%;
+    margin-top: 20px;
     top: 50%;
     width: clamp(300px, 175%, 800px);
     aspect-ratio: 1;
@@ -80,7 +82,8 @@
 .event-card-inner {
     position: relative;
     z-index: 10;
-    padding: 1.2rem;
+    margin-top: 20px;
+    padding:65px 1.2rem 1.2rem 1.2rem;
     background: rgba(12, 8, 28, 0.43);
     backdrop-filter: blur(20px);
      -webkit-backdrop-filter: blur(20px);

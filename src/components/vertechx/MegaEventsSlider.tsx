@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import "./MegaEventsSlider.css";
-import { getdepartmentEvents } from "@/lib/eventsData";
 import Image from "next/image";
-import { ArrowLeft, ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import { getdepartmentEvents } from "@/lib/eventsData";
+import "./MegaEventsSlider.css";
 
 const MegaEventsSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -13,6 +13,9 @@ const MegaEventsSlider = () => {
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   const megaEvents = getdepartmentEvents("MEGA");
+
+  const spotlightRef = useRef<HTMLDivElement | null>(null);
+  const containerRef = useRef<HTMLDivElement | null>(null);
 
   // Auto-slide effect
   useEffect(() => {
@@ -25,45 +28,45 @@ const MegaEventsSlider = () => {
     }
 
     return () => {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-      }
+      if (intervalRef.current) clearInterval(intervalRef.current);
     };
   }, [isPaused, megaEvents.length]);
 
-  const handleMouseEnter = () => {
-    setIsPaused(true);
+  const handleMouseEnter = () => setIsPaused(true);
+  const handleMouseLeave = () => setIsPaused(false);
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!spotlightRef.current || !containerRef.current) return;
+    const rect = containerRef.current.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+    spotlightRef.current.style.transform = `translate(-50%, -50%) translate(${x - 50}%, ${y - 50}%)`;
   };
 
-  const handleMouseLeave = () => {
-    setIsPaused(false);
-  };
-
-  const goToSlide = (index: number) => {
-    setCurrentIndex(index);
-  };
-
-  const nextSlide = () => {
+  const goToSlide = (index: number) => setCurrentIndex(index);
+  const nextSlide = () =>
     setCurrentIndex((prevIndex) =>
       prevIndex === megaEvents.length - 1 ? 0 : prevIndex + 1
     );
-  };
-
-  const prevSlide = () => {
+  const prevSlide = () =>
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? megaEvents.length - 1 : prevIndex - 1
     );
-  };
 
   const currentEvent = megaEvents[currentIndex];
 
   return (
     <div className="mega-events-section">
       <div
-        className="mega-slider-container overflow-visible!"
+        className="mega-slider-container"
+        ref={containerRef}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        onMouseMove={handleMouseMove}
       >
+        {/* Spotlight div */}
+        <div className="spotlight" ref={spotlightRef}></div>
+
         <div className="mega-slider-inner">
           {/* Header */}
           <div className="mega-slider-header">
@@ -75,34 +78,21 @@ const MegaEventsSlider = () => {
 
           {/* Main Content */}
           <div className="mega-slide-content">
-            {/* Event Graphic */}
-            {/* <div className="mega-event-graphic">
-              <div className="mega-event-badge">
-                <span className="badge-label">MEGA</span>
-                <span className="badge-number">#{currentIndex + 1}</span>
-              </div>
-              <div className="mega-graphic-background"></div>
-            </div> */}
             <Image
               src={currentEvent.image}
               alt={currentEvent.name}
-              height={100}
-              width={80}
-              className="w-64"
+              height={150}      // reduced from 200
+  width={200}  
+              className="event-card-image"
             />
 
-            {/* Event Details */}
             <div className="mega-event-info">
               <div className="mega-event-top">
                 <div className="mega-event-department">
-                  {currentEvent.id === "clw3q9v6e002a08l0h6qy7q2s"
-                    ? "AE AS"
-                    : "Computer Science"}
+                  {currentEvent.department || "Computer Science"}
                 </div>
                 <h3 className="mega-event-name">{currentEvent.name}</h3>
-                <p className="mega-event-description">
-                  {currentEvent.description}
-                </p>
+                <p className="mega-event-description">{currentEvent.description}</p>
               </div>
 
               <div className="mega-event-stats">
@@ -170,7 +160,6 @@ const MegaEventsSlider = () => {
                 <ArrowRight className="w-4" />
               </button>
 
-              {/* Dots Indicator */}
               <div className="slider-dots">
                 {megaEvents.map((_, index) => (
                   <button
