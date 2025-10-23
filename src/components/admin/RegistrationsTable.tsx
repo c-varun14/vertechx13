@@ -28,10 +28,10 @@ export const RegistrationsTable = ({
   registrations,
 }: RegistrationsTableProps) => {
   return (
-    <div className="rounded-md border overflow-x-auto">
+    <div className="rounded-md border border-border overflow-x-auto">
       <Table>
         <TableHeader>
-          <TableRow>
+          <TableRow className="border-border">
             <TableHead className="whitespace-nowrap">Name</TableHead>
             <TableHead className="whitespace-nowrap">USN</TableHead>
             <TableHead className="whitespace-nowrap">College</TableHead>
@@ -47,13 +47,13 @@ export const RegistrationsTable = ({
         <TableBody>
           {registrations.length === 0 ? (
             <TableRow>
-              <TableCell colSpan={9} className="h-24 text-center">
+              <TableCell colSpan={9} className="h-24 text-center border-border">
                 No registrations found.
               </TableCell>
             </TableRow>
           ) : (
             registrations.map((registration) => (
-              <TableRow key={registration.id}>
+              <TableRow key={registration.id} className="border-border">
                 <TableCell className="font-medium">
                   {registration.name}
                 </TableCell>

@@ -249,7 +249,10 @@ const VideoSection = () => {
           <div className="video-glass-box">
             <div className="video-wrapper">
               <video autoPlay loop muted playsInline>
-                {/* <source src="https://pub-ad7b9dfb5d1942639c6f3b5196e947c8.r2.dev/teaser.mp4" type="video/mp4" /> */}
+                <source
+                  src="https://pub-ad7b9dfb5d1942639c6f3b5196e947c8.r2.dev/teaser.mp4"
+                  type="video/mp4"
+                />
               </video>
             </div>
           </div>

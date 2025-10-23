@@ -63,8 +63,8 @@ const getQr = async (id: string) => {
     width: 150,
     margin: 1,
     color: {
-      dark: "#5f4a37ff",
-      light: "#fff4d400",
+      dark: "#0f131dff",
+      light: "#ffffff00",
     },
   });
   return qr;
@@ -112,7 +112,7 @@ const ProfilePage = async () => {
     <div className="max-w-6xl mx-auto px-4 py-6 sm:pt-16 min-h-[80vh]">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
         <div className="md:col-span-4 lg:col-span-3">
-          <div className="bg-[#fff4d4]/80 backdrop-blur-sm border border-[#5F4A37]/30 shadow-lg rounded-xl p-4 sm:p-6 md:sticky md:top-32">
+          <div className="bg-card/80 backdrop-blur-sm border border-border shadow-lg rounded-xl p-4 sm:p-6 md:sticky md:top-32">
             <div className="flex flex-col items-center text-center">
               <Avatar className="w-24 h-24 mb-4">
                 <AvatarImage
@@ -128,9 +128,9 @@ const ProfilePage = async () => {
               <h2 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2">
                 {user.name}
               </h2>
-              <p className="text-sm text-[#5F4A37]/80 mb-4">{user.email}</p>
+              <p className="text-sm text-muted-foreground mb-4">{user.email}</p>
 
-              <div className="w-full pt-4 border-t border-[#5F4A37]/20">
+              <div className="w-full pt-4 border-t border-border">
                 <div className="flex justify-between items-center mb-3">
                   <span className="text-sm font-medium">
                     Your Registrations
@@ -140,7 +140,7 @@ const ProfilePage = async () => {
 
                 <Link
                   href="/events"
-                  className="block w-full text-center py-2.5 px-4 bg-[#5F4A37] text-[#fff4d4] rounded-lg font-medium hover:bg-[#5F4A37]/90 transition-colors"
+                  className="block w-full text-center py-2.5 px-4 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
                 >
                   Browse More Events
                 </Link>
@@ -154,7 +154,7 @@ const ProfilePage = async () => {
           </h2>
 
           {registrations.length === 0 ? (
-            <div className="bg-[#fff4d4]/80 backdrop-blur-sm border border-[#5F4A37]/30 shadow-lg rounded-xl p-6 sm:p-8 text-center">
+            <div className="bg-card/80 backdrop-blur-sm border border-border shadow-lg rounded-xl p-6 sm:p-8 text-center">
               <div className="max-w-md mx-auto py-6 sm:py-8">
                 <Image
                   src="/assets/mvjLogo.webp"
@@ -172,7 +172,7 @@ const ProfilePage = async () => {
                 </p>
                 <Link
                   href="/events"
-                  className="inline-block px-5 sm:px-6 py-2 sm:py-2.5 bg-[#5F4A37] text-[#fff4d4] rounded-lg font-medium hover:bg-[#5F4A37]/90 transition-colors"
+                  className="inline-block px-5 sm:px-6 py-2 sm:py-2.5 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
                 >
                   Browse Events
                 </Link>
@@ -183,13 +183,13 @@ const ProfilePage = async () => {
               {registrations.map((registration) => (
                 <div
                   key={registration.id}
-                  className="bg-[#fff4d4]/80 backdrop-blur-sm border border-[#5F4A37]/30 shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition-shadow"
+                  className="bg-card/80 backdrop-blur-sm border border-border shadow-lg rounded-xl overflow-hidden hover:shadow-xl transition-shadow"
                 >
                   {registration.event ? (
                     <div className="p-4">
                       <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
                         <div className="flex items-center gap-3 flex-1 min-w-0">
-                          <div className="w-12 h-12 relative rounded overflow-hidden flex-shrink-0 bg-[#5F4A37]/10">
+                          <div className="w-12 h-12 relative rounded overflow-hidden flex-shrink-0 bg-primary/10">
                             {registration.event.image ? (
                               <Image
                                 src={registration.event.image}
@@ -199,7 +199,7 @@ const ProfilePage = async () => {
                               />
                             ) : (
                               <div className="w-full h-full flex items-center justify-center">
-                                <span className="text-[#5F4A37] text-lg font-bold">
+                                <span className="text-primary text-lg font-bold">
                                   {registration.event.name.charAt(0)}
                                 </span>
                               </div>
@@ -219,7 +219,7 @@ const ProfilePage = async () => {
                         </div>
                         {!registration.paymentId && (
                           <Link
-                            className="text-center py-2.5 px-4 bg-[#5F4A37] text-[#fff4d4] rounded-lg font-medium hover:bg-[#5F4A37]/90 transition-colors"
+                            className="text-center py-2.5 px-4 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
                             href={`/${registration.eventId}/register?clubName=${registration.club}`}
                           >
                             Complete Payment
@@ -228,9 +228,9 @@ const ProfilePage = async () => {
                       </div>
 
                       {/* Event Summary - Always visible */}
-                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 py-3 mt-2 border-t border-[#5F4A37]/10">
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 py-3 mt-2 border-t border-border">
                         <div className="flex items-center gap-2">
-                          <Calendar className="h-4 w-4 text-[#5F4A37]/70 flex-shrink-0" />
+                          <Calendar className="h-4 w-4 text-muted-foreground flex-shrink-0" />
                           <span className="text-xs">
                             {registration.event.date_time}
                           </span>
@@ -239,10 +239,10 @@ const ProfilePage = async () => {
 
                       {/* QR Code Section - Only for paid registrations */}
                       {getPaymentStatus(registration.paymentId) === "PAID" && (
-                        <div className="mt-3 pt-2 border-t border-[#5F4A37]/10">
+                        <div className="mt-3 pt-2 border-t border-border">
                           <div className="flex items-center justify-between">
                             <div className="flex items-center gap-2 mb-2">
-                              <Ticket className="h-4 w-4 text-[#5F4A37]/70" />
+                              <Ticket className="h-4 w-4 text-muted-foreground" />
                               <h4 className="text-sm font-medium">
                                 Event Ticket
                               </h4>
@@ -261,8 +261,8 @@ const ProfilePage = async () => {
                           </div>
 
                           <div className="flex items-center gap-3">
-                            <div className="bg-white p-1.5 rounded-lg border border-[#5F4A37]/10 shadow-sm">
-                              <div className="w-16 h-16 bg-[#5F4A37]/10 flex items-center justify-center text-center">
+                            <div className="bg-card p-1.5 rounded-lg border border-border shadow-sm">
+                              <div className="w-16 h-16 bg-primary/10 flex items-center justify-center text-center">
                                 <Image
                                   src={registration.qr}
                                   alt="QR-Code"
@@ -282,7 +282,7 @@ const ProfilePage = async () => {
                       )}
 
                       {/* Concise participant info and link to details */}
-                      <div className="mt-3 pt-3 border-t border-[#5F4A37]/10 flex flex-col sm:flex-row sm:items-center justify-end gap-3">
+                      <div className="mt-3 pt-3 border-t border-border flex flex-col sm:flex-row sm:items-center justify-end gap-3">
                         {/* <div className="flex items-center gap-2">
                           <User className="h-4 w-4 text-[#5F4A37]/70" />
                           <span className="text-xs">
@@ -295,7 +295,7 @@ const ProfilePage = async () => {
                         {registration.paymentId && (
                           <Link
                             href={`/profile/details/${registration.id}`}
-                            className="flex items-center justify-center gap-1 px-3 py-1.5 bg-[#5F4A37] hover:bg-[#5F4A37]/90 text-[#fff4d4] rounded-lg text-xs font-medium w-full sm:w-auto"
+                            className="flex items-center justify-center gap-1 px-3 py-1.5 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg text-xs font-medium w-full sm:w-auto"
                           >
                             View Complete Details
                             <ChevronRight className="h-3.5 w-3.5" />

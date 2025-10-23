@@ -1,10 +1,20 @@
 "use client";
-import React from "react";
-import "./events.css";
-import eventImage from "@/assets/WhatsApp Image 2025-10-07 at 21.48.17_59318160.jpg?url";
-import Image from "next/image";
 
-const EventCard = ({ event, eventNumber }) => {
+import Link from "next/link";
+import "./events.css";
+import Image from "next/image";
+import { Event } from "@/types/event";
+import { departmentsType } from "@/lib/eventsData";
+
+const EventCard = ({
+  event,
+  eventNumber,
+  department,
+}: {
+  event: Event;
+  department: departmentsType;
+  eventNumber: number;
+}) => {
   return (
     <div className="event-card">
       {/* Event Number Badge */}
@@ -22,7 +32,7 @@ const EventCard = ({ event, eventNumber }) => {
           <div className="event-card-body">
             {/* Left Side - Image */}
             <Image
-              src={event.image || eventImage}
+              src={event.image}
               alt={event.name}
               width={80}
               height={100}
@@ -67,28 +77,36 @@ const EventCard = ({ event, eventNumber }) => {
                       : "Participation Certificate"}
                   </span>
                 </div>
-                {event.sponsors && (
+                {/* {event.sponsors && (
                   <div className="info-item">
                     <span className="info-label">Sponsors:</span>
                     <span className="info-value">{event.sponsors}</span>
                   </div>
-                )}
-                {event.expenses && event.expenses !== "Nil" && (
+                )} */}
+                {/* {event.expenses && event.expenses !== "Nil" && (
                   <div className="info-item">
                     <span className="info-label">Expenses:</span>
                     <span className="info-value">₹{event.expenses}</span>
                   </div>
-                )}
-                {event.requirements && (
+                )} */}
+                {/* {event.requirements && (
                   <div className="info-item">
                     <span className="info-label">Requirements:</span>
                     <span className="info-value">{event.requirements}</span>
                   </div>
-                )}
+                )} */}
               </div>
 
               <div className="event-buttons">
-                <button className="register-btn">Register Now</button>
+                <Link
+                  href={`/${event.id}/register?clubName=${department.replace(
+                    "&",
+                    ","
+                  )}`}
+                  className="register-btn text-center"
+                >
+                  Register Now
+                </Link>
                 <button className="know-more-btn">Know More</button>
               </div>
             </div>

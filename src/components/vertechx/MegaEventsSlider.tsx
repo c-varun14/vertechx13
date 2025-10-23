@@ -5,6 +5,7 @@ import "./MegaEventsSlider.css";
 import { getdepartmentEvents } from "@/lib/eventsData";
 import Image from "next/image";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const MegaEventsSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -57,7 +58,7 @@ const MegaEventsSlider = () => {
   const currentEvent = megaEvents[currentIndex];
 
   return (
-    <div className="mega-events-section pt-8!">
+    <div className="mega-events-section">
       <div
         className="mega-slider-container overflow-visible!"
         onMouseEnter={handleMouseEnter}
@@ -142,14 +143,13 @@ const MegaEventsSlider = () => {
               </div>
 
               <div className="mega-event-actions">
-                <button className="mega-register-btn">
-                  <i className="bx bx-rocket"></i>
+                <Link
+                  href={`/${currentEvent.id}/register?clubName=MEGA`}
+                  className="mega-register-btn"
+                >
                   Register Now
-                </button>
-                <button className="mega-details-btn">
-                  <i className="bx bx-info-circle"></i>
-                  Details
-                </button>
+                </Link>
+                <button className="mega-details-btn">Details</button>
               </div>
             </div>
           </div>

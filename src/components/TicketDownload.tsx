@@ -32,8 +32,8 @@ export function TicketDownload({
       width: "210mm",
       minHeight: minHeight,
       padding: "15mm 20mm",
-      backgroundColor: "#fff4d4",
-      color: "#5f4a37",
+      backgroundColor: "#0f131d",
+      color: "#ffffff",
       fontFamily: "'Open Sans', Arial, sans-serif",
       position: "absolute", // Changed from fixed to absolute
       left: "-10000px",
@@ -47,8 +47,8 @@ export function TicketDownload({
       margin: 2,
       scale: 8, // Explicit scale factor
       color: {
-        dark: "#5f4a37ff",
-        light: "#fff4d400",
+        dark: "#ffffff",
+        light: "#0f131d00",
       },
     });
 
@@ -57,10 +57,10 @@ export function TicketDownload({
 
     container.innerHTML = `
       <!-- Header with Logos -->
-      <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 10mm;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10mm;">
         <div>
-          <img src="/assets/mvjLogo.webp" alt="College Logo" style="height: 20mm; width: auto; object-fit: contain; margin:auto" />
-          <img src="/assets/SwayamLogo.png" alt="Event Logo" style="height: 20mm; width: auto; object-fit: contain;" />
+          <img src="/assets/mvjLogo.webp" alt="College Logo" style="height: 20mm; width: auto; object-fit: contain" />
+          <img src="/assets/vertechx.webp" alt="Event Logo" style="height: auto; width: 60mm; object-fit: contain; margin-top: 4mm" />
         </div>
         <div style="margin-left:8mm">
           <h1 style="font-size: 24pt; margin: 0; font-weight: 700; letter-spacing: -0.5pt;">
@@ -70,7 +70,7 @@ export function TicketDownload({
       </div>
 
       <!-- Divider -->
-      <div style="border-bottom: 2px solid #5f4a37; margin-bottom: 8mm;"></div>
+      <div style="border-bottom: 2px solid #d4a72c; margin-bottom: 8mm;"></div>
 
       <!-- Main Content -->
       <div style="display: flex; gap: 15mm;">
@@ -109,14 +109,14 @@ export function TicketDownload({
         <!-- Right Column -->
         <div style="width: 70mm; flex-shrink: 0;">
           <!-- QR Code Section -->
-          <div style="background: white; padding: 5mm; border-radius: 3mm; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 5mm; text-align: center;">
+          <div style="background: #111724; padding: 5mm; border-radius: 3mm; box-shadow: 0 2px 8px rgba(0,0,0,0.3); margin-bottom: 5mm; text-align: center; border: 1px solid #d4a72c;">
             <img src="${qrCodeDataURL}" style="width: 50mm; height: 50mm; display: block; margin: 0 auto; image-rendering: pixelated;" />
-            <p style="font-size: 10pt; margin: 3mm 0 0 0; color: #666;">QR code for verification</p>
+            <p style="font-size: 10pt; margin: 3mm 0 0 0; color: #d4a72c;">QR code for verification</p>
           </div>
 
           <!-- Payment Info -->
-          <div style="background: rgba(95,74,55,0.08); padding: 4mm; border-radius: 3mm; margin-bottom: 5mm;">
-            <h3 style="font-size: 14pt; margin: 0 0 3mm 0; font-weight: 600; text-align: center;">Payment Details</h3>
+          <div style="background: rgba(212,167,44,0.1); padding: 4mm; border-radius: 3mm; margin-bottom: 5mm; border: 1px solid rgba(212,167,44,0.3);">
+            <h3 style="font-size: 14pt; margin: 0 0 3mm 0; font-weight: 600; text-align: center; color: #d4a72c;">Payment Details</h3>
             <p style="font-size: 12pt; margin: 0 0 2mm 0;"><strong>Status:</strong> ${
               registration.paymentId ? "Paid" : "Pending"
             }</p>
@@ -131,13 +131,13 @@ export function TicketDownload({
           </div>
 
           <!-- Event Quick Info -->
-          <div style="background: rgba(95,74,55,0.08); padding: 4mm; border-radius: 3mm;">
-            <h3 style="font-size: 14pt; margin: 0 0 3mm 0; font-weight: 600; text-align: center;">Event Info</h3>
+          <div style="background: rgba(212,167,44,0.1); padding: 4mm; border-radius: 3mm; border: 1px solid rgba(212,167,44,0.3);">
+            <h3 style="font-size: 14pt; margin: 0 0 3mm 0; font-weight: 600; text-align: center; color: #d4a72c;">Event Info</h3>
             <p style="font-size: 11pt; margin: 0 0 2mm 0;"><strong>Date:</strong> ${
-              event.date_time
+              event.date_time ? event.date_time : "TBD"
             }</p>
             <p style="font-size: 11pt; margin: 0 0 2mm 0;"><strong>Venue:</strong> ${
-              event.venue
+              event.venue ? event.venue : "TBD"
             }</p>
             <p style="font-size: 11pt; margin: 0 0 2mm 0;"><strong>Team Size:</strong> ${
               registration.teamMembers.length + 1
@@ -150,7 +150,7 @@ export function TicketDownload({
       </div>
 
       <!-- Footer Section -->
-      <div style="margin-top: 15mm; padding-top: 5mm; border-top: 2px solid #5f4a37;">
+      <div style="margin-top: 15mm; padding-top: 5mm; border-top: 2px solid #d4a72c;">
         <div style="display: flex; gap: 10mm;">
           <!-- Prizes -->
           <div style="flex: 1;">
@@ -185,19 +185,10 @@ export function TicketDownload({
           </div>
 
           <!-- Rules -->
-          <div style="flex: 1;">
-            <h3 style="font-size: 14pt; margin: 0 0 3mm 0; font-weight: 600;">Important Notes</h3>
-            <ul style="list-style: disc; padding-left: 5mm; margin: 0; font-size: 11pt;">
-              ${event.rules
-                .slice(0, 3)
-                .map((rule) => `<li style="margin: 0 0 2mm 0;">${rule}</li>`)
-                .join("")}
-            </ul>
-          </div>
         </div>
 
         <!-- Footer Note -->
-        <div style="margin-top: 5mm; font-size: 9pt; text-align: center; color: rgba(95,74,55,0.6);">
+        <div style="margin-top: 5mm; font-size: 9pt; text-align: center; color: rgba(255,255,255,0.6);">
           Please bring this ticket and college ID for verification. Generated on ${new Date().toLocaleString()}
         </div>
       </div>
@@ -217,8 +208,8 @@ export function TicketDownload({
               (
                 member,
                 index
-              ) => ` <li id=${index} style="margin: 0 0 4mm 0; padding: 3mm; background: rgba(95,74,55,0.05); border-radius: 2mm;">
-                  <strong style="display: block; margin-bottom: 1mm; font-size: 13pt;">${member.name}</strong>
+              ) => ` <li id=${index} style="margin: 0 0 4mm 0; padding: 3mm; background: rgba(212,167,44,0.1); border-radius: 2mm; border: 1px solid rgba(212,167,44,0.3);">
+                  <strong style="display: block; margin-bottom: 1mm; font-size: 13pt; color: #d4a72c;">${member.name}</strong>
                   <div style="font-size: 11pt;">
                     <p style="margin: 0 0 1mm 0;"><strong>USN:</strong> ${member.usn}</p>
                     <p style="margin: 0;"><strong>College:</strong> ${member.collegeName}</p>
@@ -247,7 +238,7 @@ export function TicketDownload({
         scale: 2, // Higher scale for better quality
         logging: false,
         useCORS: true,
-        backgroundColor: "#fff4d4",
+        backgroundColor: "#0f131d",
         allowTaint: true,
         height: ticketContent.scrollHeight,
         windowHeight: ticketContent.scrollHeight,
@@ -288,7 +279,7 @@ export function TicketDownload({
     <Button
       onClick={downloadPDF}
       disabled={isGenerating}
-      className="bg-[#5f4a37] hover:bg-[#4a3a2c] text-[#fff4d4]"
+      className="bg-foreground hover:bg-foreground/90 text-[#fff4d4]"
     >
       {isGenerating ? (
         <span className="flex items-center gap-2">

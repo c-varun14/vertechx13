@@ -60,6 +60,7 @@ export const eventsData = {
         "Judged on accuracy, completion time, and tool usage",
       ],
       registration_fee: 200,
+      drive: null,
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -68,7 +69,7 @@ export const eventsData = {
       maxTeamMembers: 2,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "S Vimal Adithya", phone: "7411688915" },
         { name: "Anna Jovita J", phone: "8310616583" },
@@ -91,6 +92,7 @@ export const eventsData = {
         "No second chance for launching",
       ],
       registration_fee: 300,
+      drive: null,
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -100,7 +102,7 @@ export const eventsData = {
       maxTeamMembers: 2,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "Sambhradha", phone: "8867054035" },
         { name: "Arpita S H", phone: "8073591238" },
@@ -125,6 +127,7 @@ export const eventsData = {
         "2 flights per team, best counts",
       ],
       registration_fee: 200,
+      drive: null,
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -133,7 +136,7 @@ export const eventsData = {
       maxTeamMembers: 3,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "H K.Hemalatha", phone: "9972571916" },
         { name: "Purvajaa I", phone: "9483204607" },
@@ -158,6 +161,7 @@ export const eventsData = {
         "Judged on descent time, stability, softness",
       ],
       registration_fee: 300,
+      drive: null,
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -166,7 +170,7 @@ export const eventsData = {
       maxTeamMembers: 2,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "Ranjitha M", phone: "9731556749" },
         { name: "Ayeesha MS", phone: "9019148634" },
@@ -192,6 +196,7 @@ export const eventsData = {
         "Round 2: Hand-launch, 3 timed flights, best counts",
       ],
       registration_fee: 0,
+      drive: null,
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -200,7 +205,7 @@ export const eventsData = {
       maxTeamMembers: 3,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "Swaroop Dinesh Bhat", phone: "8970889676" },
         { name: "Krishnavansh V", phone: "9108650079" },
@@ -226,6 +231,7 @@ export const eventsData = {
         "Round 2: Final competition for winners",
       ],
       registration_fee: 300,
+      drive: null,
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -234,7 +240,7 @@ export const eventsData = {
       maxTeamMembers: 4,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "David Wiliam Raj", phone: "9790347191" },
         { name: "S.NITIN", phone: "8296090231" },
@@ -261,6 +267,7 @@ export const eventsData = {
         "No intentional damage to opponent robots",
       ],
       registration_fee: 300,
+      drive: null,
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -269,7 +276,7 @@ export const eventsData = {
       maxTeamMembers: 5,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "David Wiliam Raj", phone: "9790347191" },
         { name: "S.NITIN", phone: "8296090231" },
@@ -293,6 +300,7 @@ export const eventsData = {
         "Judges' decision is final",
       ],
       registration_fee: 200,
+      drive: null,
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -301,7 +309,7 @@ export const eventsData = {
       maxTeamMembers: 2,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "David Wiliam Raj", phone: "9790347191" },
         { name: "S.NITIN", phone: "8296090231" },
@@ -325,6 +333,7 @@ export const eventsData = {
         "Judges' decision is final",
       ],
       registration_fee: 300,
+      drive: null,
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -333,7 +342,7 @@ export const eventsData = {
       maxTeamMembers: 2,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "David Wiliam Raj", phone: "9790347191" },
         { name: "S.NITIN", phone: "8296090231" },
@@ -359,6 +368,7 @@ export const eventsData = {
         "Round 2: Discontinuous lines, loops, sharp turns",
       ],
       registration_fee: 300,
+      drive: null,
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -367,7 +377,7 @@ export const eventsData = {
       maxTeamMembers: 4,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "David Wiliam Raj", phone: "9790347191" },
         { name: "S.NITIN", phone: "8296090231" },
@@ -394,6 +404,7 @@ export const eventsData = {
         "Negative points for leaving track",
       ],
       registration_fee: 300,
+      drive: null,
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -402,7 +413,7 @@ export const eventsData = {
       maxTeamMembers: 5,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "David Wiliam Raj", phone: "9790347191" },
         { name: "S.NITIN", phone: "8296090231" },
@@ -430,6 +441,7 @@ export const eventsData = {
         "Judged on smell, presentation, hygiene, materials",
       ],
       registration_fee: 300,
+      drive: null,
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -438,7 +450,7 @@ export const eventsData = {
       maxTeamMembers: 5,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "Sheeba", phone: "9310938256" },
         { name: "Veerendra", phone: "8147033902" },
@@ -462,6 +474,7 @@ export const eventsData = {
         "Sharing answers leads to disqualification",
       ],
       registration_fee: 200,
+      drive: null,
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -470,7 +483,7 @@ export const eventsData = {
       maxTeamMembers: 5,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "Kousthub", phone: "7829992205" },
         { name: "Bhavesh", phone: "9080015692" },
@@ -496,6 +509,7 @@ export const eventsData = {
         "Round 2: 5-minute presentation explaining features",
       ],
       registration_fee: 300,
+      drive: null,
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -505,7 +519,7 @@ export const eventsData = {
       maxTeamMembers: 4,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "MOHAMMAD TAMEEM ZAKARIYA", phone: "8105006039" },
         { name: "MOHAMMAD ZAID", phone: "9103091711" },
@@ -532,6 +546,7 @@ export const eventsData = {
         "Judged on design aesthetics, sustainability, feasibility, load-bearing capacity",
       ],
       registration_fee: 200,
+      drive: null,
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -540,7 +555,7 @@ export const eventsData = {
       maxTeamMembers: 4,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "ASHISH KUMAR TIWARI", phone: "7411826045" },
         { name: "KAREN ANTHONY", phone: "8147536499" },
@@ -568,6 +583,7 @@ export const eventsData = {
         "Strict time limit adherence",
       ],
       registration_fee: 300,
+      drive: null,
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -576,7 +592,7 @@ export const eventsData = {
       maxTeamMembers: 5,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "Ranganath S", phone: "7019922146" },
         { name: "Nitish N M", phone: "9353636599" },
@@ -603,6 +619,7 @@ export const eventsData = {
         "Bring own devices (laptops/tablets)",
       ],
       registration_fee: 200,
+      drive: null,
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -611,7 +628,7 @@ export const eventsData = {
       maxTeamMembers: 2,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "Bindu Mahanthi", phone: "TBD" },
         { name: "Gouthami B", phone: "TBD" },
@@ -638,6 +655,7 @@ export const eventsData = {
         "2-3 minute demo after development",
       ],
       registration_fee: 500,
+      drive: null,
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -646,7 +664,7 @@ export const eventsData = {
       maxTeamMembers: 3,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "J Bahulika", phone: "TBD" },
         { name: "Angel Susan", phone: "TBD" },
@@ -674,6 +692,7 @@ export const eventsData = {
         "Code must be original, clean, modular",
       ],
       registration_fee: 300,
+      drive: null,
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -682,7 +701,7 @@ export const eventsData = {
       maxTeamMembers: 3,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "Harshath R", phone: "7348950177" },
         { name: "Diya Oommen", phone: "9845106872" },
@@ -707,6 +726,7 @@ export const eventsData = {
         "Judged on creativity, humor, pixel art execution, virality",
       ],
       registration_fee: 200,
+      drive: null,
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -715,7 +735,7 @@ export const eventsData = {
       maxTeamMembers: 2,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "NITISHKUMAR PATIL", phone: "8123552246" },
         { name: "HARISMITHA G", phone: "7338121844" },
@@ -742,6 +762,7 @@ export const eventsData = {
         "No AI tools allowed",
       ],
       registration_fee: 200,
+      drive: null,
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -750,7 +771,7 @@ export const eventsData = {
       maxTeamMembers: 3,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "Prabjyot", phone: "8899640581" },
         { name: "Bushra", phone: "9964933575" },
@@ -774,6 +795,7 @@ export const eventsData = {
         "Accuracy and logical deduction crucial",
       ],
       registration_fee: 200,
+      drive: null,
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -782,7 +804,7 @@ export const eventsData = {
       maxTeamMembers: 2,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "Mussarat", phone: "9353801953" },
         { name: "Nikitha", phone: "7975161965" },
@@ -806,6 +828,7 @@ export const eventsData = {
         "Challenge sequencing with increasing complexity",
       ],
       registration_fee: 300,
+      drive: null,
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -814,7 +837,7 @@ export const eventsData = {
       maxTeamMembers: 2,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "Basavaraj", phone: "8073871635" },
         { name: "Ankita", phone: "9243620020" },
@@ -838,6 +861,7 @@ export const eventsData = {
         "No pre-built modules or AI-assisted solutions",
       ],
       registration_fee: 300,
+      drive: null,
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -846,7 +870,7 @@ export const eventsData = {
       maxTeamMembers: 3,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "Deeksha", phone: "7019917641" },
         { name: "Krish", phone: "7889608840" },
@@ -873,6 +897,7 @@ export const eventsData = {
         "Unethical behavior prohibited",
       ],
       registration_fee: 200,
+      drive: null,
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -881,7 +906,7 @@ export const eventsData = {
       maxTeamMembers: 3,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "Lakshaya I", phone: "7892925234" },
         { name: "Nayana D", phone: "8123397879" },
@@ -905,6 +930,7 @@ export const eventsData = {
         "Unethical behavior leads to disqualification",
       ],
       registration_fee: 300,
+      drive: null,
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -915,7 +941,7 @@ export const eventsData = {
       maxTeamMembers: 3,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "Naresh M", phone: "7975482136" },
         { name: "S.Nikhil Aradhya", phone: "8431707289" },
@@ -940,6 +966,7 @@ export const eventsData = {
         "Only one final submission allowed",
       ],
       registration_fee: 300,
+      drive: null,
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -948,7 +975,7 @@ export const eventsData = {
       maxTeamMembers: 3,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "Ananya Bera", phone: "8310458929" },
         { name: "Chaitanya.M", phone: "9380261673" },
@@ -976,6 +1003,7 @@ export const eventsData = {
         "Include explanation of visualization choices",
       ],
       registration_fee: 200,
+      drive: null,
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -984,7 +1012,7 @@ export const eventsData = {
       maxTeamMembers: 4,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "Surabhi", phone: "6363898557" },
         { name: "Abhishek", phone: "9380533700" },
@@ -1009,6 +1037,7 @@ export const eventsData = {
         "Round 2: Solve real-world data scenario",
       ],
       registration_fee: 300,
+      drive: null,
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -1017,7 +1046,7 @@ export const eventsData = {
       maxTeamMembers: 4,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [
         { name: "Rakshitha", phone: "7892316603" },
         { name: "Shashank", phone: "7022742719" },
@@ -1038,6 +1067,7 @@ export const eventsData = {
         "All teams get a drone to assemble and practice",
       ],
       registration_fee: 500,
+      drive: null,
       prizes: {
         first: "7,500",
         second: "3,500",
@@ -1046,7 +1076,7 @@ export const eventsData = {
       maxTeamMembers: 5,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [{ name: "TBD", phone: "TBD" }],
     },
 
@@ -1066,6 +1096,7 @@ export const eventsData = {
         "Interdisciplinary teams encouraged",
       ],
       registration_fee: 400,
+      drive: null,
       prizes: {
         first: "15,000",
         second: "7,000",
@@ -1074,7 +1105,7 @@ export const eventsData = {
       maxTeamMembers: 6,
       date_time: null,
       start_time: null,
-      venue: "to be announced soon",
+      venue: null,
       coordinators: [{ name: "TBD", phone: "TBD" }],
     },
   ],
@@ -1092,11 +1123,11 @@ export const getdepartmentEvent = (
   const events = getdepartmentEvents(departmentName);
   let index: number;
   events.forEach((data, i) => {
-    if (data.id == id) index = i;
+    if (data.id == id) index = i + 1;
   });
   // @ts-expect-error Index will be defined due to for each loop
-  if (!index) throw new Error("Event not found");
-  return events[index];
+  if (!index) throw new Error("Couldn't find the event");
+  return events[index - 1];
 };
 
 export const getEventDetailsById = (id: string) => {

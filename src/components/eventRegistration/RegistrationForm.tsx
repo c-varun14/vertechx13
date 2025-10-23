@@ -287,7 +287,7 @@ export default function EventRegistration({
       try {
         if (!(isFormSubmitted || registeredBefore)) {
           const register = await axios.post(
-            "/api/registration?clubName=" + clubName,
+            "/api/registration?clubName=" + clubName.replace("&", ","),
             {
               ...formData,
               eventId: id,
@@ -391,7 +391,7 @@ export default function EventRegistration({
         <div className="mb-8">
           <div className="relative flex justify-between">
             {/* Progress Bar Background */}
-            <div className="absolute top-1/2 left-0 h-1 w-full -translate-y-1/2 bg-[#e0d5c0]" />
+            <div className="absolute top-1/2 left-0 h-1 w-full -translate-y-1/2 bg-white/10" />
 
             {/* Progress Bar Fill - Animated */}
             <div
@@ -408,7 +408,7 @@ export default function EventRegistration({
                 className={`flex h-10 w-10 items-center justify-center rounded-full border-2 transition-all duration-300 ${
                   currentStep >= 1
                     ? "border-[#d4a72c] bg-[#d4a72c] text-white"
-                    : "border-[#e0d5c0] bg-white text-[#5f4a37]"
+                    : "border-white/20 bg-transparent text-white"
                 }`}
               >
                 {currentStep > 1 ? (
@@ -419,7 +419,7 @@ export default function EventRegistration({
               </div>
               <span
                 className={`mt-2 text-sm font-medium transition-all duration-300 ${
-                  currentStep === 1 ? "text-[#5f4a37]" : "text-[#5f4a37]/70"
+                  currentStep === 1 ? "text-white" : "text-white/70"
                 }`}
               >
                 Primary Contact
@@ -434,7 +434,7 @@ export default function EventRegistration({
                   className={`flex h-10 w-10 items-center justify-center rounded-full border-2 transition-all duration-300 ${
                     currentStep >= 2
                       ? "border-[#d4a72c] bg-[#d4a72c] text-white"
-                      : "border-[#e0d5c0] bg-white text-[#5f4a37]"
+                      : "border-white/20 bg-transparent text-white"
                   }`}
                 >
                   {currentStep > 2 ? (
@@ -445,7 +445,7 @@ export default function EventRegistration({
                 </div>
                 <span
                   className={`mt-2 text-sm font-medium transition-all duration-300 ${
-                    currentStep === 2 ? "text-[#5f4a37]" : "text-[#5f4a37]/70"
+                    currentStep === 2 ? "text-white" : "text-white/70"
                   }`}
                 >
                   Team Members
@@ -459,7 +459,7 @@ export default function EventRegistration({
                 className={`flex h-10 w-10 items-center justify-center rounded-full border-2 transition-all duration-300 ${
                   currentStep >= 3
                     ? "border-[#d4a72c] bg-[#d4a72c] text-white"
-                    : "border-[#e0d5c0] bg-white text-[#5f4a37]"
+                    : "border-white/20 bg-transparent text-white"
                 }`}
               >
                 {currentStep > 3 ? (
@@ -472,7 +472,7 @@ export default function EventRegistration({
               </div>
               <span
                 className={`mt-2 text-sm font-medium transition-all duration-300 ${
-                  currentStep === 3 ? "text-[#5f4a37]" : "text-[#5f4a37]/70"
+                  currentStep === 3 ? "text-white" : "text-white/70"
                 }`}
               >
                 Review & Payment
@@ -484,7 +484,7 @@ export default function EventRegistration({
 
       {/* Form Steps */}
       <Card
-        className={`p-6 bg-white border-[#e0d5c0] shadow-md transition-opacity duration-300 ${
+        className={`p-6 bg-[#111724] border-white/10 text-white shadow-lg transition-opacity duration-300 ${
           animatingStep ? "opacity-50" : "opacity-100"
         }`}
       >
@@ -494,7 +494,7 @@ export default function EventRegistration({
             <h2 className="text-2xl font-bold mb-2">
               Primary Contact Information
             </h2>
-            <p className="text-[#5f4a37]/80 mb-6">
+            <p className="text-white/70 mb-6">
               Please enter details for the team leader/primary contact
             </p>
 
@@ -509,7 +509,7 @@ export default function EventRegistration({
                   value={formData.name}
                   onChange={handlePrimaryContactChange}
                   placeholder="Enter your full name"
-                  className={`bg-[#fffbf0] border-[#e0d5c0] focus-visible:ring-chart-4 ${
+                  className={`bg-white/5 text-white placeholder-white/40 border-white/10 focus-visible:ring-[#d4a72c] ${
                     errors.name ? "border-red-300" : ""
                   }`}
                 />
@@ -528,7 +528,7 @@ export default function EventRegistration({
                     value={formData.phone}
                     onChange={handlePrimaryContactChange}
                     placeholder="Eg: 9876543210"
-                    className={`flex-1 bg-[#fffbf0] border-[#e0d5c0] focus-visible:ring-chart-4 ${
+                    className={`flex-1 bg-white/5 text-white placeholder-white/40 border-white/10 focus-visible:ring-[#d4a72c] ${
                       errors.phone ? "border-red-300" : ""
                     }`}
                   />
@@ -548,7 +548,7 @@ export default function EventRegistration({
                   value={formData.usn}
                   onChange={handlePrimaryContactChange}
                   placeholder="e.g., 1XX21XX000"
-                  className={`bg-[#fffbf0] border-[#e0d5c0] focus-visible:ring-chart-4 ${
+                  className={`bg-white/5 text-white placeholder-white/40 border-white/10 focus-visible:ring-[#d4a72c] ${
                     errors.usn ? "border-red-300" : ""
                   }`}
                 />
@@ -567,7 +567,7 @@ export default function EventRegistration({
                   value={formData.collegeName}
                   onChange={handlePrimaryContactChange}
                   placeholder="Enter your college/university name"
-                  className={`bg-[#fffbf0] border-[#e0d5c0] focus-visible:ring-chart-4 ${
+                  className={`bg-white/5 text-white placeholder-white/40 border-white/10 focus-visible:ring-[#d4a72c] ${
                     errors.collegeName ? "border-red-300" : ""
                   }`}
                 />
@@ -582,7 +582,7 @@ export default function EventRegistration({
             <div className="mt-8 flex justify-end">
               <Button
                 onClick={handleNext}
-                className="bg-[#5f4a37] hover:bg-[#4a3a2a] text-[#fff4d4]"
+                className="bg-foreground hover:bg-foreground/90 text-[#fff4d4]"
               >
                 Next Step
                 <ChevronRight className="ml-2 h-4 w-4" />
@@ -595,11 +595,11 @@ export default function EventRegistration({
         {currentStep === 2 && (
           <div>
             <h2 className="text-2xl font-bold mb-2">Team Members</h2>
-            <p className="text-[#5f4a37]/80 mb-2">
+            <p className="text-white/70 mb-2">
               Add between {minTeamMembers} and {maxTeamMembers} team members
               (including yourself)
             </p>
-            <div className="bg-[#fffbf0] p-3 rounded-md border border-[#e0d5c0] mb-6 flex items-center">
+            <div className="bg-white/5 p-3 rounded-md border border-white/10 mb-6 flex items-center">
               <Info className="h-5 w-5 mr-2 text-chartring-chart-4" />
               <p className="text-sm">
                 Team Members: {formData.teamMembers.length + 1}/{maxTeamMembers}
@@ -607,15 +607,15 @@ export default function EventRegistration({
             </div>
 
             {/* Primary contact summary */}
-            <div className="mb-6 p-4 bg-[#fffbf0] rounded-md border border-[#e0d5c0]">
+            <div className="mb-6 p-4 bg-white/5 rounded-md border border-white/10">
               <div className="flex justify-between items-center mb-2">
                 <h3 className="font-medium">Primary Contact (You)</h3>
-                <span className="text-xs px-2 py-1 bg-chartring-chart-4/20 text-[#5f4a37] rounded-full">
+                <span className="text-xs px-2 py-1 bg-[#d4a72c]/20 text-white rounded-full">
                   Team Leader
                 </span>
               </div>
               <p className="text-sm">{formData.name}</p>
-              <p className="text-sm text-[#5f4a37]/70">
+              <p className="text-sm text-white/70">
                 {formData.usn} • {formData.collegeName}
               </p>
             </div>
@@ -625,12 +625,12 @@ export default function EventRegistration({
               {formData.teamMembers.map((member) => (
                 <div
                   key={member.id}
-                  className="p-4 bg-[#fffbf0] rounded-md border border-[#e0d5c0] relative"
+                  className="p-4 bg-white/5 rounded-md border border-white/10 relative"
                 >
                   <button
                     type="button"
                     onClick={() => removeTeamMember(member.id)}
-                    className="absolute top-2 right-2 text-[#5f4a37]/70 hover:text-[#5f4a37]"
+                    className="absolute top-2 right-2 text-white/70 hover:text-white"
                     aria-label="Remove team member"
                   >
                     <X className="h-5 w-5" />
@@ -651,7 +651,7 @@ export default function EventRegistration({
                           updateTeamMember(member.id, "name", e.target.value)
                         }
                         placeholder="Enter team member's full name"
-                        className={`bg-white border-[#e0d5c0] focus-visible:ring-chart-4 ${
+                        className={`bg-white/5 text-white placeholder-white/40 border-white/10 focus-visible:ring-[#d4a72c] ${
                           errors[`member-${member.id}-name`]
                             ? "border-red-300"
                             : ""
@@ -678,7 +678,7 @@ export default function EventRegistration({
                           updateTeamMember(member.id, "usn", e.target.value)
                         }
                         placeholder="e.g., 1XX21XX000"
-                        className={`bg-white border-[#e0d5c0] focus-visible:ring-chart-4 ${
+                        className={`bg-white/5 text-white placeholder-white/40 border-white/10 focus-visible:ring-[#d4a72c] ${
                           errors[`member-${member.id}-usn`]
                             ? "border-red-300"
                             : ""
@@ -709,7 +709,7 @@ export default function EventRegistration({
                           )
                         }
                         placeholder="Enter team member's college name"
-                        className={`bg-white border-[#e0d5c0] focus-visible:ring-chart-4 ${
+                        className={`bg-white/5 text-white placeholder-white/40 border-white/10 focus-visible:ring-[#d4a72c] ${
                           errors[`member-${member.id}-college`]
                             ? "border-red-300"
                             : ""
@@ -731,7 +731,7 @@ export default function EventRegistration({
               type="button"
               onClick={addTeamMember}
               variant="outline"
-              className="w-full border-dashed border-chartring-chart-4 text-[#5f4a37] hover:bg-chartring-chart-4/10 mb-8"
+              className="w-full border-dashed border-white/20 text-white hover:bg-white/5 mb-8"
               disabled={formData.teamMembers.length + 1 == maxTeamMembers}
             >
               + Add Team Member
@@ -745,15 +745,12 @@ export default function EventRegistration({
               <Button
                 onClick={handlePrevious}
                 variant="outline"
-                className="border-[#5f4a37] text-[#5f4a37] hover:bg-[#5f4a37]/10"
+                // className="border-white/20 text-white hover:bg-white/5"
               >
                 <ChevronLeft className="mr-2 h-4 w-4" />
                 Previous
               </Button>
-              <Button
-                onClick={handleNext}
-                className="bg-[#5f4a37] hover:bg-[#4a3a2a] text-[#fff4d4]"
-              >
+              <Button onClick={handleNext} className="">
                 Next Step
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
@@ -767,20 +764,20 @@ export default function EventRegistration({
             <h2 className="text-2xl font-bold mb-2">
               Review & Complete Registration
             </h2>
-            <p className="text-[#5f4a37]/80 mb-6">
+            <p className="text-white/70 mb-6">
               Please review your registration details and complete payment
             </p>
 
             {/* Registration summary */}
-            <div className="bg-[#fffbf0] rounded-md border border-[#e0d5c0] p-4 mb-6">
+            <div className="bg-white/5 rounded-md border border-white/10 p-4 mb-6">
               <h3 className="font-medium mb-3">Registration Summary</h3>
 
               <div className="space-y-3">
                 <div>
                   <h4 className="text-sm font-medium">Primary Contact</h4>
                   <p className="text-sm">{formData.name}</p>
-                  <p className="text-sm text-[#5f4a37]/70">{formData.phone}</p>
-                  <p className="text-sm text-[#5f4a37]/70">
+                  <p className="text-sm text-white/70">{formData.phone}</p>
+                  <p className="text-sm text-white/70">
                     {formData.usn} • {formData.collegeName}
                   </p>
                 </div>
@@ -794,7 +791,7 @@ export default function EventRegistration({
                         Team Members ({formData.teamMembers.length})
                       </h4>
                       {formData.teamMembers.length === 0 ? (
-                        <p className="text-sm text-[#5f4a37]/70">
+                        <p className="text-sm text-white/70">
                           No additional team members
                         </p>
                       ) : (
@@ -802,7 +799,7 @@ export default function EventRegistration({
                           {formData.teamMembers.map((member) => (
                             <div key={member.id} className="text-sm">
                               <p>{member.name}</p>
-                              <p className="text-[#5f4a37]/70">
+                              <p className="text-white/70">
                                 {member.usn} • {member.collegeName}
                               </p>
                             </div>
@@ -827,7 +824,7 @@ export default function EventRegistration({
                 <Label htmlFor="terms" className="text-sm block">
                   By paying you agree to the{" "}
                   <Dialog>
-                    <DialogTrigger className="text-chartring-chart-4 underline cursor-pointer">
+                    <DialogTrigger className="text-[#d4a72c] underline cursor-pointer">
                       Rules and regulations
                     </DialogTrigger>
                     <DialogContent className="max-w-lg w-9/10 h-9/10 overflow-y-auto">
@@ -946,7 +943,7 @@ export default function EventRegistration({
                       </div>
                     </DialogContent>
                   </Dialog>{" "}
-                  of the fest Swayam
+                  of the fest VertechX
                 </Label>
               </div>
               {errors.terms && (
@@ -959,7 +956,7 @@ export default function EventRegistration({
                 <Button
                   onClick={handlePrevious}
                   variant="outline"
-                  className="border-[#5f4a37] text-[#5f4a37] hover:bg-[#5f4a37]/10"
+                  className="border-white/20 text-white hover:bg-white/5"
                 >
                   <ChevronLeft className="mr-2 h-4 w-4" />
                   Previous
@@ -1004,7 +1001,7 @@ export default function EventRegistration({
               <Button
                 onClick={handleSubmit}
                 disabled={isSubmitting}
-                className="bg-[#5f4a37] hover:bg-[#4a3a2a] text-[#fff4d4] text-xs md:text-sm"
+                className="bg-foreground hover:bg-foreground/90 text-[#fff4d4] text-xs md:text-sm"
               >
                 {isSubmitting ? "Processing..." : "Complete Payment"}
               </Button>
@@ -1027,23 +1024,23 @@ export default function EventRegistration({
               <h2 className="text-2xl font-bold mt-4 mb-2">
                 Registration Complete!
               </h2>
-              <p className="text-[#5f4a37]/80">
+              <p className="text-white/70">
                 Thank you for registering for the event. We look forward to
                 seeing you there!
               </p>
             </div>
 
-            <div className="bg-[#fffbf0] rounded-md border border-[#e0d5c0] p-6 mb-6 text-left">
+            <div className="bg-white/5 rounded-md border border-white/10 p-6 mb-6 text-left">
               <div className="flex justify-between items-center mb-4">
                 <h3 className="font-medium">Registration Details</h3>
-                <span className="text-xs px-2 py-1 bg-[#d4a72c]/20 text-[#5f4a37] rounded-full">
+                <span className="text-xs px-2 py-1 bg-[#d4a72c]/20 text-white rounded-full">
                   Confirmed
                 </span>
               </div>
 
               <div className="space-y-3">
                 <div>
-                  <p className="text-sm text-[#5f4a37]/70">Event</p>
+                  <p className="text-sm text-white/70">Event</p>
                   <p className="font-medium">{name}</p>
                 </div>
 
@@ -1062,16 +1059,14 @@ export default function EventRegistration({
                 <div>
                   <h4 className="text-sm font-medium">Primary Contact</h4>
                   <p className="text-sm ml-1">{formData.name}</p>
-                  <p className="text-sm ml-1 text-[#5f4a37]/70">
-                    {formData.phone}
-                  </p>
-                  <p className="text-sm ml-1 text-[#5f4a37]/70">
+                  <p className="text-sm ml-1 text-white/70">{formData.phone}</p>
+                  <p className="text-sm ml-1 text-white/70">
                     {formData.usn} • {formData.collegeName}
                   </p>
                 </div>
 
                 <div>
-                  <p className="text-sm text-[#5f4a37]/70">Team Size</p>
+                  <p className="text-sm text-white/70">Team Size</p>
                   <p className="font-medium">
                     {formData.teamMembers.length
                       ? "Solo Event"
@@ -1085,7 +1080,7 @@ export default function EventRegistration({
                         Team Members ({formData.teamMembers.length})
                       </h4>
                       {formData.teamMembers.length === 0 ? (
-                        <p className="text-sm text-[#5f4a37]/70">
+                        <p className="text-sm text-white/70">
                           No additional team members
                         </p>
                       ) : (
@@ -1093,7 +1088,7 @@ export default function EventRegistration({
                           {formData.teamMembers.map((member) => (
                             <div key={member.id} className="text-sm">
                               <p>{member.name}</p>
-                              <p className="text-[#5f4a37]/70">
+                              <p className="text-white/70">
                                 {member.usn} • {member.collegeName}
                               </p>
                             </div>
@@ -1101,7 +1096,7 @@ export default function EventRegistration({
                         </div>
                       )}
                     </div>
-                    <Separator className="bg-[#e0d5c0]" />
+                    <Separator className="bg-white/10" />
                   </>
                 )}
               </div>
@@ -1112,7 +1107,7 @@ export default function EventRegistration({
                 href={"/profile"}
                 className={cn(
                   buttonVariants({ variant: "default" }),
-                  "bg-[#5f4a37] hover:bg-[#4a3a2a] text-[#fff4d4]"
+                  "bg-primary hover:bg-foreground/90 text-primary-foreground"
                 )}
               >
                 Go to profile

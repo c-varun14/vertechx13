@@ -18,7 +18,10 @@ export default async function Page({
   }>;
 }) {
   const { eventId } = await params;
-  const clubName = (await searchParams).clubName;
+  let { clubName } = await searchParams;
+  //@ts-expect-error clubName will be of type departmentsType
+  clubName = clubName.replace(",", "&");
+  console.log(clubName);
 
   const session = await getServerSession(authOptions);
   if (!session?.user.email || !session.user.id)
@@ -28,7 +31,12 @@ export default async function Page({
       }/${eventId}/register?clubName=${clubName}`
     );
   const event = getdepartmentEvent(clubName, eventId);
-  if (!event) return <h1>The event you are looking for does not exist</h1>;
+  if (!event)
+    return (
+      <h1 className="text-center h-screen flex items-center justify-center">
+        The event you are looking for does not exist
+      </h1>
+    );
   if (!clubName)
     return <h1>Clubname mst be provided in the search query params</h1>;
 
@@ -44,8 +52,8 @@ export default async function Page({
 
   if (registedBefore?.paymentId) return redirect("/profile");
   return (
-    <div className="min-h-screen bg-[#fff4d4] text-[#5f4a37] pb-16">
-      <header className="bg-[#5f4a37] text-[#fff4d4] py-6 px-4 md:px-6 mb-8">
+    <div className="min-h-screen pb-16">
+      <header className="backdrop-blur-sm bg-card/40 border-b border-border py-6 px-4 md:px-6 mb-8">
         <div className="container mx-auto">
           <h1 className="text-2xl md:text-3xl font-bold">Event Registration</h1>
         </div>

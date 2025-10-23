@@ -249,7 +249,10 @@ const GlimpseSection = () => {
           <div className="glass-box">
             <div className="glimpse-video">
               <video autoPlay loop muted playsInline>
-                {/* <source src="https://pub-ad7b9dfb5d1942639c6f3b5196e947c8.r2.dev/glimpse.mp4" type="video/mp4" /> */}
+                <source
+                  src="https://pub-ad7b9dfb5d1942639c6f3b5196e947c8.r2.dev/glimpse.mp4"
+                  type="video/mp4"
+                />
               </video>
             </div>
           </div>

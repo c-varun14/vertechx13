@@ -1,6 +1,5 @@
 "use client";
 
-
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -32,7 +31,7 @@ const Navbar = () => {
       <header className={`header ${scrolled ? "scrolled" : ""}`}>
         <Link href="/" className="logo" onClick={closeMenu}>
           <Image
-            src="https://mvjce.edu.in/wp-content/uploads/2024/03/logo-autonomous-colored-001.webp"
+            src="/assets/mvjLogo.webp"
             alt="MVJCE Logo"
             width={200}
             height={75}
@@ -48,7 +47,7 @@ const Navbar = () => {
         ></i>
 
         <nav className={`navbar ${isMenuOpen ? "active" : ""}`}>
-          <Link href="/events" data-text="Events" onClick={closeMenu}>
+          <Link href="/events/AE&AS" data-text="Events" onClick={closeMenu}>
             Events
           </Link>
           <Link href="/schedule" data-text="Schedule" onClick={closeMenu}>

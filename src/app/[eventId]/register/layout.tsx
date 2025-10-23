@@ -8,7 +8,7 @@ import PixelGridBackground from "@/components/vertechx/PixelGridBackground";
 
 export const metadata: Metadata = {
   title: "Event Registration Page",
-  description: "This is the Registration page of the Vertechx 13.0 fest",
+  description: "This is the Event Registration page of the Vertechx 13.0 fest",
 };
 
 export default function RootLayout({

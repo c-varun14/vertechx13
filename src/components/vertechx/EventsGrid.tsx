@@ -9,9 +9,6 @@ const EventsGrid = ({
   selectedDepartment: departmentsType;
 }) => {
   const events = getdepartmentEvents(selectedDepartment);
-  console.log(selectedDepartment);
-  // Filter events based on selected department
-
   return (
     <div className="events-grid-section">
       <h2 className="events-grid-title">All Events</h2>
@@ -23,7 +20,12 @@ const EventsGrid = ({
       ) : (
         <div className="events-grid">
           {events.map((event, index) => (
-            <EventCard key={event.id} event={event} eventNumber={index + 1} />
+            <EventCard
+              key={event.id}
+              event={event}
+              eventNumber={index + 1}
+              department={selectedDepartment}
+            />
           ))}
         </div>
       )}

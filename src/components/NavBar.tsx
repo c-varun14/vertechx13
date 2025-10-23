@@ -62,7 +62,7 @@ const NavBar = () => {
     ) : (
       <button
         onClick={handleLogin}
-        className="hidden md:block cursor-pointer bg-[#5F4A37] text-[#f9efd1] h-10 max-w-xl px-12 font-extrabold tracking-widest rounded-full"
+        className="hidden md:block cursor-pointer bg-primary text-primary-foreground h-10 max-w-xl px-12 font-extrabold tracking-widest rounded-full"
       >
         Login
       </button>
@@ -97,7 +97,7 @@ const NavBar = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="hidden md:block backdrop-blur-sm bg-[#5F4A37]/10 border border-[#5F4A37]/30 shadow-lg lg:rounded-xl max-w-5xl mx-auto"
+        className="hidden md:block backdrop-blur-sm bg-foreground/10 border border-foreground/30 shadow-lg lg:rounded-xl max-w-5xl mx-auto"
       >
         <div className={`flex justify-around items-center p-3 relative`}>
           <Link href={"/"}>
@@ -113,23 +113,13 @@ const NavBar = () => {
               <Link href={"/"}>Home</Link>
             </li>
             <li className="py-2">
-              <Link href={"/events"}>Events</Link>
+              <Link href={"/events/AE&AS"}>Events</Link>
             </li>
             <li className="py-2">
-              <a
-                href="https://drive.google.com/file/d/1HGbTGahZJY-X1lMK9scf8S0418ZVwII0/view?usp=sharing"
-                target="_blank"
-              >
-                Schedule
-              </a>
+              <Link href="/schedule">Schedule</Link>
             </li>
             <li className="py-2">
-              <a
-                href="https://drive.google.com/file/d/1umPOuDxltPZ0IRA_arZl_bK8MuNLliGC/view?usp=sharing"
-                target="_blank"
-              >
-                Brochure
-              </a>
+              <a href="/schedule">Brochure</a>
             </li>
             <li className="flex items-center justify-center h-9"></li>
           </ul>
@@ -140,7 +130,7 @@ const NavBar = () => {
       </motion.div>
 
       {/* Mobile Navigation - Only profile and hamburger */}
-      <div className="md:hidden backdrop-blur-sm bg-[#5F4A37]/10 border-b border-[#5F4A37]/30 shadow-lg">
+      <div className="md:hidden backdrop-blur-sm bg-foreground/10 border-b border-foreground/30 shadow-lg">
         <div className={`flex items-center justify-between px-4 py-2`}>
           {/* Logo */}
           <Link href={"/"} className="flex-shrink-0">
@@ -160,10 +150,10 @@ const NavBar = () => {
 
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Menu className="h-7 w-7 text-[#5F4A37] cursor-pointer" />
+                  <Menu className="h-7 w-7 text-foreground cursor-pointer" />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent
-                  className={`w-48 bg-[#f9efd1] text-[#5F4A37] mr-5`}
+                  className={`w-48 bg-card text-card-foreground mr-5`}
                 >
                   <DropdownMenuItem asChild>
                     <Link href="/" className="flex items-center gap-2">

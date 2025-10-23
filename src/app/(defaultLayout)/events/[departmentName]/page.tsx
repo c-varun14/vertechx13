@@ -17,7 +17,8 @@ export default async function EventsPage({
   return (
     <div className="events-page">
       <div className="events-container">
-        <MegaEventsSlider /> {/* Auto-sliding component */}
+        <MegaEventsSlider />
+        {/* Auto-sliding component */}
         <DepartmentFilters selectedDepartment={departmentName} />
         <EventsGrid selectedDepartment={departmentName} />
       </div>

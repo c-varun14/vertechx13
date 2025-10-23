@@ -1,6 +1,5 @@
-
 "use client";
-import React, { useRef } from 'react';
+import React, { useRef } from "react";
 
 const CollegeInfoSection = () => {
   const _textSpotlightRef = useRef(null);
@@ -9,14 +8,16 @@ const CollegeInfoSection = () => {
 
   const _handleMouseMove = (e, spotlightRef) => {
     if (!spotlightRef.current) return;
-    
+
     const card = e.currentTarget;
     const rect = card.getBoundingClientRect();
     const x = ((e.clientX - rect.left) / rect.width) * 100;
     const y = ((e.clientY - rect.top) / rect.height) * 100;
-    
-    spotlightRef.current.style.transition = 'none';
-    spotlightRef.current.style.transform = `translate(-50%, -50%) translate(${x - 50}%, ${y - 50}%)`;
+
+    spotlightRef.current.style.transition = "none";
+    spotlightRef.current.style.transform = `translate(-50%, -50%) translate(${
+      x - 50
+    }%, ${y - 50}%)`;
   };
 
   return (
@@ -409,22 +410,40 @@ const CollegeInfoSection = () => {
             {/* Right Side - Text Content + Stats */}
             <div className="college-right-content">
               <div className="college-text-content">
-                <div 
+                <div
                   className="college-text"
                   onMouseMove={(e) => _handleMouseMove(e, _textSpotlightRef)}
                 >
-                  <div className="college-text-spotlight" ref={_textSpotlightRef}></div>
+                  <div
+                    className="college-text-spotlight"
+                    ref={_textSpotlightRef}
+                  ></div>
                   <div className="college-text-inner">
                     <p>
-                      In the heart of Bengaluru's ever-evolving techscape stands MVJ College of Engineering, a campus where dreams don't just graduate; they take flight. For over three decades and more, MVJ has been more than an institution. It has been canvas for curiosity, a home for innovation, and a launch pad for the next generation of thinkers and creators.Here, every corridor is filled with ambition. Classrooms transform into ideas in motion, labs design stories of innovation, and every student learns that engineering isn't just about machines but also about meaning.
+                      In the heart of Bengaluru's ever-evolving techscape stands
+                      MVJ College of Engineering, a campus where dreams don't
+                      just graduate; they take flight. For over three decades
+                      and more, MVJ has been more than an institution. It has
+                      been canvas for curiosity, a home for innovation, and a
+                      launch pad for the next generation of thinkers and
+                      creators.Here, every corridor is filled with ambition.
+                      Classrooms transform into ideas in motion, labs design
+                      stories of innovation, and every student learns that
+                      engineering isn't just about machines but also about
+                      meaning.
                     </p>
                     <p>
-                      With over 10,000 students and a legacy of 35+ years of excellence, MVJ continues to shape minds that balance precision with passion. The faculty aren't just teachers but also mentors who turn potential into purpose.
-                      Life at MVJ flows beyond academics filled with cultural rhythms, technical fests, and the quiet confidence of those building tomorrow.
+                      With over 10,000 students and a legacy of 35+ years of
+                      excellence, MVJ continues to shape minds that balance
+                      precision with passion. The faculty aren't just teachers
+                      but also mentors who turn potential into purpose. Life at
+                      MVJ flows beyond academics filled with cultural rhythms,
+                      technical fests, and the quiet confidence of those
+                      building tomorrow.
                     </p>
                     <h4>
-                      MVJ College of Engineering
-                      "Not just a college, but a journey through ideas, energy, and evolution."
+                      MVJ College of Engineering "Not just a college, but a
+                      journey through ideas, energy, and evolution."
                     </h4>
                   </div>
                 </div>
@@ -432,11 +451,14 @@ const CollegeInfoSection = () => {
 
               {/* Stats inside right content */}
               <div className="college-stats">
-                <div 
+                <div
                   className="college-stat-box"
                   onMouseMove={(e) => _handleMouseMove(e, _stat1SpotlightRef)}
                 >
-                  <div className="college-stat-box-spotlight" ref={_stat1SpotlightRef}></div>
+                  <div
+                    className="college-stat-box-spotlight"
+                    ref={_stat1SpotlightRef}
+                  ></div>
                   <div className="college-stat-box-inner">
                     <div className="stat-corners corner-tl"></div>
                     <div className="stat-corners corner-tr"></div>
@@ -447,11 +469,14 @@ const CollegeInfoSection = () => {
                   </div>
                 </div>
 
-                <div 
+                <div
                   className="college-stat-box"
                   onMouseMove={(e) => _handleMouseMove(e, _stat2SpotlightRef)}
                 >
-                  <div className="college-stat-box-spotlight" ref={_stat2SpotlightRef}></div>
+                  <div
+                    className="college-stat-box-spotlight"
+                    ref={_stat2SpotlightRef}
+                  ></div>
                   <div className="college-stat-box-inner">
                     <div className="stat-corners corner-tl"></div>
                     <div className="stat-corners corner-tr"></div>

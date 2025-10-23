@@ -83,9 +83,9 @@ const RegistrationDetailsPage = async ({
   });
   if (!registration)
     return (
-      <div className="flex flex-col items-center justify-center py-16 sm:py-20 bg-[#fff4d4]/80 backdrop-blur-sm border border-[#5F4A37]/30 shadow-lg rounded-xl">
-        <div className="bg-[#5F4A37]/10 rounded-full p-4 mb-4">
-          <AlertCircle className="h-10 w-10 sm:h-12 sm:w-12 text-[#5F4A37]" />
+      <div className="flex flex-col items-center justify-center py-16 sm:py-20 bg-card/80 backdrop-blur-sm border border-border shadow-lg rounded-xl">
+        <div className="bg-primary/10 rounded-full p-4 mb-4">
+          <AlertCircle className="h-10 w-10 sm:h-12 sm:w-12 text-primary" />
         </div>
         <h2 className="text-xl sm:text-2xl font-bold mb-2">
           Registration Not Found
@@ -96,7 +96,7 @@ const RegistrationDetailsPage = async ({
         </p>
         <Link
           href="/profile"
-          className="px-4 py-2 bg-[#5F4A37] text-[#fff4d4] rounded-lg font-medium hover:bg-[#5F4A37]/90 transition-colors"
+          className="px-4 py-2 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
         >
           Back to Profile
         </Link>
@@ -115,17 +115,17 @@ const RegistrationDetailsPage = async ({
     width: 150,
     margin: 1,
     color: {
-      dark: "#5f4a37ff",
-      light: "#fff4d400",
+      dark: "#0f131dff",
+      light: "#ffffff00",
     },
   });
   return (
-    <div className="min-h-screen bg-contain bg-center bg-[url('/assets/AndroidBackground.png')] md:bg-[url('/assets/Background.png')] bg-fixed text-[#5F4A37] scroll-smooth">
+    <div className="min-h-screen bg-contain bg-center bg-[url('/assets/AndroidBackground.png')] md:bg-[url('/assets/Background.png')] bg-fixed text-foreground scroll-smooth">
       <div className="max-w-6xl mx-auto px-4 py-6 mt-4 lg:mt-8 sm:py-8">
         {/* Back Button */}
         <Link
           href={"/profile"}
-          className="flex items-center text-[#5F4A37] hover:text-[#5F4A37]/80 mb-4"
+          className="flex items-center text-foreground hover:text-foreground/80 mb-4"
         >
           <ArrowLeft className="w-4 h-4 mr-1" />
           <span className="text-sm font-medium">Back to Profile</span>
@@ -133,10 +133,10 @@ const RegistrationDetailsPage = async ({
 
         <div className="space-y-6">
           {/* Event Header with Title and Status */}
-          <div className="bg-[#fff4d4]/80 backdrop-blur-sm border border-[#5F4A37]/30 shadow-lg rounded-xl p-4 sm:p-5">
+          <div className="bg-card/80 backdrop-blur-sm border border-border shadow-lg rounded-xl p-4 sm:p-5">
             <div className="flex flex-col sm:flex-row sm:items-center gap-4">
               <div className="flex items-center gap-3 flex-1 min-w-0">
-                <div className="w-14 h-14 sm:w-16 sm:h-16 relative rounded overflow-hidden flex-shrink-0 bg-[#5F4A37]/10">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 relative rounded overflow-hidden flex-shrink-0 bg-primary/10">
                   {event.image ? (
                     <Image
                       src={event.image}
@@ -146,7 +146,7 @@ const RegistrationDetailsPage = async ({
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center">
-                      <span className="text-[#5F4A37] text-xl sm:text-2xl font-bold">
+                      <span className="text-primary text-xl sm:text-2xl font-bold">
                         {event.name.charAt(0)}
                       </span>
                     </div>
@@ -156,7 +156,7 @@ const RegistrationDetailsPage = async ({
                   <h1 className="text-xl sm:text-2xl md:text-3xl font-bold truncate">
                     {event.name}
                   </h1>
-                  <p className="text-sm text-[#5F4A37]/80 mb-1">
+                  <p className="text-sm text-muted-foreground mb-1">
                     {eventDetails.department}
                   </p>
                   <div className="flex flex-wrap gap-2 mt-2">
@@ -166,36 +166,42 @@ const RegistrationDetailsPage = async ({
               </div>
             </div>
           </div>
-          <div className="bg-[#fff4d4]/80 backdrop-blur-sm border border-[#5F4A37]/30 shadow-lg rounded-xl overflow-hidden">
+          <div className="bg-card/80 backdrop-blur-sm border border-border shadow-lg rounded-xl overflow-hidden">
             {/* Event Info */}
             <div className="p-4 sm:p-5">
               <h3 className="text-lg font-bold mb-3">Event Details</h3>
 
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
-                  <Calendar className="h-5 w-5 text-[#5F4A37]/70 flex-shrink-0 mt-0.5" />
+                  <Calendar className="h-5 w-5 text-muted-foreground flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-xs text-[#5F4A37]/70 mb-0.5">
+                    <p className="text-xs text-muted-foreground mb-0.5">
                       Date & Time
                     </p>
                     <p className="text-sm font-medium">{event.date_time}</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <MapPin className="h-5 w-5 text-[#5F4A37]/70 flex-shrink-0 mt-0.5" />
+                  <MapPin className="h-5 w-5 text-muted-foreground flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-xs text-[#5F4A37]/70 mb-0.5">Venue</p>
+                    <p className="text-xs text-muted-foreground mb-0.5">
+                      Venue
+                    </p>
                     <p className="text-sm font-medium">{event.venue}</p>
                   </div>
                 </div>
 
-                <div className="pt-3 border-t border-[#5F4A37]/10">
-                  <p className="text-xs text-[#5F4A37]/70 mb-2">Description</p>
+                <div className="pt-3 border-t border-border">
+                  <p className="text-xs text-muted-foreground mb-2">
+                    Description
+                  </p>
                   <p className="text-sm">{event.description}</p>
                 </div>
 
-                <div className="pt-3 border-t border-[#5F4A37]/10">
-                  <p className="text-xs text-[#5F4A37]/70 mb-2">Team Size</p>
+                <div className="pt-3 border-t border-border">
+                  <p className="text-xs text-muted-foreground mb-2">
+                    Team Size
+                  </p>
                   <p className="text-sm">
                     {event.minTeamMembers === event.maxTeamMembers
                       ? event.maxTeamMembers == 1
@@ -209,27 +215,27 @@ const RegistrationDetailsPage = async ({
           </div>
 
           {/* Registration Details Card */}
-          <div className="bg-[#fff4d4]/80 backdrop-blur-sm border border-[#5F4A37]/30 shadow-lg rounded-xl p-4 sm:p-5">
+          <div className="bg-card/80 backdrop-blur-sm border border-border shadow-lg rounded-xl p-4 sm:p-5">
             <h2 className="text-xl font-bold mb-6">Registration Details</h2>
 
             {/* Payment Details */}
             <div className="mb-6">
               <div className="flex items-center gap-2 mb-4">
-                <CreditCard className="h-5 w-5 text-[#5F4A37]/70" />
+                <CreditCard className="h-5 w-5 text-muted-foreground" />
                 <h3 className="text-lg font-medium">Payment Details</h3>
               </div>
 
-              <div className="bg-[#5F4A37]/5 rounded-lg p-4">
+              <div className="bg-primary/5 rounded-lg p-4">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <p className="text-xs text-[#5F4A37]/70 mb-1">Amount</p>
+                    <p className="text-xs text-muted-foreground mb-1">Amount</p>
                     <p className="text-lg font-medium">
                       ₹{registration.paymentAmount}
                     </p>
                   </div>
 
                   <div>
-                    <p className="text-xs text-[#5F4A37]/70 mb-1">Status</p>
+                    <p className="text-xs text-muted-foreground mb-1">Status</p>
                     <div className="flex items-center">
                       {getPaymentStatus(registration.paymentId) === "PAID" ? (
                         <div className="flex items-center text-emerald-700">
@@ -253,8 +259,10 @@ const RegistrationDetailsPage = async ({
                 </div>
 
                 {registration.paymentId && (
-                  <div className="mt-3 pt-3 border-t border-[#5F4A37]/10">
-                    <p className="text-xs text-[#5F4A37]/70 mb-1">Payment ID</p>
+                  <div className="mt-3 pt-3 border-t border-border">
+                    <p className="text-xs text-muted-foreground mb-1">
+                      Payment ID
+                    </p>
                     <p className="text-sm font-medium">
                       {registration.paymentId}
                     </p>
@@ -263,7 +271,7 @@ const RegistrationDetailsPage = async ({
 
                 {getPaymentStatus(registration.paymentId) === "PENDING" && (
                   <div className="mt-4">
-                    <button className="px-4 py-2 bg-[#5F4A37] text-[#fff4d4] rounded-lg text-sm font-medium hover:bg-[#5F4A37]/90 transition-colors">
+                    <button className="px-4 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors">
                       {getPaymentStatus(registration.paymentId) === "PENDING"
                         ? "Complete Payment"
                         : "Retry Payment"}
@@ -272,35 +280,36 @@ const RegistrationDetailsPage = async ({
                 )}
               </div>
             </div>
-            <div className="flex items-center gap-2 mb-4">
-              {/* <CreditCard className="h-5 w-5 text-[#5F4A37]/70" /> */}
-            </div>
+            <div className="flex items-center gap-2 mb-4"></div>
 
             <div className="mb-6">
               <div className="flex items-center gap-2 mb-4">
-                {/* <CreditCard className="h-5 w-5 text-[#5F4A37]/70" /> */}
                 <h3 className="text-lg font-medium">Team Lead Details</h3>
               </div>
 
-              <div className="bg-[#5F4A37]/5 rounded-lg p-4">
+              <div className="bg-primary/5 rounded-lg p-4">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <p className="text-xs text-[#5F4A37]/70 mb-1">Name</p>
+                    <p className="text-xs text-muted-foreground mb-1">Name</p>
                     <p className="flex items-center">{registration.name}</p>
                   </div>
 
                   <div>
-                    <p className="text-xs text-[#5F4A37]/70 mb-1">USN</p>
+                    <p className="text-xs text-muted-foreground mb-1">USN</p>
                     <div className="flex items-center">{registration.usn}</div>
                   </div>
                   <div>
-                    <p className="text-xs text-[#5F4A37]/70 mb-1">Phone No</p>
+                    <p className="text-xs text-muted-foreground mb-1">
+                      Phone No
+                    </p>
                     <div className="flex items-center">
                       {registration.phone}
                     </div>
                   </div>
                   <div>
-                    <p className="text-xs text-[#5F4A37]/70 mb-1">College</p>
+                    <p className="text-xs text-muted-foreground mb-1">
+                      College
+                    </p>
                     <div className="flex items-center">
                       {registration.collegeName}
                     </div>
@@ -312,19 +321,19 @@ const RegistrationDetailsPage = async ({
             {registration.teamMembers.length != 0 && (
               <div className="mb-6">
                 <div className="flex items-center gap-2 mb-4">
-                  <Users className="h-5 w-5 text-[#5F4A37]/70" />
+                  <Users className="h-5 w-5 text-muted-foreground" />
                   <h3 className="text-lg font-medium">
                     Team Members ({registration.teamMembers.length})
                   </h3>
                 </div>
 
                 <div className="space-y-3">
-                  {registration.teamMembers.map((participant, index) => (
+                  {registration.teamMembers.map((participant) => (
                     <div
                       key={participant.id}
-                      className="flex items-start gap-3 bg-[#5F4A37]/5 p-3 rounded-lg"
+                      className="flex items-start gap-3 bg-primary/5 p-3 rounded-lg"
                     >
-                      <div className="w-10 h-10 rounded-full bg-[#5F4A37] flex items-center justify-center text-[#fff4d4] text-sm font-bold mt-0.5">
+                      <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground text-sm font-bold mt-0.5">
                         {participant.name.charAt(0)}
                       </div>
                       <div className="flex-1 min-w-0">
@@ -332,16 +341,11 @@ const RegistrationDetailsPage = async ({
                           <h4 className="text-sm font-semibold truncate">
                             {participant.name}
                           </h4>
-                          {index === 0 && (
-                            <span className="text-xs bg-[#5F4A37]/10 text-[#5F4A37] px-2 py-0.5 rounded-full flex-shrink-0">
-                              Team Lead
-                            </span>
-                          )}
                         </div>
-                        <p className="text-xs text-[#5F4A37]/70 mt-1 truncate">
+                        <p className="text-xs text-muted-foreground mt-1 truncate">
                           USN: {participant.usn}
                         </p>
-                        <p className="text-xs text-[#5F4A37]/70 truncate">
+                        <p className="text-xs text-muted-foreground truncate">
                           College: {participant.collegeName}
                         </p>
                       </div>
@@ -354,14 +358,14 @@ const RegistrationDetailsPage = async ({
             {getPaymentStatus(registration.paymentId) === "PAID" && (
               <div className="mb-4">
                 <div className="flex items-center gap-2 mb-4">
-                  <Ticket className="h-5 w-5 text-[#5F4A37]/70" />
+                  <Ticket className="h-5 w-5 text-muted-foreground" />
                   <h3 className="text-lg font-medium">Event Ticket</h3>
                 </div>
 
-                <div className="bg-[#5F4A37]/5 rounded-lg p-4">
+                <div className="bg-primary/5 rounded-lg p-4">
                   <div className="flex flex-col sm:flex-row items-center gap-6">
-                    <div className="bg-white rounded-lg border border-[#5F4A37]/10 shadow-sm">
-                      <div className="w-32 h-32 bg-[#5F4A37]/5 flex items-center justify-center">
+                    <div className="bg-card rounded-lg border border-border shadow-sm">
+                      <div className="w-32 h-32 bg-foreground/90 flex items-center justify-center">
                         <Image
                           src={qrCodeDataURL}
                           alt="QR-Code"

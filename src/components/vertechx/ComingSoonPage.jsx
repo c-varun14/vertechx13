@@ -1,35 +1,37 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
 
-const ComingSoonPage = ({ title, icon, message }) => {
-  const [particles, setParticles] = useState([]);
-  const spotlightRef = useRef(null);
-  const containerRef = useRef(null);
+const ComingSoonPage = () =>
+  // { title, icon, message }
+  {
+    const [particles, setParticles] = useState([]);
+    const spotlightRef = useRef(null);
+    const containerRef = useRef(null);
 
-  useEffect(() => {
-    const newParticles = Array.from({ length: 25 }, (_, i) => ({
-      id: i,
-      left: Math.random() * 100,
-      animationDelay: Math.random() * 5,
-      size: Math.random() * 5 + 3,
-    }));
-    setParticles(newParticles);
-  }, []);
+    useEffect(() => {
+      const newParticles = Array.from({ length: 25 }, (_, i) => ({
+        id: i,
+        left: Math.random() * 100,
+        animationDelay: Math.random() * 5,
+        size: Math.random() * 5 + 3,
+      }));
+      setParticles(newParticles);
+    }, []);
 
-  const handleMouseMove = (e) => {
-    if (!spotlightRef.current || !containerRef.current) return;
-    const rect = containerRef.current.getBoundingClientRect();
-    const x = ((e.clientX - rect.left) / rect.width) * 100;
-    const y = ((e.clientY - rect.top) / rect.height) * 100;
+    const handleMouseMove = (e) => {
+      if (!spotlightRef.current || !containerRef.current) return;
+      const rect = containerRef.current.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
 
-    spotlightRef.current.style.transform = `translate(-50%, -50%) translate(${x - 50}%, ${
-      y - 50
-    }%)`;
-  };
+      spotlightRef.current.style.transform = `translate(-50%, -50%) translate(${
+        x - 50
+      }%, ${y - 50}%)`;
+    };
 
-  return (
-    <>
-      <style>{`
+    return (
+      <>
+        <style>{`
         .coming-soon-page {
           position: relative;
           width: 100%;
@@ -236,54 +238,56 @@ const ComingSoonPage = ({ title, icon, message }) => {
         }
       `}</style>
 
-      <div className="coming-soon-page">
-        <div className="particles-container">
-          {particles.map((p) => (
-            <div
-              key={p.id}
-              className="particle"
-              style={{
-                left: `${p.left}%`,
-                animationDelay: `${p.animationDelay}s`,
-                width: `${p.size}px`,
-                height: `${p.size}px`,
-              }}
-            />
-          ))}
-        </div>
-
-        <div
-          className="content-container"
-          ref={containerRef}
-          onMouseMove={handleMouseMove}
-        >
-          <div className="spotlight" ref={spotlightRef}></div>
-
-          <div className="icon-container">
-            <i className={`bx ${icon}`}></i>
+        <div className="coming-soon-page">
+          <div className="particles-container">
+            {particles.map((p) => (
+              <div
+                key={p.id}
+                className="particle"
+                style={{
+                  left: `${p.left}%`,
+                  animationDelay: `${p.animationDelay}s`,
+                  width: `${p.size}px`,
+                  height: `${p.size}px`,
+                }}
+              />
+            ))}
           </div>
 
-          <h1 className="coming-soon-title">Coming Soon</h1>
-          <h2 className="coming-soon-subtitle">{title}</h2>
-          <div className="divider"></div>
-          <p className="coming-soon-message">
-            {message ||
-              `We're working hard to bring you an amazing ${title} experience. Stay tuned for updates!`}
-          </p>
+          <div
+            className="content-container"
+            ref={containerRef}
+            onMouseMove={handleMouseMove}
+          >
+            <div className="spotlight" ref={spotlightRef}></div>
+            {/* 
+            <div className="icon-container">
+              <i className={`bx ${icon}`}></i>
+            </div> */}
 
-          <div className="loading-dots">
-            <div className="dot"></div>
-            <div className="dot"></div>
-            <div className="dot"></div>
+            <h1 className="coming-soon-title">Coming Soon</h1>
+            {/* <h2 className="coming-soon-subtitle">{title}</h2> */}
+            <div className="divider"></div>
+            <p className="coming-soon-message">
+              {/* {message || */}
+              `We're working hard to bring you an amazing experience. Stay tuned
+              for updates!`
+              {/* } */}
+            </p>
+
+            <div className="loading-dots">
+              <div className="dot"></div>
+              <div className="dot"></div>
+              <div className="dot"></div>
+            </div>
+
+            <a href="/" className="back-button">
+              Back to Home
+            </a>
           </div>
-
-          <a href="/" className="back-button">
-            Back to Home
-          </a>
         </div>
-      </div>
-    </>
-  );
-};
+      </>
+    );
+  };
 
 export default ComingSoonPage;

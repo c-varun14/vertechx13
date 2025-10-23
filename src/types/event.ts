@@ -14,10 +14,11 @@ export interface Event {
     name: string;
     phone: string;
   }[];
-  venue: string;
+  venue: string | null;
   minTeamMembers: number;
   maxTeamMembers: number;
   image: string;
+  drive: string | null;
 }
 
 export interface Club {

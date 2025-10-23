@@ -10,7 +10,7 @@ import SponsorsSection from "@/components/vertechx/SponsorsSection";
 
 export default function Home() {
   return (
-    <>
+    <div className="max-w-7xl mx-auto">
       <HeroSection />
       <HeadingSection />
       <VideoSection />
@@ -20,6 +20,6 @@ export default function Home() {
       <Glimpinfo />
       <GlimpseSection />
       <SponsorsSection />
-    </>
+    </div>
   );
 }

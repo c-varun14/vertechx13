@@ -9,7 +9,7 @@ import { NextResponse } from "next/server";
 export const POST = async (req: Request) => {
   try {
     const { searchParams } = new URL(req.url);
-    const club = searchParams.get("clubName");
+    let club = searchParams.get("clubName");
     if (!club)
       return NextResponse.json(
         {
@@ -18,6 +18,7 @@ export const POST = async (req: Request) => {
         },
         { status: 400 }
       );
+    club = club?.replace(",", "&");
     const parsedClub = departmentsSchema.parse(club);
     const body = await req.json();
     const { teamMembers, ...data } = registrationSchema.parse(body);
