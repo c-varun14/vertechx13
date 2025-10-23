@@ -232,6 +232,7 @@ const SponsorsSection = () => {
         @media (max-width: 768px) {
           .sponsors-section {
             padding: 4rem 1rem;
+            min-height: 62vh;
           }
 
           .sponsors-heading {

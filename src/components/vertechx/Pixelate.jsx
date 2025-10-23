@@ -1,4 +1,5 @@
 "use client";
+import "./CollegeInfoSection"
 import React, { useRef } from 'react';
 
 const ParadoxiaSection = () => {
@@ -204,7 +205,7 @@ const ParadoxiaSection = () => {
         }
 
         .feature-title {
-          font-family: "Orbitron", sans-serif;
+          font-family: " ui-sans-serif", sans-serif;
           font-size: 1.5rem;
           font-weight: 700;
           color: #ff6b6b;
@@ -215,7 +216,7 @@ const ParadoxiaSection = () => {
         }
 
         .feature-description {
-          font-family: "Orbitron", sans-serif;
+          font-family:" ui-sans-serif",  sans-serif;
           font-size: 1rem;
           line-height: 1.7;
           color: rgba(255, 255, 255, 0.8);
@@ -359,7 +360,7 @@ const ParadoxiaSection = () => {
       `}</style>
 
       <section className="paradoxia-section">
-        <h2 className="paradoxia-heading">About Pixelate</h2>
+        <h2 className="heading-glass">About Pixelate</h2>
 
         <div className="paradoxia-content-wrapper">
           <div 
@@ -394,7 +395,7 @@ const ParadoxiaSection = () => {
                 <div className="feature-corners corner-tr"></div>
                 <div className="feature-corners corner-bl"></div>
                 <div className="feature-corners corner-br"></div>
-                <div className="feature-icon">🔬</div>
+                
                 <h3 className="feature-title">Innovative Workshops</h3>
                 <p className="feature-description">
                   Explore paradoxical technology and systems that bridge real and virtual applications.
@@ -412,7 +413,7 @@ const ParadoxiaSection = () => {
                 <div className="feature-corners corner-tr"></div>
                 <div className="feature-corners corner-bl"></div>
                 <div className="feature-corners corner-br"></div>
-                <div className="feature-icon">🏆</div>
+                
                 <h3 className="feature-title">Competitions</h3>
                 <p className="feature-description">
                   Participate in paradox-themed hackathons, robotics challenges, and coding contests.

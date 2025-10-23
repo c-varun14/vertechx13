@@ -1,4 +1,5 @@
 "use client";
+import "./CollegeInfoSection.css"
 import React, { useRef } from "react";
 
 const CollegeInfoSection = () => {
@@ -394,7 +395,7 @@ const CollegeInfoSection = () => {
       `}</style>
 
       <section className="college-section">
-        <h2 className="college-heading">MVJ College of Engineering </h2>
+        <h2 className="heading-glass">MVJ College of Engineering</h2>
 
         <div className="college-content-wrapper">
           <div className="college-main-content">
@@ -433,7 +434,7 @@ const CollegeInfoSection = () => {
                       meaning.
                     </p>
                     <p>
-                      With over 10,000 students and a legacy of 35+ years of
+                      With over 10,000 students and a legacy of 43+ years of
                       excellence, MVJ continues to shape minds that balance
                       precision with passion. The faculty aren't just teachers
                       but also mentors who turn potential into purpose. Life at
@@ -482,7 +483,7 @@ const CollegeInfoSection = () => {
                     <div className="stat-corners corner-tr"></div>
                     <div className="stat-corners corner-bl"></div>
                     <div className="stat-corners corner-br"></div>
-                    <div className="stat-number">35+</div>
+                    <div className="stat-number">43+</div>
                     <div className="stat-label">Years of Excellence</div>
                   </div>
                 </div>
