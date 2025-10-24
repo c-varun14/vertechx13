@@ -9,10 +9,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem 2rem;
+  /* padding: 4rem 2rem; */
   position: relative;
   text-align: center;
 }
+
 
 .main-heading {
   font-family: 'Exo', sans-serif;
@@ -82,11 +83,10 @@
 
 /* Mobile */
 @media (max-width: 768px) {
-  .heading-section {
-    min-height: 30vh;
-    padding: 3rem 1.5rem;
-  }
-
+  
+.heading-section {
+       min-height: 0;
+}
   .main-heading {
     font-size: 2.8rem;
     letter-spacing: 3px;

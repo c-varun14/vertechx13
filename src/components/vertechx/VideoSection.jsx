@@ -149,7 +149,12 @@ const VideoSection = () => {
           .video-glass-box {
             border-radius: 20px;
           }
+          .video-container {
 
+          max-width: 319px;
+          }
+
+          
           .video-wrapper {
             border-radius: 18px;
           }

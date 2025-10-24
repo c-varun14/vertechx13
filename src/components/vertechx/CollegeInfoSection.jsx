@@ -1,5 +1,5 @@
 "use client";
-import "./CollegeInfoSection.css"
+import "./CollegeInfoSection.css";
 import React, { useRef } from "react";
 
 const CollegeInfoSection = () => {
@@ -165,7 +165,8 @@ const CollegeInfoSection = () => {
           font-size: 1.1rem;
           line-height: 1.8;
           color: rgba(255, 255, 255, 0.85);
-          text-align: justify;
+          text-align: center; 
+  text-justify: inter-word;
         }
 
         .college-text-inner p {
@@ -335,7 +336,7 @@ const CollegeInfoSection = () => {
             font-size: 0.95rem;
             line-height: 1.7;
             padding: 1.5rem;
-            text-align: left;
+            text-align: center;
           }
 
           .college-text-inner p {
@@ -343,7 +344,8 @@ const CollegeInfoSection = () => {
           }
 
           .college-stats {
-            grid-template-columns: 1fr;
+                {/* grid-template-columns: repeat(2, 1fr); */}
+                grid-template-columns: 1fr;
             gap: 1.5rem;
           }
 
@@ -363,6 +365,13 @@ const CollegeInfoSection = () => {
 
         /* Small Mobile */
         @media (max-width: 480px) {
+
+        
+         .college-stats {
+            grid-template-columns: 1;
+            gap: 1.5rem;
+          }
+        
           .college-heading {
             font-size: 1.6rem;
             letter-spacing: 2px;
