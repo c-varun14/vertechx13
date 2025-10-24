@@ -23,7 +23,8 @@ const InfoSection = () => {
   return (
     <>
       <style>{`
-        @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;700;900&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 
         .info-section {
           position: relative;
@@ -37,7 +38,7 @@ const InfoSection = () => {
         }
 
         .info-heading {
-          font-family: "Orbitron", sans-serif;
+          font-family: "Exo", sans-serif;
           font-size: 4rem;
           font-weight: 900;
           color: #fff;
@@ -199,7 +200,7 @@ const InfoSection = () => {
         }
 
         .stat-number {
-          font-family: "Orbitron", sans-serif;
+          font-family: "Exo", sans-serif;
           font-size: 3.5rem;
           font-weight: 900;
           color: #ff6b6b;
@@ -209,7 +210,7 @@ const InfoSection = () => {
         }
 
         .stat-label {
-          font-family: "Orbitron", sans-serif;
+          font-family: "Exo", sans-serif;
           font-size: 1.3rem;
           font-weight: 600;
           color: #fff;

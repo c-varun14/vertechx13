@@ -1,8 +1,7 @@
 /* ========================================
    EVENT CARD STYLES - OPTIMIZED & REDUCED
    ======================================== */
-
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 
 .event-card {
     position: relative;
@@ -26,7 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Orbitron", sans-serif;
+    font-family: "Exo", sans-serif;
     font-weight: 700;
     font-size: 1.2rem; /* REDUCED from 1.4rem */
     z-index: 1000;
@@ -95,7 +94,7 @@
 }
 
 .event-title {
-    font-family: "Orbitron", sans-serif;
+    font-family: "Exo", sans-serif;
     font-size: clamp(1.3rem, 2.5vw, 2rem); /* REDUCED */
     font-weight: 900;
     color: #ff6b6b;
@@ -144,8 +143,8 @@
 }
 
 .section-title {
-    font-family: "Orbitron", sans-serif;
-    font-size: 1rem; /* REDUCED from 1.1rem */
+    font-family: "Exo", sans-serif;
+    font-size: 1.5rem; /* REDUCED from 1.1rem */
     font-weight: 700;
     color: #ff6b6b;
     text-transform: uppercase;
@@ -155,8 +154,8 @@
 }
 
 .description-text {
-    font-family: "Orbitron", sans-serif;
-    font-size: 0.88rem; /* REDUCED from 0.95rem */
+    font-family: "Exo", sans-serif;
+    font-size:16px; /* REDUCED from 0.95rem */
     color: rgba(255, 255, 255, 0.85);
     line-height: 1.5; /* REDUCED from 1.6 */
     margin: 0;
@@ -169,7 +168,7 @@
 }
 
 .rules-list li {
-    font-family: "Orbitron", sans-serif;
+    font-family: "Exo", sans-serif;
     font-size: 0.85rem; /* REDUCED from 0.9rem */
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: 0.4rem; /* REDUCED from 0.5rem */
@@ -201,7 +200,7 @@
 }
 
 .info-label {
-    font-family: "Orbitron", sans-serif;
+    font-family: "Exo", sans-serif;
     font-size: 0.85rem; /* REDUCED from 0.9rem */
     font-weight: 600;
     color: rgba(255, 255, 255, 0.7);
@@ -210,7 +209,7 @@
 }
 
 .info-value {
-    font-family: "Orbitron", sans-serif;
+    font-family: "Exo", sans-serif;
     font-size: 0.85rem; /* REDUCED from 0.9rem */
     font-weight: 700;
     color: #ff6b6b;
@@ -229,7 +228,7 @@
 }
 
 .coordinator {
-    font-family: "Orbitron", sans-serif;
+    font-family: "Exo", sans-serif;
     font-size: 0.8rem; /* REDUCED from 0.85rem */
     color: rgba(255, 255, 255, 0.8);
     padding: 0.35rem 0.7rem; /* REDUCED from 0.4rem 0.8rem */
@@ -258,7 +257,7 @@ min-width: fit-content;
     border: none;
     padding: 0.7rem 1.3rem; /* REDUCED from 0.8rem 1.5rem */
     border-radius: 9px; /* REDUCED from 10px */
-    font-family: "Orbitron", sans-serif;
+    font-family: "Exo", sans-serif;
     font-size: 0.85rem; /* REDUCED from 0.9rem */
     font-weight: 700;
     cursor: pointer;
@@ -282,7 +281,7 @@ min-width: fit-content;
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 0.7rem 1.3rem; /* REDUCED from 0.8rem 1.5rem */
     border-radius: 9px; /* REDUCED from 10px */
-    font-family: "Orbitron", sans-serif;
+    font-family: "Exo", sans-serif;
     font-size: 0.85rem; /* REDUCED from 0.9rem */
     font-weight: 600;
     cursor: pointer;
