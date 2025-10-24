@@ -40,7 +40,9 @@ const MegaEventsSlider = () => {
     const rect = containerRef.current.getBoundingClientRect();
     const x = ((e.clientX - rect.left) / rect.width) * 100;
     const y = ((e.clientY - rect.top) / rect.height) * 100;
-    spotlightRef.current.style.transform = `translate(-50%, -50%) translate(${x - 50}%, ${y - 50}%)`;
+    spotlightRef.current.style.transform = `translate(-50%, -50%) translate(${
+      x - 50
+    }%, ${y - 50}%)`;
   };
 
   const goToSlide = (index: number) => setCurrentIndex(index);
@@ -81,18 +83,22 @@ const MegaEventsSlider = () => {
             <Image
               src={currentEvent.image}
               alt={currentEvent.name}
-              height={150}      // reduced from 200
-  width={200}  
+              height={150} // reduced from 200
+              width={200}
               className="event-card-image"
             />
 
             <div className="mega-event-info">
               <div className="mega-event-top">
                 <div className="mega-event-department">
-                  {currentEvent.department || "Computer Science"}
+                  {currentEvent.id == "clw3q9v6e002a08l0h6qy7q2s"
+                    ? "AE AS"
+                    : "Computer Science"}
                 </div>
                 <h3 className="mega-event-name">{currentEvent.name}</h3>
-                <p className="mega-event-description">{currentEvent.description}</p>
+                <p className="mega-event-description">
+                  {currentEvent.description}
+                </p>
               </div>
 
               <div className="mega-event-stats">

@@ -146,6 +146,14 @@ const seedData = {
       id: "clw3q9v6e002b08l0h6qy7q2t",
       title: "PixelGensis Hackathon",
     },
+    {
+      id: "clw3q9v6e002c08l0h6qy7q2u",
+      title: "DJ Night",
+    },
+    {
+      id: "clw3q9v6e002d08l0h6qy7q2v",
+      title: "Concert",
+    },
   ],
 };
 export default seedData;
