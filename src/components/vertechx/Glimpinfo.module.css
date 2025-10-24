@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap");
+
+.heading-section {
+  width: 100%;
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  perspective: 1000px; /* optional, for depth */
+  position: relative;
+}
+
+.glass-box {
+  position: relative;
+  padding: 2rem 4rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05); /* subtle transparent white */
+  backdrop-filter: blur(15px); /* glass effect */
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.glass-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.main-heading {
+  font-family: "Orbitron", sans-serif;
+  font-size: 5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  text-align: center;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff8e72 50%, #ffd6c0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 6px rgba(255, 107, 107, 0.4), 0 0 12px rgba(255, 107, 107, 0.25);
+  transition: all 0.3s ease;
+  animation: subtleGlow 2.5s ease-in-out infinite alternate;
+  cursor: pointer;
+}
+
+/* Hover glow on text */
+.main-heading:hover {
+  text-shadow: 0 0 10px rgba(255, 107, 107, 0.5), 0 0 20px rgba(255, 107, 107, 0.35);
+}
+
+/* Subtle Glow Animation */
+@keyframes subtleGlow {
+  0% {
+    text-shadow: 0 0 4px rgba(255, 107, 107, 0.3), 0 0 8px rgba(255, 107, 107, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 6px rgba(255, 107, 107, 0.35), 0 0 12px rgba(255, 107, 107, 0.25);
+  }
+  100% {
+    text-shadow: 0 0 4px rgba(255, 107, 107, 0.3), 0 0 8px rgba(255, 107, 107, 0.2);
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .main-heading {
+    font-size: 4rem;
+    letter-spacing: 6px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .heading-section {
+    padding: 3rem 1.5rem;
+  }
+  .main-heading {
+    font-size: 2.8rem;
+    letter-spacing: 4px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .main-heading {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+}

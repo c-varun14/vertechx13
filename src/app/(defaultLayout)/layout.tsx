@@ -1,6 +1,6 @@
 import "../globals.css";
 import { Suspense } from "react";
-import Navbar from "@/components/NavBar";
+import Navbar from "@/components/vertechx/Navbar";
 import Footer from "@/components/vertechx/Footer";
 import { Toaster } from "@/components/ui/sonner";
 import { NextAuthProvider } from "@/components/NextAuthProvider";
@@ -10,7 +10,7 @@ import LoadingSpinner from "@/components/LoadingSpinner";
 import PixelGridBackground from "@/components/vertechx/PixelGridBackground";
 
 import { Analytics } from "@vercel/analytics/next";
-import Cursor from "@/components/Cursor";
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -26,14 +26,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="relative min-h-screen w-screen bg-[#0f131d] text-white cursor-none overflow-x-hidden scroll-smooth">
+      <head>
+        <link
+          href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="relative min-h-screen w-screen bg-[#0f131d] text-white  overflow-x-hidden scroll-smooth">
         <PixelGridBackground />
         <Suspense fallback={<LoadingSpinner />}>
           <NextAuthProvider>
             <Navbar />
             {children}
             <Toaster richColors />
-            <Cursor />
+            
           </NextAuthProvider>
           <Footer />
           <Analytics />
