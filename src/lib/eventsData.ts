@@ -60,7 +60,7 @@ export const eventsData = {
         "Judged on accuracy, completion time, and tool usage",
       ],
       registration_fee: 200,
-      drive: null,
+      drive: "https://docs.google.com/document/d/1R3-jy0ThhP2DLuFGhkyNs-9g06_kWwJoW6eMnfNK7YE/edit?usp=sharing",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -92,7 +92,7 @@ export const eventsData = {
         "No second chance for launching",
       ],
       registration_fee: 300,
-      drive: null,
+      drive: "https://docs.google.com/document/d/1R3-jy0ThhP2DLuFGhkyNs-9g06_kWwJoW6eMnfNK7YE/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -127,7 +127,7 @@ export const eventsData = {
         "2 flights per team, best counts",
       ],
       registration_fee: 200,
-      drive: null,
+      drive: "https://docs.google.com/document/d/1R3-jy0ThhP2DLuFGhkyNs-9g06_kWwJoW6eMnfNK7YE/edit?usp=sharing",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -161,7 +161,7 @@ export const eventsData = {
         "Judged on descent time, stability, softness",
       ],
       registration_fee: 300,
-      drive: null,
+      drive: "https://docs.google.com/document/d/1R3-jy0ThhP2DLuFGhkyNs-9g06_kWwJoW6eMnfNK7YE/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -196,7 +196,7 @@ export const eventsData = {
         "Round 2: Hand-launch, 3 timed flights, best counts",
       ],
       registration_fee: 0,
-      drive: null,
+      drive: "https://docs.google.com/document/d/1R3-jy0ThhP2DLuFGhkyNs-9g06_kWwJoW6eMnfNK7YE/edit?usp=sharing",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -231,7 +231,7 @@ export const eventsData = {
         "Round 2: Final competition for winners",
       ],
       registration_fee: 300,
-      drive: null,
+      drive: "https://docs.google.com/document/d/1BrHtHuPlTTm3Y7v5zr4V7Z6z6Jm0fi8Abkvf8j9yobg/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -267,7 +267,7 @@ export const eventsData = {
         "No intentional damage to opponent robots",
       ],
       registration_fee: 300,
-      drive: null,
+      drive: "https://docs.google.com/document/d/1BrHtHuPlTTm3Y7v5zr4V7Z6z6Jm0fi8Abkvf8j9yobg/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -300,7 +300,7 @@ export const eventsData = {
         "Judges' decision is final",
       ],
       registration_fee: 200,
-      drive: null,
+      drive: "https://docs.google.com/document/d/1BrHtHuPlTTm3Y7v5zr4V7Z6z6Jm0fi8Abkvf8j9yobg/edit?usp=sharing",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -333,7 +333,7 @@ export const eventsData = {
         "Judges' decision is final",
       ],
       registration_fee: 300,
-      drive: null,
+      drive: "https://docs.google.com/document/d/1BrHtHuPlTTm3Y7v5zr4V7Z6z6Jm0fi8Abkvf8j9yobg/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -368,7 +368,7 @@ export const eventsData = {
         "Round 2: Discontinuous lines, loops, sharp turns",
       ],
       registration_fee: 300,
-      drive: null,
+      drive: "https://docs.google.com/document/d/1BrHtHuPlTTm3Y7v5zr4V7Z6z6Jm0fi8Abkvf8j9yobg/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -404,7 +404,7 @@ export const eventsData = {
         "Negative points for leaving track",
       ],
       registration_fee: 300,
-      drive: null,
+      drive: "https://docs.google.com/document/d/1BrHtHuPlTTm3Y7v5zr4V7Z6z6Jm0fi8Abkvf8j9yobg/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -441,7 +441,7 @@ export const eventsData = {
         "Judged on smell, presentation, hygiene, materials",
       ],
       registration_fee: 300,
-      drive: null,
+      drive: "https://docs.google.com/document/d/1iaynuRjoXZ0xgrErDeplgCyvNEMRA4iELMBCsMNA-j8/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -474,7 +474,7 @@ export const eventsData = {
         "Sharing answers leads to disqualification",
       ],
       registration_fee: 200,
-      drive: null,
+      drive:  "https://docs.google.com/document/d/1iaynuRjoXZ0xgrErDeplgCyvNEMRA4iELMBCsMNA-j8/edit?usp=sharing",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -509,7 +509,7 @@ export const eventsData = {
         "Round 2: 5-minute presentation explaining features",
       ],
       registration_fee: 300,
-      drive: null,
+      drive: "https://docs.google.com/document/d/17FcWhFEpq71MJ7pHsCqXBwVVnc1jQSRosMYgFTt05WE/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -546,7 +546,7 @@ export const eventsData = {
         "Judged on design aesthetics, sustainability, feasibility, load-bearing capacity",
       ],
       registration_fee: 200,
-      drive: null,
+      drive: "https://docs.google.com/document/d/1V7LvCKFw-ok4W9Xs-1MYJE4Utu0atPzXlZR5JNBCVnc/edit?usp=sharing",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -583,7 +583,7 @@ export const eventsData = {
         "Strict time limit adherence",
       ],
       registration_fee: 300,
-      drive: null,
+      drive: "https://docs.google.com/document/d/1V9dTU7weDrsunZBOu9Pf7kwvlLcZcVRJA6YKpfUkUo4/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -619,7 +619,7 @@ export const eventsData = {
         "Bring own devices (laptops/tablets)",
       ],
       registration_fee: 200,
-      drive: null,
+      drive: "https://docs.google.com/document/d/1uClKrQ2fuTWN-Jj7l18TjtT6dqj7eooNufOLfNWkTAc/edit?usp=sharing",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -655,7 +655,7 @@ export const eventsData = {
         "2-3 minute demo after development",
       ],
       registration_fee: 500,
-      drive: null,
+      drive:  "https://docs.google.com/document/d/1uClKrQ2fuTWN-Jj7l18TjtT6dqj7eooNufOLfNWkTAc/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -692,7 +692,7 @@ export const eventsData = {
         "Code must be original, clean, modular",
       ],
       registration_fee: 300,
-      drive: null,
+      drive: "https://docs.google.com/document/d/1EcZCmfDCTThWRHy_3RU2vO0eF4fh6VruPKhLu871ZsI/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -726,7 +726,7 @@ export const eventsData = {
         "Judged on creativity, humor, pixel art execution, virality",
       ],
       registration_fee: 200,
-      drive: null,
+      drive: "https://docs.google.com/document/d/1EcZCmfDCTThWRHy_3RU2vO0eF4fh6VruPKhLu871ZsI/edit?usp=sharing",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -762,7 +762,7 @@ export const eventsData = {
         "No AI tools allowed",
       ],
       registration_fee: 200,
-      drive: null,
+      drive: "https://docs.google.com/document/d/1eN8CqSgdJmvt90rsALlQKt-tTXTVukRRgY-JQg09jRM/edit?usp=sharing",
       prizes: {
         first: "3,000",
         second: "1,500",

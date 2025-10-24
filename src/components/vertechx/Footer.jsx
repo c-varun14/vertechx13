@@ -1,8 +1,8 @@
 "use client";
 
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -53,9 +53,17 @@ const Footer = () => {
           transform: scale(1.05);
           filter: brightness(1.2) drop-shadow(0 0 15px #ff6b6b);
         }
+        .contact-item {
+        margin-top:20px;
+        }
+.contact-info {
 
+display:flex;
+flex-direction:column;
+}
         .footer-title {
           font-size: 1.3rem;
+          margin-top:50px;
           font-weight: 700;
           text-transform: uppercase;
           letter-spacing: 2px;
@@ -243,13 +251,21 @@ const Footer = () => {
               />
             </div>
             <p className="footer-text">
-              VertechX is a premier tech fest that brings together the brightest minds in technology and innovation. Join us to explore, learn, and compete!
+              VertechX is a premier tech fest that brings together the brightest
+              minds in technology and innovation. Join us to explore, learn, and
+              compete!
             </p>
             <div className="social-links">
-              <a href="#" className="social-icon" aria-label="Facebook"><i className="bx bxl-facebook"></i></a>
-              <a href="#" className="social-icon" aria-label="Twitter"><i className="bx bxl-twitter"></i></a>
-              <a href="#" className="social-icon" aria-label="Instagram"><i className="bx bxl-instagram"></i></a>
-              <a href="#" className="social-icon" aria-label="LinkedIn"><i className="bx bxl-linkedin"></i></a>
+              <a href="#" className="social-icon" aria-label="Instagram">
+                <i className="bx bxl-instagram"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/vertechx?igsh=MTZva2JzbjJla25odQ=="
+                className="social-icon"
+                aria-label="LinkedIn"
+              >
+                <i className="bx bxl-linkedin"></i>
+              </a>
             </div>
           </div>
 
@@ -257,11 +273,18 @@ const Footer = () => {
           <div className="footer-section">
             <h3 className="footer-title">Quick Links</h3>
             <div className="footer-links">
-              <a href="/" className="footer-link">Home</a>
-              <a href="/events" className="footer-link">Events</a>
-              <a href="/my-registration" className="footer-link">My Registration</a>
-              <a href="/contact" className="footer-link">Contact</a>
-              <a href="/register" className="footer-link">Register</a>
+              <a href="/" className="footer-link">
+                Home
+              </a>
+              <a href="/events/AE&AS" className="footer-link">
+                Events
+              </a>
+              <a href="/profile" className="footer-link">
+                My Registration
+              </a>
+              <a href="/contact" className="footer-link">
+                Contact
+              </a>
             </div>
           </div>
 
@@ -269,11 +292,19 @@ const Footer = () => {
           <div className="footer-section">
             <h3 className="footer-title">Resources</h3>
             <div className="footer-links">
-              <a href="#" className="footer-link">About Us</a>
-              <a href="#" className="footer-link">Gallery</a>
-              <a href="#" className="footer-link">FAQs</a>
-              <a href="#" className="footer-link">Schedule</a>
-              <a href="#" className="footer-link">Sponsors</a>
+              <a href="#" className="footer-link">
+                About Us
+              </a>
+
+              <a href="#" className="footer-link">
+                FAQs
+              </a>
+              <a href="#" className="footer-link">
+                Schedule
+              </a>
+              <a href="#" className="footer-link">
+                Sponsors
+              </a>
             </div>
           </div>
 
@@ -281,9 +312,24 @@ const Footer = () => {
           <div className="footer-section">
             <h3 className="footer-title">Contact Us</h3>
             <div className="contact-info">
-              <div className="contact-item"><i className="bx bx-map"></i><span>MVJ College of Engineering, Near ITPB, Whitefield, Bangalore, Karnataka, India</span></div>
-              <div className="contact-item"><i className="bx bx-envelope"></i><a href="mailto:contactmvjce@gmail.com">contactmvjce@gmail.com</a></div>
-              <div className="contact-item"><i className="bx bx-phone"></i><a href="tel:+919620659690">+91 96206 59690</a></div>
+              <div className="contact-item">
+                <i className="bx bx-map"></i>
+                
+                <span>
+                    MVJ College of Engineering, Near ITPB, Whitefield, Bangalore,
+                  Karnataka, India
+                </span>
+              </div>
+              <div className="contact-item">
+                <i className="bx bx-envelope"></i>
+                <a href="mailto:contactmvjce@gmail.com">
+                    contactmvjce@gmail.com
+                </a>
+              </div>
+              <div className="contact-item">
+                <i className="bx bx-phone"></i>
+                <a href="tel:+919620659690">  +91 96206 59690</a>
+              </div>
             </div>
           </div>
         </div>
@@ -292,15 +338,21 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>
-            &copy; 2025 VertechX. Built with ❤️ by{' '}
+            &copy; 2025 VertechX. Built with ❤️ by{" "}
             <Link href="/websiteteam" className="website-team-link">
               VertechX Website Team
             </Link>
           </p>
           <div className="footer-bottom-links">
-            <a href="#" className="footer-bottom-link">Privacy Policy</a>
-            <a href="#" className="footer-bottom-link">Terms of Service</a>
-            <a href="#" className="footer-bottom-link">Cookie Policy</a>
+            <a href="#" className="footer-bottom-link">
+              Privacy Policy
+            </a>
+            <a href="#" className="footer-bottom-link">
+              Terms of Service
+            </a>
+            <a href="#" className="footer-bottom-link">
+              Cookie Policy
+            </a>
           </div>
         </div>
       </footer>

@@ -107,7 +107,15 @@ const EventCard = ({
                 >
                   Register Now
                 </Link>
-                <button className="know-more-btn">Know More</button>
+                {/* <button className="know-more-btn" >Know More</button> */}
+                <a
+                  href={event.drive ?? "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="know-more-btn"
+                >
+                  Know More
+                </a>
               </div>
             </div>
           </div>

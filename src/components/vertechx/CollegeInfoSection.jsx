@@ -24,10 +24,12 @@ const CollegeInfoSection = () => {
   return (
     <>
       <style>{`
-        @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;700;900&display=swap");
+
+        @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 
         * {
-          font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+          font-family:"Exo", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         }
 
         .college-section {
@@ -42,7 +44,7 @@ const CollegeInfoSection = () => {
         }
 
         .college-heading {
-          font-family: "Orbitron", sans-serif;
+          font-family: "Exo", sans-serif;
           font-size: 4rem;
           font-weight: 900;
           color: #fff;

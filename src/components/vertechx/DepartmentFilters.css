@@ -2,7 +2,9 @@
    DEPARTMENT FILTERS STYLES
    ======================================== */
 
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;700;900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 
 .department-filters {
     margin-bottom: 3rem;
@@ -40,7 +42,7 @@
     backdrop-filter: blur(8px);
     transition: all 0.3s ease;
     white-space: nowrap;
-    font-family: "Orbitron", sans-serif;
+    font-family: "Exo", sans-serif;
     font-weight: 600;
     flex: 1;
     cursor: pointer;
@@ -154,7 +156,7 @@
 /* Tablet */
 @media screen and (max-width: 1024px) {
     .filters-container {
-        gap: 0.75rem;
+        gap: 0.4rem;
     }
 
     .filter-btn {
@@ -166,7 +168,7 @@
 /* Mobile */
 @media screen and (max-width: 768px) {
     .filters-container {
-        gap: 0.3rem;
+        gap: 0.5rem;
         padding: 0.5rem 0;
         justify-content: space-between;
         overflow-x: auto;
@@ -180,7 +182,7 @@
 
     .filter-btn {
         padding: 0.4rem 0.6rem;
-        font-size: clamp(0.6rem, 1.5vw, 0.8rem);
+        font-size: clamp(0.9rem, 1.5vw, 0.8rem);
         border-radius: 6px;
         flex: 1;
         min-width: fit-content;
@@ -189,14 +191,14 @@
 
     .filter-btn.active {
         padding: 0.5rem 0.8rem;
-        font-size: clamp(0.65rem, 1.5vw, 0.85rem);
+        font-size: clamp(1.25rem, 1.5vw, 0.85rem);
     }
 }
 
 /* Small Mobile */
 @media screen and (max-width: 480px) {
     .filters-container {
-        gap: 0.2rem;
+        gap: 0.4rem;
         padding: 0.3rem 0;
         justify-content: space-between;
         overflow-x: auto;
