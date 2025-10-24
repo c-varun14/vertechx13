@@ -281,7 +281,7 @@ const InfoSection = () => {
         /* Mobile */
         @media (max-width: 768px) {
         .info-text-inner {
-            font-size: 0.75rem;
+            font-size: 0.9rem;
         
         }
         .stat-box-inner{
@@ -330,7 +330,7 @@ const InfoSection = () => {
         @media (max-width: 480px) {
 
         .info-text-inner {
-            font-size: 0.75rem;
+            font-size: 0.9rem;
         
         }
           .info-heading {

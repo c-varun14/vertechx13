@@ -288,6 +288,7 @@ const ParadoxiaSection = () => {
           }
           .paradoxia-intro-inner{
            padding: 1rem;
+           font-size: 0.9rem;
           } 
 
           .paradoxia-heading {
