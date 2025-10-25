@@ -256,16 +256,16 @@ flex-direction:column;
               compete!
             </p>
             <div className="social-links">
-              <a href="#" className="social-icon" aria-label="Instagram">
+              <a href="https://www.instagram.com/vertechx?igsh=MTZva2JzbjJla25odQ==" className="social-icon" aria-label="Instagram">
                 <i className="bx bxl-instagram"></i>
               </a>
-              <a
+              {/* <a
                 href="https://www.instagram.com/vertechx?igsh=MTZva2JzbjJla25odQ=="
                 className="social-icon"
                 aria-label="LinkedIn"
               >
                 <i className="bx bxl-linkedin"></i>
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -282,7 +282,7 @@ flex-direction:column;
               <a href="/profile" className="footer-link">
                 My Registration
               </a>
-              <a href="/contact" className="footer-link">
+              <a href="/contactus" className="footer-link">
                 Contact
               </a>
             </div>
@@ -292,17 +292,17 @@ flex-direction:column;
           <div className="footer-section">
             <h3 className="footer-title">Resources</h3>
             <div className="footer-links">
-              <a href="#" className="footer-link">
+              <a href="/contactus" className="footer-link">
                 About Us
               </a>
 
-              <a href="#" className="footer-link">
+              <a href="/faq" className="footer-link">
                 FAQs
               </a>
-              <a href="#" className="footer-link">
+              <a href="/schedule" className="footer-link">
                 Schedule
               </a>
-              <a href="#" className="footer-link">
+              <a href="#sponser" className="footer-link">
                 Sponsors
               </a>
             </div>
@@ -339,18 +339,18 @@ flex-direction:column;
         <div className="footer-bottom">
           <p>
             &copy; 2025 VertechX. Built with ❤️ by{" "}
-            <Link href="/websiteteam" className="website-team-link">
+            <Link href="/contactus" className="website-team-link">
               VertechX Website Team
             </Link>
           </p>
           <div className="footer-bottom-links">
-            <a href="#" className="footer-bottom-link">
+            <a href="/faq" className="footer-bottom-link">
               Privacy Policy
             </a>
-            <a href="#" className="footer-bottom-link">
+            <a href="/faq" className="footer-bottom-link">
               Terms of Service
             </a>
-            <a href="#" className="footer-bottom-link">
+            <a href="/faq" className="footer-bottom-link">
               Cookie Policy
             </a>
           </div>
