@@ -51,16 +51,16 @@ export const eventsData = {
       name: "DIMENSIO-CRAFT",
       image: "/assets/events/AEAS/DIMENSIO_CRAFT.jpg",
       description:
-        "Design in CAD the given components of the aircraft within the given time. Transform 2D blueprints into 3D aircraft component models.",
+        "DIMENSIO-CRAFT is a high-stakes, It’s your chance to transform 2D blueprints—the top, front, and side views—into a 3D aircraft component model using CAD software. Sharpen your CAD skills and precision to design essential parts like the fuselage, wing, or tail assembly, mirroring real aerospace design. The objective is to accurately and quickly translate technical specifications into a flawless 3D model under a strict time limit.",
       rules: [
-        "Teams must consist of two members",
-        "Collaborate using Fusion360 hub connection",
-        "Competition duration: 3 hours strictly",
-        "Two design options to choose from",
-        "Judged on accuracy, completion time, and tool usage",
+        "Participants from any engineering  are allowed . Participation is individual ( solo participation).",
+        "Each member will be using Fusion360, where they must draft and assemble the component",
+        "Each member will be given a common design ",
+        
       ],
       registration_fee: 200,
-      drive: "https://docs.google.com/document/d/1R3-jy0ThhP2DLuFGhkyNs-9g06_kWwJoW6eMnfNK7YE/edit?usp=sharing",
+      drive:
+        "https://docs.google.com/document/d/1R3-jy0ThhP2DLuFGhkyNs-9g06_kWwJoW6eMnfNK7YE/edit?usp=sharing",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -92,7 +92,8 @@ export const eventsData = {
         "No second chance for launching",
       ],
       registration_fee: 300,
-      drive: "https://docs.google.com/document/d/1R3-jy0ThhP2DLuFGhkyNs-9g06_kWwJoW6eMnfNK7YE/edit?usp=sharing",
+      drive:
+        "https://docs.google.com/document/d/1R3-jy0ThhP2DLuFGhkyNs-9g06_kWwJoW6eMnfNK7YE/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -127,7 +128,8 @@ export const eventsData = {
         "2 flights per team, best counts",
       ],
       registration_fee: 200,
-      drive: "https://docs.google.com/document/d/1R3-jy0ThhP2DLuFGhkyNs-9g06_kWwJoW6eMnfNK7YE/edit?usp=sharing",
+      drive:
+        "https://docs.google.com/document/d/1R3-jy0ThhP2DLuFGhkyNs-9g06_kWwJoW6eMnfNK7YE/edit?usp=sharing",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -161,7 +163,8 @@ export const eventsData = {
         "Judged on descent time, stability, softness",
       ],
       registration_fee: 300,
-      drive: "https://docs.google.com/document/d/1R3-jy0ThhP2DLuFGhkyNs-9g06_kWwJoW6eMnfNK7YE/edit?usp=sharing",
+      drive:
+        "https://docs.google.com/document/d/1R3-jy0ThhP2DLuFGhkyNs-9g06_kWwJoW6eMnfNK7YE/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -196,7 +199,8 @@ export const eventsData = {
         "Round 2: Hand-launch, 3 timed flights, best counts",
       ],
       registration_fee: 0,
-      drive: "https://docs.google.com/document/d/1R3-jy0ThhP2DLuFGhkyNs-9g06_kWwJoW6eMnfNK7YE/edit?usp=sharing",
+      drive:
+        "https://docs.google.com/document/d/1R3-jy0ThhP2DLuFGhkyNs-9g06_kWwJoW6eMnfNK7YE/edit?usp=sharing",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -231,7 +235,8 @@ export const eventsData = {
         "Round 2: Final competition for winners",
       ],
       registration_fee: 300,
-      drive: "https://docs.google.com/document/d/1BrHtHuPlTTm3Y7v5zr4V7Z6z6Jm0fi8Abkvf8j9yobg/edit?usp=sharing",
+      drive:
+        "https://docs.google.com/document/d/1BrHtHuPlTTm3Y7v5zr4V7Z6z6Jm0fi8Abkvf8j9yobg/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -267,7 +272,8 @@ export const eventsData = {
         "No intentional damage to opponent robots",
       ],
       registration_fee: 300,
-      drive: "https://docs.google.com/document/d/1BrHtHuPlTTm3Y7v5zr4V7Z6z6Jm0fi8Abkvf8j9yobg/edit?usp=sharing",
+      drive:
+        "https://docs.google.com/document/d/1BrHtHuPlTTm3Y7v5zr4V7Z6z6Jm0fi8Abkvf8j9yobg/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -300,7 +306,8 @@ export const eventsData = {
         "Judges' decision is final",
       ],
       registration_fee: 200,
-      drive: "https://docs.google.com/document/d/1BrHtHuPlTTm3Y7v5zr4V7Z6z6Jm0fi8Abkvf8j9yobg/edit?usp=sharing",
+      drive:
+        "https://docs.google.com/document/d/1BrHtHuPlTTm3Y7v5zr4V7Z6z6Jm0fi8Abkvf8j9yobg/edit?usp=sharing",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -333,7 +340,8 @@ export const eventsData = {
         "Judges' decision is final",
       ],
       registration_fee: 300,
-      drive: "https://docs.google.com/document/d/1BrHtHuPlTTm3Y7v5zr4V7Z6z6Jm0fi8Abkvf8j9yobg/edit?usp=sharing",
+      drive:
+        "https://docs.google.com/document/d/1BrHtHuPlTTm3Y7v5zr4V7Z6z6Jm0fi8Abkvf8j9yobg/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -368,7 +376,8 @@ export const eventsData = {
         "Round 2: Discontinuous lines, loops, sharp turns",
       ],
       registration_fee: 300,
-      drive: "https://docs.google.com/document/d/1BrHtHuPlTTm3Y7v5zr4V7Z6z6Jm0fi8Abkvf8j9yobg/edit?usp=sharing",
+      drive:
+        "https://docs.google.com/document/d/1BrHtHuPlTTm3Y7v5zr4V7Z6z6Jm0fi8Abkvf8j9yobg/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -404,7 +413,8 @@ export const eventsData = {
         "Negative points for leaving track",
       ],
       registration_fee: 300,
-      drive: "https://docs.google.com/document/d/1BrHtHuPlTTm3Y7v5zr4V7Z6z6Jm0fi8Abkvf8j9yobg/edit?usp=sharing",
+      drive:
+        "https://docs.google.com/document/d/1BrHtHuPlTTm3Y7v5zr4V7Z6z6Jm0fi8Abkvf8j9yobg/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -441,7 +451,8 @@ export const eventsData = {
         "Judged on smell, presentation, hygiene, materials",
       ],
       registration_fee: 300,
-      drive: "https://docs.google.com/document/d/1iaynuRjoXZ0xgrErDeplgCyvNEMRA4iELMBCsMNA-j8/edit?usp=sharing",
+      drive:
+        "https://docs.google.com/document/d/1iaynuRjoXZ0xgrErDeplgCyvNEMRA4iELMBCsMNA-j8/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -474,7 +485,8 @@ export const eventsData = {
         "Sharing answers leads to disqualification",
       ],
       registration_fee: 200,
-      drive:  "https://docs.google.com/document/d/1iaynuRjoXZ0xgrErDeplgCyvNEMRA4iELMBCsMNA-j8/edit?usp=sharing",
+      drive:
+        "https://docs.google.com/document/d/1iaynuRjoXZ0xgrErDeplgCyvNEMRA4iELMBCsMNA-j8/edit?usp=sharing",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -509,7 +521,8 @@ export const eventsData = {
         "Round 2: 5-minute presentation explaining features",
       ],
       registration_fee: 300,
-      drive: "https://docs.google.com/document/d/17FcWhFEpq71MJ7pHsCqXBwVVnc1jQSRosMYgFTt05WE/edit?usp=sharing",
+      drive:
+        "https://docs.google.com/document/d/17FcWhFEpq71MJ7pHsCqXBwVVnc1jQSRosMYgFTt05WE/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -546,7 +559,8 @@ export const eventsData = {
         "Judged on design aesthetics, sustainability, feasibility, load-bearing capacity",
       ],
       registration_fee: 200,
-      drive: "https://docs.google.com/document/d/1V7LvCKFw-ok4W9Xs-1MYJE4Utu0atPzXlZR5JNBCVnc/edit?usp=sharing",
+      drive:
+        "https://docs.google.com/document/d/1V7LvCKFw-ok4W9Xs-1MYJE4Utu0atPzXlZR5JNBCVnc/edit?usp=sharing",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -562,6 +576,43 @@ export const eventsData = {
         { name: "ABHAY SINGH", phone: "7006562500" },
       ],
     },
+
+    {
+      id: "clw3q9v6e001508l0h6qy7q1d",
+      name: " ONE-PIECE – Hunt | Gather | Build ",
+
+      image: "/assets/events/ME/Onepiece.jpg",
+      description:
+        "Where Adventure meets engineering in a race against time and wit. ONE-PIECE challenges brains, instincts, and teamwork where every clue leads to creation.",
+ 
+
+      rules: [
+        " Teams must rely solely on their own efforts, no outside support or assistance is allowed.",
+        "Each team should designate one lead member to coordinate decisions.",
+        "Clues must be solved and tasks must be completed to uncover the hidden components across campus.",
+        " Interdisciplinary groups are welcomed, and strong teamwork may unlock in-game advantages.",
+        "Skipping clues or failing assigned tasks will result in time penalties",
+        " Once the event begins, teams must stay committed until completion and no withdrawals mid challenge will be entertained",
+ 
+        
+      ],
+      registration_fee: 200,
+      drive:
+        "https://docs.google.com/document/d/1V7LvCKFw-ok4W9Xs-1MYJE4Utu0atPzXlZR5JNBCVnc/edit?usp=sharing",
+      prizes: {
+        first: "3,000",
+        second: "1,500",
+      },
+      minTeamMembers: 2,
+      maxTeamMembers: 6,
+      date_time: null,
+      start_time: null,
+      venue: null,
+      coordinators: [
+        { name: "TBD", phone: "TBD" },
+        
+      ],
+    }
   ],
   EEE: [
     {
@@ -583,7 +634,8 @@ export const eventsData = {
         "Strict time limit adherence",
       ],
       registration_fee: 300,
-      drive: "https://docs.google.com/document/d/1V9dTU7weDrsunZBOu9Pf7kwvlLcZcVRJA6YKpfUkUo4/edit?usp=sharing",
+      drive:
+        "https://docs.google.com/document/d/1V9dTU7weDrsunZBOu9Pf7kwvlLcZcVRJA6YKpfUkUo4/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -619,7 +671,8 @@ export const eventsData = {
         "Bring own devices (laptops/tablets)",
       ],
       registration_fee: 200,
-      drive: "https://docs.google.com/document/d/1uClKrQ2fuTWN-Jj7l18TjtT6dqj7eooNufOLfNWkTAc/edit?usp=sharing",
+      drive:
+        "https://docs.google.com/document/d/1uClKrQ2fuTWN-Jj7l18TjtT6dqj7eooNufOLfNWkTAc/edit?usp=sharing",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -655,7 +708,8 @@ export const eventsData = {
         "2-3 minute demo after development",
       ],
       registration_fee: 500,
-      drive:  "https://docs.google.com/document/d/1uClKrQ2fuTWN-Jj7l18TjtT6dqj7eooNufOLfNWkTAc/edit?usp=sharing",
+      drive:
+        "https://docs.google.com/document/d/1uClKrQ2fuTWN-Jj7l18TjtT6dqj7eooNufOLfNWkTAc/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -692,7 +746,8 @@ export const eventsData = {
         "Code must be original, clean, modular",
       ],
       registration_fee: 300,
-      drive: "https://docs.google.com/document/d/1EcZCmfDCTThWRHy_3RU2vO0eF4fh6VruPKhLu871ZsI/edit?usp=sharing",
+      drive:
+        "https://docs.google.com/document/d/1EcZCmfDCTThWRHy_3RU2vO0eF4fh6VruPKhLu871ZsI/edit?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -726,7 +781,8 @@ export const eventsData = {
         "Judged on creativity, humor, pixel art execution, virality",
       ],
       registration_fee: 200,
-      drive: "https://docs.google.com/document/d/1EcZCmfDCTThWRHy_3RU2vO0eF4fh6VruPKhLu871ZsI/edit?usp=sharing",
+      drive:
+        "https://docs.google.com/document/d/1EcZCmfDCTThWRHy_3RU2vO0eF4fh6VruPKhLu871ZsI/edit?usp=sharing",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -762,7 +818,8 @@ export const eventsData = {
         "No AI tools allowed",
       ],
       registration_fee: 200,
-      drive: "https://docs.google.com/document/d/1eN8CqSgdJmvt90rsALlQKt-tTXTVukRRgY-JQg09jRM/edit?usp=sharing",
+      drive:
+        "https://docs.google.com/document/d/1eN8CqSgdJmvt90rsALlQKt-tTXTVukRRgY-JQg09jRM/edit?usp=sharing",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -1054,41 +1111,41 @@ export const eventsData = {
     },
   ],
   MEGA: [
-    {
-      id: "clw3q9v6e002a08l0h6qy7q2s",
-      name: "Fast & Furious - The Drone Edition",
-      image: "/assets/events/MEGA/Fast_Furious_Drone_Edition.png",
-      description:
-        "A drone flying race where participants demonstrate piloting skills through obstacle hoops. Includes training by Drona Aviation on assembling the Pluto X educational drone.",
-      rules: [
-        "Teams of 1-5 participants",
-        "Participants must complete obstacle courses",
-        "Training provided by Drona Aviation",
-        "All teams get a drone to assemble and practice",
-      ],
-      registration_fee: 500,
-      drive: null,
-      prizes: {
-        first: "7,500",
-        second: "3,500",
-      },
-      minTeamMembers: 1,
-      maxTeamMembers: 5,
-      date_time: null,
-      start_time: null,
-      venue: null,
-      coordinators: [{ name: "TBD", phone: "TBD" }],
-    },
+    // {
+    //   id: "clw3q9v6e002a08l0h6qy7q2s",
+    //   name: "Fast & Furious - The Drone Edition",
+    //   image: "/assets/events/MEGA/Fast_Furious_Drone_Edition.png",
+    //   description:
+    //     "A drone flying race where participants demonstrate piloting skills through obstacle hoops. Includes training by Drona Aviation on assembling the Pluto X educational drone.",
+    //   rules: [
+    //     "Teams of 1-5 participants",
+    //     "Participants must complete obstacle courses",
+    //     "Training provided by Drona Aviation",
+    //     "All teams get a drone to assemble and practice",
+    //   ],
+    //   registration_fee: 500,
+    //   drive: null,
+    //   prizes: {
+    //     first: "7,500",
+    //     second: "3,500",
+    //   },
+    //   minTeamMembers: 1,
+    //   maxTeamMembers: 5,
+    //   date_time: null,
+    //   start_time: null,
+    //   venue: null,
+    //   coordinators: [{ name: "TBD", phone: "TBD" }],
+    // },
 
     {
       id: "clw3q9v6e002b08l0h6qy7q2t",
       name: "PixelGensis Hackathon",
       image: "/assets/events/MEGA/CYBER_FORGE.png",
       description:
-        "The 24-Hour Software Hackathon is designed as a fast-paced and challenging coding event, encouraging participants to showcase their innovation, technical skills, and teamwork. The event aims to push participants to ideate, develop, and present a functional software solution in just 8 hours, based on a theme revealed at the beginning of the event.",
+        "The 24-Hour Software Hackathon is designed as a fast-paced and challenging coding event, encouraging participants to showcase their innovation, technical skills, and teamwork. The event aims to push participants to ideate, develop, and present a functional software solution in just 24 hours, based on a theme revealed at the beginning of the event.",
       rules: [
-        "Teams 2-6 members",
-        "8-hour duration",
+        "Teams 2-4 members",
+        "24-hour duration",
         "Design models performing tasks through mechanical steps",
         "Promotes creativity and teamwork",
         "Critical thinking and out-of-box innovation required",
@@ -1102,11 +1159,18 @@ export const eventsData = {
         second: "7,000",
       },
       minTeamMembers: 2,
-      maxTeamMembers: 6,
+      maxTeamMembers: 4,
       date_time: null,
       start_time: null,
       venue: null,
-      coordinators: [{ name: "TBD", phone: "TBD" }],
+      coordinators: [
+        { name: "S Naren Kumar", phone: "8123816894" },
+        { name: "Shravan Ramakunja", phone: "636850438" },
+        { name: "Surabhi M R", phone: "6363898557" },
+        { name: " S Pavan ", phone: "9113936062" },
+        { name: "Soujanya Maharudra Bailawad ", phone: "9380594015" },
+        { name: "Rana Biswas", phone: "9019849813" },
+      ],
     },
   ],
 };
