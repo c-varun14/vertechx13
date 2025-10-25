@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center; /* vertical center */
   align-items: center; /* horizontal center */
-  padding-top: 80px; /* space for navbar */
+   /* space for navbar */
   margin: 0;
   overflow: hidden;
   text-align: center;
