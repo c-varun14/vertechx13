@@ -71,6 +71,7 @@ const InfoSection = () => {
         }
 
         .info-text {
+        
           position: relative;
           padding: 1px;
           border-radius: 19px;
@@ -105,14 +106,16 @@ const InfoSection = () => {
         .info-text-inner {
           position: relative;
           z-index: 10;
-          padding: 2rem;
+          {/* padding: 2rem; */}
           background: rgba(12, 8, 28, 0.43);
           backdrop-filter: blur(10px);
           border-radius: 19px;
           font-size: 1.1rem;
           line-height: 1.8;
           color: rgba(255, 255, 255, 0.85);
-          text-align: center;
+          
+          text-align: center; /* ✅ make start and end align */
+   
         }
 
         .info-text-inner p {
@@ -263,7 +266,7 @@ const InfoSection = () => {
 
           .info-text {
             font-size: 1rem;
-            padding: 1.5rem;
+            padding: 0.6rem;
           }
 
           .stat-number {
@@ -277,8 +280,15 @@ const InfoSection = () => {
 
         /* Mobile */
         @media (max-width: 768px) {
+        .info-text-inner {
+            font-size: 0.9rem;
+        
+        }
+        .stat-box-inner{
+        padding: 2.5rem 0.1rem;
+        }
           .info-section {
-            padding: 4rem 1.5rem;
+            padding: 0rem 1.2rem;
           }
 
           .info-heading {
@@ -298,8 +308,7 @@ const InfoSection = () => {
           }
 
           .stats-container {
-            grid-template-columns: 1fr;
-            gap: 1.5rem;
+           
             margin-top: 1.5rem;
           }
 
@@ -319,6 +328,11 @@ const InfoSection = () => {
 
         /* Small Mobile */
         @media (max-width: 480px) {
+
+        .info-text-inner {
+            font-size: 0.9rem;
+        
+        }
           .info-heading {
             font-size: 1.8rem;
             letter-spacing: 2px;
