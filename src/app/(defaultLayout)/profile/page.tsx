@@ -139,7 +139,7 @@ const ProfilePage = async () => {
                 </div>
 
                 <Link
-                  href="/events"
+                  href="/events/AE&AS"
                   className="block w-full text-center py-2.5 px-4 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
                 >
                   Browse More Events

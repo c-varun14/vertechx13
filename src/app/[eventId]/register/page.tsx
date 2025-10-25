@@ -19,17 +19,17 @@ export default async function Page({
 }) {
   const { eventId } = await params;
   let { clubName } = await searchParams;
-  //@ts-expect-error clubName will be of type departmentsType
-  clubName = clubName.replace(",", "&");
-  console.log(clubName);
-
   const session = await getServerSession(authOptions);
   if (!session?.user.email || !session.user.id)
     return redirect(
       `/api/auth/signin/google?callbackUrl=${
         process.env.BASE_URL || "http://localhost:3000"
-      }/${eventId}/register?clubName=${clubName}`
+      }/${eventId}/register?clubName=${clubName.replace("&", ",")}`
     );
+  //@ts-expect-error clubName will be of type departmentsType
+  clubName = clubName.replace(",", "&");
+  console.log(clubName);
+
   const event = getdepartmentEvent(clubName, eventId);
   if (!event)
     return (

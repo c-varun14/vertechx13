@@ -31,6 +31,10 @@ export default function RootLayout({
           href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
           rel="stylesheet"
         />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
       </head>
       <body className="relative min-h-screen w-screen bg-[#0f131d] text-white  overflow-x-hidden scroll-smooth">
         <PixelGridBackground />
@@ -39,7 +43,6 @@ export default function RootLayout({
             <Navbar />
             {children}
             <Toaster richColors />
-            
           </NextAuthProvider>
           <Footer />
           <Analytics />
