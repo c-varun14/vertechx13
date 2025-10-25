@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import QRCode from "qrcode";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import LogoutButton from "@/components/LogoutButton";
 
 const getPaymentStatus = (paymentId: string | null) => {
   // if (!registration.paymentAmount) return "FREE";
@@ -138,12 +139,13 @@ const ProfilePage = async () => {
                   <span className="font-bold">{registrations.length}</span>
                 </div>
 
-                <Link
+                {/* <Link
                   href="/events/AE&AS"
                   className="block w-full text-center py-2.5 px-4 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
                 >
                   Browse More Events
-                </Link>
+                </Link> */}
+                <LogoutButton />
               </div>
             </div>
           </div>

@@ -36,7 +36,7 @@ export default function RootLayout({
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
       </head>
-      <body className="relative min-h-screen w-screen bg-[#0f131d] text-white  overflow-x-hidden scroll-smooth">
+      <body className="relative min-h-screen w-screen bg-[#0f131d] text-white overflow-x-hidden scroll-smooth pt-32">
         <PixelGridBackground />
         <Suspense fallback={<LoadingSpinner />}>
           <NextAuthProvider>

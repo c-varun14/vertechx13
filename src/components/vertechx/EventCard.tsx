@@ -112,7 +112,7 @@ const EventCard = ({
                   href={event.drive ?? "#"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="know-more-btn"
+                  className="know-more-btn text-center"
                 >
                   Know More
                 </a>

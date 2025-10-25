@@ -10,12 +10,12 @@ const DepartmentFilters = ({
   const departments = [...departmentsNames];
   departments.splice(departments.length - 1); // Removed Mega event
   return (
-    <div className="department-filters">
+    <div className="department-filters" id="department-filters">
       <div className="filters-container">
         {departments.map((department) => (
           <Link
             key={department}
-            href={`/events/${department}`}
+            href={`/events/${department}#department-filters`}
             className={`filter-btn ${
               selectedDepartment === department ? "active" : ""
             }`}
