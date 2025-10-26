@@ -68,6 +68,10 @@ const seedData = {
       id: "clw3q9v6e001508l0h6qy7q2d",
       title: "Pontification",
     },
+    {
+      id: "clw3q9v6e001508l0h6qy7q1d",
+      title: "ONE-PIECE",
+    },
   ],
   EEE: [
     {
