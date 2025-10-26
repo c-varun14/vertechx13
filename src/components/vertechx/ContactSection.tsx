@@ -4,8 +4,8 @@ import React, { useRef } from "react";
 
 const teamData = {
   chiefOrganisers: [
-    { name: "Nandan", phone: "9019683569" },
-    { name: "Heerath", phone: "+91 97972 43748" },
+    { name: "Nandan", phone: "9019683569", role: "" },
+    { name: "Heerath", phone: "+91 97972 43748", role: "" },
   ],
   websiteTeam: [
     { name: "S Naren Kumar", role: "Lead", phone: "8123816894" },
@@ -24,29 +24,29 @@ const teamData = {
     { name: "Likhitha G", role: "Lead", phone: "8792233042" },
     { name: "Sathya Narayanan K", role: "Sub-Lead", phone: "7676623337" },
   ],
-  sponsorshipTeam: [{ name: "P. Shreya", phone: "9591848646" }],
+  sponsorshipTeam: [{ name: "P. Shreya", phone: "9591848646", role: "Lead" }],
   departmentTeam: [
     { name: "KeerthiPriya R", role: "Lead", phone: "8073460884" },
     { name: "Akshatha V Rao", role: "Lead", phone: "8147130337" },
   ],
-  facultyCoordinator: [{ name: "Hameem", phone: "9632053690" }],
+  facultyCoordinator: [{ name: "Hameem", phone: "9632053690", role: "" }],
 };
 
 const ContactSection = () => {
   const spotlightRefs = {
-    chiefOrganisers: useRef<HTMLDivElement>(null),
-    websiteTeam: useRef<HTMLDivElement>(null),
-    designTeam: useRef<HTMLDivElement>(null),
-    contentTeam: useRef<HTMLDivElement>(null),
-    marketingTeam: useRef<HTMLDivElement>(null),
-    sponsorshipTeam: useRef<HTMLDivElement>(null),
-    departmentTeam: useRef<HTMLDivElement>(null),
-    facultyCoordinator: useRef<HTMLDivElement>(null),
+    chiefOrganisers: useRef<HTMLDivElement | null>(null),
+    websiteTeam: useRef<HTMLDivElement | null>(null),
+    designTeam: useRef<HTMLDivElement | null>(null),
+    contentTeam: useRef<HTMLDivElement | null>(null),
+    marketingTeam: useRef<HTMLDivElement | null>(null),
+    sponsorshipTeam: useRef<HTMLDivElement | null>(null),
+    departmentTeam: useRef<HTMLDivElement | null>(null),
+    facultyCoordinator: useRef<HTMLDivElement | null>(null),
   };
 
   const handleMouseMove = (
     e: React.MouseEvent<HTMLDivElement>,
-    spotlightRef: React.RefObject<HTMLDivElement>
+    spotlightRef: React.RefObject<HTMLDivElement | null>
   ) => {
     if (!spotlightRef.current) return;
 
@@ -108,8 +108,8 @@ const ContactSection = () => {
     <>
       <style jsx>{`
         @import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;700;900&display=swap");
-        
-        @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+        @import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
 
         .contact-section {
           position: relative;
@@ -120,7 +120,6 @@ const ContactSection = () => {
           align-items: center;
           padding: 1rem 2rem 2rem 2rem;
           z-index: 100;
-
         }
 
         .contact-heading {
@@ -502,8 +501,11 @@ const ContactSection = () => {
                     <div key={idx} className="contact-item">
                       <span className="contact-name">
                         {contact.name}
-                        {contact.role && (
-                          <span className="contact-role"> ({contact.role})</span>
+                        {contact?.role && (
+                          <span className="contact-role">
+                            {" "}
+                            ({contact.role})
+                          </span>
                         )}
                       </span>
                       <a
