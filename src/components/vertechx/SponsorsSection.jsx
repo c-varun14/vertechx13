@@ -279,7 +279,7 @@ const SponsorsSection = () => {
       `}</style>
 
       <section className="sponsors-section">
-        <h1 className="sponsors-heading">Sponsor</h1>
+        <h1 id="sponser" className="sponsors-heading">Sponsor</h1>
 
         <div className="carousel-container px-auto">
           {/* <div className="carousel-gradient-left"></div>
