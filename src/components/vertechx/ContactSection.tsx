@@ -29,7 +29,10 @@ const teamData = {
     { name: "KeerthiPriya R", role: "Lead", phone: "8073460884" },
     { name: "Akshatha V Rao", role: "Lead", phone: "8147130337" },
   ],
-  facultyCoordinator: [{ name: "Hameem", phone: "9632053690", role: "" }],
+  facultyCoordinator: [
+    { name: "Dr. I Hameem Shanavas", phone: "9632053690", role: "" },
+    { name: "Manu Raju", phone: "9446534050", role: "" },
+  ],
 };
 
 const ContactSection = () => {

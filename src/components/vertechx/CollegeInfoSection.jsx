@@ -434,18 +434,17 @@ const CollegeInfoSection = () => {
                     <p>
                       In the heart of Bengaluru's ever-evolving techscape stands
                       MVJ College of Engineering, a campus where dreams don't
-                      just graduate; they take flight. For over three decades
-                      and more, MVJ has been more than an institution. It has
-                      been canvas for curiosity, a home for innovation, and a
-                      launch pad for the next generation of thinkers and
-                      creators.Here, every corridor is filled with ambition.
-                      Classrooms transform into ideas in motion, labs design
-                      stories of innovation, and every student learns that
-                      engineering isn't just about machines but also about
-                      meaning.
+                      just graduate; they take flight. For over four decades and
+                      more, MVJ has been more than an institution. It has been
+                      canvas for curiosity, a home for innovation, and a launch
+                      pad for the next generation of thinkers and creators.Here,
+                      every corridor is filled with ambition. Classrooms
+                      transform into ideas in motion, labs design stories of
+                      innovation, and every student learns that engineering
+                      isn't just about machines but also about meaning.
                     </p>
                     <p>
-                      With over 10,000 students and a legacy of 43+ years of
+                      With over 26,500 students and a legacy of 43+ years of
                       excellence, MVJ continues to shape minds that balance
                       precision with passion. The faculty aren't just teachers
                       but also mentors who turn potential into purpose. Life at
@@ -476,7 +475,7 @@ const CollegeInfoSection = () => {
                     <div className="stat-corners corner-tr"></div>
                     <div className="stat-corners corner-bl"></div>
                     <div className="stat-corners corner-br"></div>
-                    <div className="stat-number">10,000+</div>
+                    <div className="stat-number">26,500+</div>
                     <div className="stat-label">Students</div>
                   </div>
                 </div>

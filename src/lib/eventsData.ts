@@ -65,7 +65,7 @@ export const eventsData = {
         second: "1,500",
       },
       minTeamMembers: 1,
-      maxTeamMembers: 2,
+      maxTeamMembers: 1,
       date_time: null,
       start_time: null,
       venue: null,

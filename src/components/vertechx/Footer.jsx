@@ -256,7 +256,11 @@ flex-direction:column;
               compete!
             </p>
             <div className="social-links">
-              <a href="https://www.instagram.com/vertechx?igsh=MTZva2JzbjJla25odQ==" className="social-icon" aria-label="Instagram">
+              <a
+                href="https://www.instagram.com/vertechx?igsh=MTZva2JzbjJla25odQ=="
+                className="social-icon"
+                aria-label="Instagram"
+              >
                 <i className="bx bxl-instagram"></i>
               </a>
               {/* <a
@@ -314,21 +318,19 @@ flex-direction:column;
             <div className="contact-info">
               <div className="contact-item">
                 <i className="bx bx-map"></i>
-                
+
                 <span>
-                    MVJ College of Engineering, Near ITPB, Whitefield, Bangalore,
+                  MVJ College of Engineering, Near ITPB, Whitefield, Bangalore,
                   Karnataka, India
                 </span>
               </div>
               <div className="contact-item">
                 <i className="bx bx-envelope"></i>
-                <a href="mailto:contactmvjce@gmail.com">
-                    contactmvjce@gmail.com
-                </a>
+                <a href="mailto:vertechx@mvjce.edu.in">vertechx@mvjce.edu.in</a>
               </div>
               <div className="contact-item">
                 <i className="bx bx-phone"></i>
-                <a href="tel:+919620659690">  +91 96206 59690</a>
+                <a href="tel:+919620659690"> +91 96206 59690</a>
               </div>
             </div>
           </div>
