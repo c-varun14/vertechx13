@@ -35,6 +35,7 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
+        <meta name="google-site-verification" content="J6bmXYd7nEffrLpEsna74MU6K223Ci3otNvLqfT-ewE" />
       </head>
       <body className="relative min-h-screen w-screen bg-[#0f131d] text-white overflow-x-hidden scroll-smooth pt-32">
         <PixelGridBackground />
