@@ -59,7 +59,7 @@ export const eventsData = {
       ],
       registration_fee: 200,
       drive:
-        "https://docs.google.com/document/d/1R3-jy0ThhP2DLuFGhkyNs-9g06_kWwJoW6eMnfNK7YE/edit?usp=sharing",
+        "https://drive.google.com/file/d/1kMeH-PDmOxVh5wvfypLe91jM6lTkEshn/view?usp=drive_link",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -92,7 +92,7 @@ export const eventsData = {
       ],
       registration_fee: 300,
       drive:
-        "https://docs.google.com/document/d/1R3-jy0ThhP2DLuFGhkyNs-9g06_kWwJoW6eMnfNK7YE/edit?usp=sharing",
+        "https://drive.google.com/file/d/1TtJnTNVuPTU-cZQbOJhet2Tp0pqbPhRc/view?usp=drive_link",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -128,7 +128,7 @@ export const eventsData = {
       ],
       registration_fee: 200,
       drive:
-        "https://docs.google.com/document/d/1R3-jy0ThhP2DLuFGhkyNs-9g06_kWwJoW6eMnfNK7YE/edit?usp=sharing",
+        "https://drive.google.com/file/d/11GKrLUkxP2eT8KJ4ICw84Pk2Rcn6r2Le/view?usp=drive_link",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -163,7 +163,7 @@ export const eventsData = {
       ],
       registration_fee: 300,
       drive:
-        "https://docs.google.com/document/d/1R3-jy0ThhP2DLuFGhkyNs-9g06_kWwJoW6eMnfNK7YE/edit?usp=sharing",
+        "https://drive.google.com/file/d/1SP2mKBgwxEeYH5OTGtOSY4YSNoiNZYrG/view?usp=drive_link",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -199,7 +199,7 @@ export const eventsData = {
       ],
       registration_fee: 0,
       drive:
-        "https://docs.google.com/document/d/1R3-jy0ThhP2DLuFGhkyNs-9g06_kWwJoW6eMnfNK7YE/edit?usp=sharing",
+        "https://drive.google.com/file/d/1smCs6zi2SLY7XIe0gndOdxJ70HtLYxn4/view?usp=drive_link",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -235,7 +235,7 @@ export const eventsData = {
       ],
       registration_fee: 300,
       drive:
-        "https://docs.google.com/document/d/1BrHtHuPlTTm3Y7v5zr4V7Z6z6Jm0fi8Abkvf8j9yobg/edit?usp=sharing",
+        "https://drive.google.com/file/d/10ITWiOs7K55MxpkTNyJJcxMXulA_tAuu/view?usp=drive_link",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -272,7 +272,7 @@ export const eventsData = {
       ],
       registration_fee: 300,
       drive:
-        "https://docs.google.com/document/d/1BrHtHuPlTTm3Y7v5zr4V7Z6z6Jm0fi8Abkvf8j9yobg/edit?usp=sharing",
+        "https://drive.google.com/file/d/1DuX2dBdp5rKoApn5n344VmSPc5nro0SI/view?usp=drive_link",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -340,7 +340,7 @@ export const eventsData = {
       ],
       registration_fee: 300,
       drive:
-        "https://docs.google.com/document/d/1BrHtHuPlTTm3Y7v5zr4V7Z6z6Jm0fi8Abkvf8j9yobg/edit?usp=sharing",
+        "https://drive.google.com/file/d/1uo59a75FgSSsTa07EIKwChgjMpZYi_O1/view?usp=drive_link",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -376,7 +376,7 @@ export const eventsData = {
       ],
       registration_fee: 300,
       drive:
-        "https://docs.google.com/document/d/1BrHtHuPlTTm3Y7v5zr4V7Z6z6Jm0fi8Abkvf8j9yobg/edit?usp=sharing",
+        "https://drive.google.com/file/d/1fCXKzRmngTSVcOzPENkcICgIjDxHXhcH/view?usp=drive_link",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -413,7 +413,7 @@ export const eventsData = {
       ],
       registration_fee: 300,
       drive:
-        "https://docs.google.com/document/d/1BrHtHuPlTTm3Y7v5zr4V7Z6z6Jm0fi8Abkvf8j9yobg/edit?usp=sharing",
+        "https://drive.google.com/file/d/1WKqzQzRSUMjql4NEtAhZSEEU740apszE/view?usp=drive_link",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -451,7 +451,7 @@ export const eventsData = {
       ],
       registration_fee: 300,
       drive:
-        "https://docs.google.com/document/d/1iaynuRjoXZ0xgrErDeplgCyvNEMRA4iELMBCsMNA-j8/edit?usp=sharing",
+        "https://drive.google.com/file/d/1mH3KZ25Mox6lbYqmMZqDT5n6Watc838u/view?usp=drive_link",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -485,7 +485,7 @@ export const eventsData = {
       ],
       registration_fee: 200,
       drive:
-        "https://docs.google.com/document/d/1iaynuRjoXZ0xgrErDeplgCyvNEMRA4iELMBCsMNA-j8/edit?usp=sharing",
+        "https://drive.google.com/file/d/153BNqRCpeQQrEIjqp1xCiw28m7Txl38G/view?usp=drive_link",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -521,7 +521,7 @@ export const eventsData = {
       ],
       registration_fee: 300,
       drive:
-        "https://docs.google.com/document/d/17FcWhFEpq71MJ7pHsCqXBwVVnc1jQSRosMYgFTt05WE/edit?usp=sharing",
+        "https://drive.google.com/file/d/1SGDNrX5V8GbxvaEE9I3inagly4FCOfcV/view?usp=drive_link",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -559,7 +559,7 @@ export const eventsData = {
       ],
       registration_fee: 200,
       drive:
-        "https://docs.google.com/document/d/1V7LvCKFw-ok4W9Xs-1MYJE4Utu0atPzXlZR5JNBCVnc/edit?usp=sharing",
+        "https://drive.google.com/file/d/1xMC1HuDzHhRQ324a7PM4V5f88oBi5Y6K/view?usp=drive_link",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -594,7 +594,7 @@ export const eventsData = {
       ],
       registration_fee: 200,
       drive:
-        "https://docs.google.com/document/d/1V7LvCKFw-ok4W9Xs-1MYJE4Utu0atPzXlZR5JNBCVnc/edit?usp=sharing",
+        "https://drive.google.com/file/d/1pEU99AiYokuxsnyBsMkyfEUQWc02MQVu/view?usp=drive_link",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -613,7 +613,7 @@ export const eventsData = {
       name: "Arc Reactor Wars",
       image: "/assets/events/EEE/Arc_Reactor_Wars.jpg",
       description:
-        "Marvel-themed two-day competition teaching practical electronics skills through creating a functional Arc Reactor prototype. Focus on PCB design, soldering, and microcontroller integration.",
+        "Marvel-themed One-day competition teaching practical electronics skills through creating a functional Arc Reactor prototype. Focus on PCB design, soldering, and microcontroller integration.",
       rules: [
         "Teams 4-5 members",
         "Register before event",
@@ -628,7 +628,7 @@ export const eventsData = {
       ],
       registration_fee: 300,
       drive:
-        "https://docs.google.com/document/d/1V9dTU7weDrsunZBOu9Pf7kwvlLcZcVRJA6YKpfUkUo4/edit?usp=sharing",
+        "https://drive.google.com/file/d/1kyv2VdFZjmxMdR33yyuNg0fKwUu0Qwwu/view?usp=drive_link",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -665,7 +665,7 @@ export const eventsData = {
       ],
       registration_fee: 200,
       drive:
-        "https://docs.google.com/document/d/1uClKrQ2fuTWN-Jj7l18TjtT6dqj7eooNufOLfNWkTAc/edit?usp=sharing",
+        "https://drive.google.com/file/d/1a134pPC6EugGYGDV4yNQhih-PaLhFvin/view?usp=drive_link",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -702,7 +702,7 @@ export const eventsData = {
       ],
       registration_fee: 500,
       drive:
-        "https://docs.google.com/document/d/1uClKrQ2fuTWN-Jj7l18TjtT6dqj7eooNufOLfNWkTAc/edit?usp=sharing",
+        "https://drive.google.com/file/d/1bJGfqIg6XqKz32Ts-mc-U4BPT-hlHRCy/view?usp=drive_link",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -740,7 +740,7 @@ export const eventsData = {
       ],
       registration_fee: 300,
       drive:
-        "https://docs.google.com/document/d/1EcZCmfDCTThWRHy_3RU2vO0eF4fh6VruPKhLu871ZsI/edit?usp=sharing",
+        "https://drive.google.com/file/d/1RouTdSbTJHEGSBo27ZSlXqAVOVBQzRxn/view?usp=drive_link",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -775,7 +775,7 @@ export const eventsData = {
       ],
       registration_fee: 200,
       drive:
-        "https://docs.google.com/document/d/1EcZCmfDCTThWRHy_3RU2vO0eF4fh6VruPKhLu871ZsI/edit?usp=sharing",
+        "https://drive.google.com/file/d/1QRf8Kw9ETunnti4rYOpz0zN_7sUgcLjb/view?usp=drive_link",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -812,7 +812,7 @@ export const eventsData = {
       ],
       registration_fee: 200,
       drive:
-        "https://docs.google.com/document/d/1eN8CqSgdJmvt90rsALlQKt-tTXTVukRRgY-JQg09jRM/edit?usp=sharing",
+        "https://drive.google.com/file/d/10ZFPXtCvhloldAJ0xEhVKcC4vMCPM96F/view?usp=drive_link",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -845,7 +845,7 @@ export const eventsData = {
         "Accuracy and logical deduction crucial",
       ],
       registration_fee: 200,
-      drive: null,
+      drive: "https://drive.google.com/file/d/10ZFPXtCvhloldAJ0xEhVKcC4vMCPM96F/view?usp=drive_link",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -878,7 +878,7 @@ export const eventsData = {
         "Challenge sequencing with increasing complexity",
       ],
       registration_fee: 300,
-      drive: null,
+      drive: "https://drive.google.com/file/d/1MYXq8wUTiFILK47GH_b2fKtVimsp0GUt/view?usp=drive_link",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -911,7 +911,7 @@ export const eventsData = {
         "No pre-built modules or AI-assisted solutions",
       ],
       registration_fee: 300,
-      drive: null,
+      drive: "https://drive.google.com/file/d/1F4_iUET4A7sg_rrZdZrgAgPdM9z7cWdi/view?usp=drive_link",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -947,7 +947,7 @@ export const eventsData = {
         "Unethical behavior prohibited",
       ],
       registration_fee: 200,
-      drive: null,
+      drive: "https://drive.google.com/file/d/1rke_2zIDNqzXjkcuOZbEnij22qGUasWN/view?usp=drive_link",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -980,7 +980,7 @@ export const eventsData = {
         "Unethical behavior leads to disqualification",
       ],
       registration_fee: 300,
-      drive: null,
+      drive: "https://drive.google.com/file/d/1LShRHrQ7onY0VAycuGNTyfYgIWIWOUFw/view?usp=drive_link",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -1016,7 +1016,7 @@ export const eventsData = {
         "Only one final submission allowed",
       ],
       registration_fee: 300,
-      drive: null,
+      drive: "https://drive.google.com/file/d/1xIHKSOukg6b0OH6Afcx-vzDnKx0I2KHr/view?usp=drive_link",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -1053,7 +1053,7 @@ export const eventsData = {
         "Include explanation of visualization choices",
       ],
       registration_fee: 200,
-      drive: null,
+      drive: "https://drive.google.com/file/d/1KiXPmNSDckWH0wHN5WWJNSwdkSO7ipsL/view?usp=drive_link",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -1087,7 +1087,7 @@ export const eventsData = {
         "Round 2: Solve real-world data scenario",
       ],
       registration_fee: 300,
-      drive: null,
+      drive: "https://drive.google.com/file/d/1NEQ9N6HZyjEM5P5MMzDVsvHAFxVvpUMR/view?usp=drive_link",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -1146,7 +1146,7 @@ export const eventsData = {
         "Interdisciplinary teams encouraged",
       ],
       registration_fee: 500,
-      drive: null,
+      drive: "https://drive.google.com/file/d/1HeMg0JIFBgAlV7XB98GBJX18rirey9Nb/view?usp=drive_link",
       prizes: {
         first: "25,000",
         second: "15,000",
