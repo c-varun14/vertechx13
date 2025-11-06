@@ -145,7 +145,18 @@ const MegaEventsSlider = () => {
                 >
                   Register Now
                 </Link>
-                <button className="mega-details-btn">Details</button>
+                {/* <button className="mega-details-btn">Details</button> */}
+                <button
+                  className="mega-details-btn"
+                  onClick={() =>
+                    window.open(
+                      "https://drive.google.com/file/d/1HeMg0JIFBgAlV7XB98GBJX18rirey9Nb/view?usp=drive_link",
+                      "_blank"
+                    )
+                  }
+                >
+                  Details
+                </button>
               </div>
             </div>
           </div>

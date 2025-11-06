@@ -133,7 +133,7 @@ const Navbar = () => {
             Schedule
           </Link>
           <a
-            href="https://drive.google.com/file/d/1umPOuDxltPZ0IRA_arZl_bK8MuNLliGC/view?usp=sharing"
+            href="https://drive.google.com/file/d/1ECt7LkKeIfFWcfcP5MhFRZBP3L-dw3QV/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             data-text="Brochure"
