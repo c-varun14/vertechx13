@@ -47,6 +47,31 @@ export const departmentsSchema = z.enum([
 export const eventsData = {
   "AE&AS": [
     {
+      id: "clw3q9v6e002a08l0h6qy7q2s",
+      name: "Fast & Furious - The Drone Edition",
+      image: "/assets/events/MEGA/Fast_Furious_Drone_Edition.png",
+      description:
+        "The AERODROP is a competitive drone event where participants must demonstrate their skills by flying their drone through a series of obstacle hoops and successfully dropping a given payload onto a designated target zone. Scoring is based on the precision of the payload drop, with higher points awarded for landing closer to the bullseye, while completion time is also factored into scoring of points. This event evaluates critical drone pilot skills including payload management, obstacle navigation, flight precision, target accuracy, and time optimization.",
+      rules: [
+        "Teams of 1-5 participants",
+        "Participants must complete obstacle courses",
+        "Training provided by Drona Aviation",
+        "All teams get a drone to assemble and practice",
+      ],
+      registration_fee: 500,
+      drive: null,
+      prizes: {
+        first: "7,500",
+        second: "3,500",
+      },
+      minTeamMembers: 1,
+      maxTeamMembers: 5,
+      date_time: null,
+      start_time: null,
+      venue: null,
+      coordinators: [{ name: "TBD", phone: "TBD" }],
+    },
+    {
       id: "clw3q9v6e000108l0h6qy7q1z",
       name: "DIMENSIO-CRAFT",
       image: "/assets/events/AEAS/DIMENSIO_CRAFT.jpg",
@@ -185,7 +210,7 @@ export const eventsData = {
       name: "MechaBird",
       image: "/assets/events/AEAS/MechaBird.jpg",
       description:
-        "Design and construct an Ornithopter (flapping wing aircraft) of monoplane configuration within two hours focusing on maximum flight endurance.",
+        "Design and construct an Ornithopter (flapping wing aircraft) of monowing configuration within two hours focusing on maximum flight endurance.",
       rules: [
         "Construct using lightweight materials (balsa wood)",
         "Rubber band power only",
@@ -197,15 +222,15 @@ export const eventsData = {
         "Round 1: Design compliance and construction quality check",
         "Round 2: Hand-launch, 3 timed flights, best counts",
       ],
-      registration_fee: 0,
+      registration_fee: 300,
       drive:
         "https://drive.google.com/file/d/1smCs6zi2SLY7XIe0gndOdxJ70HtLYxn4/view?usp=drive_link",
       prizes: {
-        first: "3,000",
-        second: "1,500",
+        first: "5,000",
+        second: "2,500",
       },
       minTeamMembers: 2,
-      maxTeamMembers: 3,
+      maxTeamMembers: 4,
       date_time: null,
       start_time: null,
       venue: null,
@@ -456,8 +481,8 @@ export const eventsData = {
         first: "5,000",
         second: "2,500",
       },
-      minTeamMembers: 2,
-      maxTeamMembers: 5,
+      minTeamMembers: 1,
+      maxTeamMembers: 4,
       date_time: null,
       start_time: null,
       venue: null,
@@ -490,8 +515,8 @@ export const eventsData = {
         first: "3,000",
         second: "1,500",
       },
-      minTeamMembers: 2,
-      maxTeamMembers: 5,
+      minTeamMembers: 1,
+      maxTeamMembers: 4,
       date_time: null,
       start_time: null,
       venue: null,
@@ -564,8 +589,8 @@ export const eventsData = {
         first: "3,000",
         second: "1,500",
       },
-      minTeamMembers: 1,
-      maxTeamMembers: 4,
+      minTeamMembers: 2,
+      maxTeamMembers: 3,
       date_time: null,
       start_time: null,
       venue: null,
@@ -599,8 +624,8 @@ export const eventsData = {
         first: "3,000",
         second: "1,500",
       },
-      minTeamMembers: 2,
-      maxTeamMembers: 6,
+      minTeamMembers: 4,
+      maxTeamMembers: 5,
       date_time: null,
       start_time: null,
       venue: null,
@@ -640,7 +665,7 @@ export const eventsData = {
       venue: null,
       coordinators: [
         { name: "Ranganath S", phone: "7019922146" },
-        { name: "Nitish N M", phone: "9353636599" },
+        { name: "Nithish N M", phone: "9353636599" },
       ],
     },
   ],
@@ -1113,32 +1138,6 @@ export const eventsData = {
     },
   ],
   MEGA: [
-    // {
-    //   id: "clw3q9v6e002a08l0h6qy7q2s",
-    //   name: "Fast & Furious - The Drone Edition",
-    //   image: "/assets/events/MEGA/Fast_Furious_Drone_Edition.png",
-    //   description:
-    //     "A drone flying race where participants demonstrate piloting skills through obstacle hoops. Includes training by Drona Aviation on assembling the Pluto X educational drone.",
-    //   rules: [
-    //     "Teams of 1-5 participants",
-    //     "Participants must complete obstacle courses",
-    //     "Training provided by Drona Aviation",
-    //     "All teams get a drone to assemble and practice",
-    //   ],
-    //   registration_fee: 500,
-    //   drive: null,
-    //   prizes: {
-    //     first: "7,500",
-    //     second: "3,500",
-    //   },
-    //   minTeamMembers: 1,
-    //   maxTeamMembers: 5,
-    //   date_time: null,
-    //   start_time: null,
-    //   venue: null,
-    //   coordinators: [{ name: "TBD", phone: "TBD" }],
-    // },
-
     {
       id: "clw3q9v6e002b08l0h6qy7q2t",
       name: "PixelGensis Hackathon",
@@ -1158,8 +1157,8 @@ export const eventsData = {
       drive:
         "https://drive.google.com/file/d/1HeMg0JIFBgAlV7XB98GBJX18rirey9Nb/view?usp=drive_link",
       prizes: {
-        first: "25,000",
-        second: "15,000",
+        first: "15,000",
+        second: "7,500",
       },
       minTeamMembers: 2,
       maxTeamMembers: 4,
