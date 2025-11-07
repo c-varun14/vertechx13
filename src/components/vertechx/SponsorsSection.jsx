@@ -12,10 +12,11 @@ const SponsorsSection = () => {
       name: "MVJ COLLEGE OF ENGENNERING",
       logo: "/assets/mvjLogo.webp",
     },
-    // { id: 2, name: 'Sponsor 2', logo: 'https://mvjce.edu.in/wp-content/uploads/2024/03/logo-autonomous-colored-001.webp' },
-    // { id: 3, name: 'Sponsor 3', logo: 'https://mvjce.edu.in/wp-content/uploads/2024/03/logo-autonomous-colored-001.webp' },
-    // { id: 4, name: 'Sponsor 4', logo: 'https://mvjce.edu.in/wp-content/uploads/2024/03/logo-autonomous-colored-001.webp' },
-    // { id: 5, name: 'Sponsor 5', logo: 'https://via.placeholder.com/200x100/10b981/ffffff?text=Sponsor+5' },
+    { id: 2, name: 'Casio', logo: 'Casio.png' },
+
+    { id: 3, name: 'Global degree', logo: 'https://globaldegrees.in/wp-content/uploads/2025/02/Logo_0000_Group-1-copy-1.png' },
+    { id: 4, name: 'iskon', logo: '/iskcon_logo.svg' },
+    { id: 5, name: 'thebelgianwaffle', logo: 'https://thebelgianwaffle.co/wp-content/uploads/2023/11/bwc-logo-1.png' },
     // { id: 6, name: 'Sponsor 6', logo: 'https://via.placeholder.com/200x100/3b82f6/ffffff?text=Sponsor+6' },
     // { id: 7, name: 'Sponsor 7', logo: 'https://via.placeholder.com/200x100/ef4444/ffffff?text=Sponsor+7' },
     // { id: 8, name: 'Sponsor 8', logo: 'https://via.placeholder.com/200x100/8b5cf6/ffffff?text=Sponsor+8' },
@@ -282,11 +283,11 @@ const SponsorsSection = () => {
         <h1 id="sponser" className="sponsors-heading">Sponsor</h1>
 
         <div className="carousel-container px-auto">
-          {/* <div className="carousel-gradient-left"></div>
-          <div className="carousel-gradient-right"></div> */}
+          <div className="carousel-gradient-left"></div>
+          <div className="carousel-gradient-right"></div>
 
-          {/* <div className="carousel-track w-full" ref={scrollRef}> */}
-          {/* {duplicatedSponsors.map((sponsor, index) => (
+          <div className="carousel-track w-full" ref={scrollRef}>
+          {duplicatedSponsors.map((sponsor, index) => (
               <div key={`${sponsor.id}-${index}`} className="sponsor-card">
                 <img 
                   src={sponsor.logo} 
@@ -294,15 +295,9 @@ const SponsorsSection = () => {
                   className="sponsor-logo"
                 />
               </div>
-            ))} */}
-          <Image
-            src={sponsors[0].logo}
-            alt={sponsors[0].name}
-            width={80}
-            height={50}
-            className="w-56 mx-auto!"
-          />
-          {/* </div> */}
+            ))}
+          
+          </div>
         </div>
       </section>
     </>
