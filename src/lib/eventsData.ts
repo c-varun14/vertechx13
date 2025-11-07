@@ -559,7 +559,7 @@ export const eventsData = {
       ],
       registration_fee: 200,
       drive:
-        "https://drive.google.com/file/d/1xMC1HuDzHhRQ324a7PM4V5f88oBi5Y6K/view?usp=drive_link",
+        "https://drive.google.com/file/d/1jhihXPvazhF1Ux1OUNNonApKKPN7Nsep/view?usp=drive_link",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -594,7 +594,7 @@ export const eventsData = {
       ],
       registration_fee: 200,
       drive:
-        "https://drive.google.com/file/d/1pEU99AiYokuxsnyBsMkyfEUQWc02MQVu/view?usp=drive_link",
+        "https://drive.google.com/file/d/1dBHH4bpYmXZTDX8yToKSBvYDvRksjUyp/view?usp=drive_link",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -734,13 +734,14 @@ export const eventsData = {
         "No plagiarism or pre-built templates",
         "Strict time limits enforced",
         "Round 1: Design Doctor - Identify UI flaws",
-        "Round 2: Code Craft - Create functional prototype",
+        "Round 2:  Code Craft – Prototype Implementation",
+        "In this round, participants will receive a JSON file containing structured data that represents components, layout details, or dynamic content.Your task is to convert this JSON file into a functional user interface. You can use any tool, framework, or AI assistance (including V0, Vibe Code, or any AI-powered UI generator).",
         "All assets must be royalty-free",
         "Code must be original, clean, modular",
       ],
       registration_fee: 300,
       drive:
-        "https://drive.google.com/file/d/1RouTdSbTJHEGSBo27ZSlXqAVOVBQzRxn/view?usp=drive_link",
+        "https://drive.google.com/file/d/1Sy3-hVRFmcLA2vIrAB57rRrolJdzedc1/view?usp=sharing",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -845,7 +846,8 @@ export const eventsData = {
         "Accuracy and logical deduction crucial",
       ],
       registration_fee: 200,
-      drive: "https://drive.google.com/file/d/10ZFPXtCvhloldAJ0xEhVKcC4vMCPM96F/view?usp=drive_link",
+      drive:
+        "https://drive.google.com/file/d/10ZFPXtCvhloldAJ0xEhVKcC4vMCPM96F/view?usp=drive_link",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -878,7 +880,8 @@ export const eventsData = {
         "Challenge sequencing with increasing complexity",
       ],
       registration_fee: 300,
-      drive: "https://drive.google.com/file/d/1MYXq8wUTiFILK47GH_b2fKtVimsp0GUt/view?usp=drive_link",
+      drive:
+        "https://drive.google.com/file/d/1MYXq8wUTiFILK47GH_b2fKtVimsp0GUt/view?usp=drive_link",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -911,7 +914,8 @@ export const eventsData = {
         "No pre-built modules or AI-assisted solutions",
       ],
       registration_fee: 300,
-      drive: "https://drive.google.com/file/d/1F4_iUET4A7sg_rrZdZrgAgPdM9z7cWdi/view?usp=drive_link",
+      drive:
+        "https://drive.google.com/file/d/1F4_iUET4A7sg_rrZdZrgAgPdM9z7cWdi/view?usp=drive_link",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -947,7 +951,8 @@ export const eventsData = {
         "Unethical behavior prohibited",
       ],
       registration_fee: 200,
-      drive: "https://drive.google.com/file/d/1rke_2zIDNqzXjkcuOZbEnij22qGUasWN/view?usp=drive_link",
+      drive:
+        "https://drive.google.com/file/d/1rke_2zIDNqzXjkcuOZbEnij22qGUasWN/view?usp=drive_link",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -980,7 +985,8 @@ export const eventsData = {
         "Unethical behavior leads to disqualification",
       ],
       registration_fee: 300,
-      drive: "https://drive.google.com/file/d/1LShRHrQ7onY0VAycuGNTyfYgIWIWOUFw/view?usp=drive_link",
+      drive:
+        "https://drive.google.com/file/d/1LShRHrQ7onY0VAycuGNTyfYgIWIWOUFw/view?usp=drive_link",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -1016,7 +1022,8 @@ export const eventsData = {
         "Only one final submission allowed",
       ],
       registration_fee: 300,
-      drive: "https://drive.google.com/file/d/1xIHKSOukg6b0OH6Afcx-vzDnKx0I2KHr/view?usp=drive_link",
+      drive:
+        "https://drive.google.com/file/d/1xIHKSOukg6b0OH6Afcx-vzDnKx0I2KHr/view?usp=drive_link",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -1053,7 +1060,8 @@ export const eventsData = {
         "Include explanation of visualization choices",
       ],
       registration_fee: 200,
-      drive: "https://drive.google.com/file/d/1KiXPmNSDckWH0wHN5WWJNSwdkSO7ipsL/view?usp=drive_link",
+      drive:
+        "https://drive.google.com/file/d/12dNBzyvQF7p_K7IEroy5BmrEdr3v6M3G/view?usp=drive_link",
       prizes: {
         first: "3,000",
         second: "1,500",
@@ -1087,7 +1095,8 @@ export const eventsData = {
         "Round 2: Solve real-world data scenario",
       ],
       registration_fee: 300,
-      drive: "https://drive.google.com/file/d/1NEQ9N6HZyjEM5P5MMzDVsvHAFxVvpUMR/view?usp=drive_link",
+      drive:
+        "https://drive.google.com/file/d/1qMKoT2iMO_ZzTXWV73FhCl0vKdTk5X8k/view?usp=drive_link",
       prizes: {
         first: "5,000",
         second: "2,500",
@@ -1146,7 +1155,8 @@ export const eventsData = {
         "Interdisciplinary teams encouraged",
       ],
       registration_fee: 500,
-      drive: "https://drive.google.com/file/d/1HeMg0JIFBgAlV7XB98GBJX18rirey9Nb/view?usp=drive_link",
+      drive:
+        "https://drive.google.com/file/d/1HeMg0JIFBgAlV7XB98GBJX18rirey9Nb/view?usp=drive_link",
       prizes: {
         first: "25,000",
         second: "15,000",
