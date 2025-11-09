@@ -59,7 +59,7 @@ export const eventsData = {
         "All teams get a drone to assemble and practice",
       ],
       registration_fee: 500,
-      drive: null,
+      drive: "https://drive.google.com/file/d/1kFERBzE_fi29k5H6mLaliSONAuTbbsA-/view?usp=drive_link",
       prizes: {
         first: "7,500",
         second: "3,500",
@@ -1121,7 +1121,7 @@ export const eventsData = {
       ],
       registration_fee: 300,
       drive:
-        "https://drive.google.com/file/d/1qMKoT2iMO_ZzTXWV73FhCl0vKdTk5X8k/view?usp=drive_link",
+        "https://drive.google.com/file/d/1OWgpCOzZVmF-eeUPquwpNnnRiRrSBNH6/view?usp=drive_link",
       prizes: {
         first: "5,000",
         second: "2,500",
