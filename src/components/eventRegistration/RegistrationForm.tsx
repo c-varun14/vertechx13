@@ -375,7 +375,7 @@ export default function EventRegistration({
         console.log(error);
         toast.error("Registration failed", {
           description:
-            "There was an error processing your registration. Please try again.",
+            "Make sure all the teammembers have a unique USN. If the issue still persists contact the people mentioned in the start of the page",
         });
       } finally {
         setIsSubmitting(false);

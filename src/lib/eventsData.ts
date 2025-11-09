@@ -1154,8 +1154,7 @@ export const eventsData = {
         "Interdisciplinary teams encouraged",
       ],
       registration_fee: 500,
-      drive:
-        "https://drive.google.com/file/d/1HeMg0JIFBgAlV7XB98GBJX18rirey9Nb/view?usp=drive_link",
+      drive: null,
       prizes: {
         first: "15,000",
         second: "7,500",

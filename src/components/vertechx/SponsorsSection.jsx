@@ -296,14 +296,14 @@ const SponsorsSection = () => {
           src={"/assets/mvjLogo.webp"}
           height={100}
           width={100}
-          className="w-52"
+          className="w-40 md:w-52"
           alt="MVJ Logo"
         />
         <Image
           src={"/logos/luxev.png"}
           height={100}
           width={100}
-          className="w-64 mt-3"
+          className="w-48 md:w-64 mt-3"
           alt="Luxev Logo"
         />
         <div className="carousel-container px-auto">
