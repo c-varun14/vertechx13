@@ -9,6 +9,8 @@ import {
   Users,
   Calendar,
   CreditCard,
+  Clock,
+  CheckCheck,
 } from "lucide-react";
 import Link from "next/link";
 import { getEventDetailsById } from "@/lib/eventsData";
@@ -127,6 +129,32 @@ const Page = async ({
                   <p>{registration.usn}</p>
                 </div>
               </div>
+
+              <div className="flex items-start">
+                <CheckCheck className="h-5 w-5 mr-2 mt-1" />
+                <div>
+                  <p className="font-medium">Check-in Status</p>
+                  <p
+                    className={`font-medium ${
+                      registration.isCheckedIn
+                        ? "text-green-600"
+                        : "text-amber-600"
+                    }`}
+                  >
+                    {registration.isCheckedIn ? "Checked In" : "Not Checked In"}
+                  </p>
+                </div>
+              </div>
+
+              {registration.isCheckedIn && registration.checkedInAt && (
+                <div className="flex items-start">
+                  <Clock className="h-5 w-5 mr-2 mt-1" />
+                  <div>
+                    <p className="font-medium">Checked In At</p>
+                    <p>{new Date(registration.checkedInAt).toLocaleString()}</p>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>

@@ -1199,10 +1199,11 @@ export const getEventDetailsById = (id: string) => {
   for (const department of departmentsNames) {
     const events = eventsData[department];
     for (const event of events) {
-      if (event.id === id) {
-        return { event, department };
+      if (event.id == id) {
+        return { event, club: department };
       }
     }
   }
+
   return undefined;
 };

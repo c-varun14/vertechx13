@@ -222,7 +222,12 @@ const ProfilePage = async () => {
                         {!registration.paymentId && (
                           <Link
                             className="text-center py-2.5 px-4 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
-                            href={`/${registration.eventId}/register?clubName=${registration.club}`}
+                            href={`/${
+                              registration.eventId
+                            }/register?clubName=${registration.club?.replace(
+                              "&",
+                              ","
+                            )}`}
                           >
                             Complete Payment
                           </Link>
