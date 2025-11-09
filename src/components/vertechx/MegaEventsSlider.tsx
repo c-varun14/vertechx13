@@ -150,7 +150,7 @@ const MegaEventsSlider = () => {
                   className="mega-details-btn"
                   onClick={() =>
                     window.open(
-                      "https://drive.google.com/file/d/1HeMg0JIFBgAlV7XB98GBJX18rirey9Nb/view?usp=drive_link",
+                      "https://drive.google.com/file/d/1rrqwQbdtrp3R1Lud3gS9r0xr27dj9AD9/view?usp=drive_link",
                       "_blank"
                     )
                   }
