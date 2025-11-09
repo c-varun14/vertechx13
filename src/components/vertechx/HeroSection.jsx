@@ -18,6 +18,14 @@ const HeroSection = () => {
             priority
           />
         </div>
+
+{/*         
+        <div className="date-time">
+          DATE : 14 & 15
+        </div> */}
+        <div className="date-time">14 & 15 NOV 2025</div>
+
+
         <div className="hero-gif-container">
           <Image
             src="/blocks-unscreen.gif"
