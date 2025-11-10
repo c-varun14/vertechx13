@@ -140,11 +140,23 @@ const MegaEventsSlider = () => {
 
               <div className="mega-event-actions">
                 <Link
-                  href={`/${currentEvent.id}/register?clubName=MEGA`}
-                  className="mega-register-btn"
+                  href="#"
+                  className="mega-details-btn"
+                  onClick={(e) => {
+                    e.preventDefault(); // prevent page from jumping
+                    alert("Registration is closed for this event , please register for other event");
+                  }}
                 >
-                  Register Now
+                  Registration closed
                 </Link>
+
+                {/* <Link
+                href={'#'}
+                  // href={`/${currentEvent.id}/register?clubName=MEGA`}
+                  className=""
+                >
+                  Registration closed
+                </Link> */}
                 {/* <button className="mega-details-btn">Details</button> */}
                 <button
                   className="mega-details-btn"
