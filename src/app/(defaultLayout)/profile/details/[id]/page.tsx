@@ -157,7 +157,7 @@ const RegistrationDetailsPage = async ({
                     {event.name}
                   </h1>
                   <p className="text-sm text-muted-foreground mb-1">
-                    {eventDetails.department}
+                    {eventDetails.club}
                   </p>
                   <div className="flex flex-wrap gap-2 mt-2">
                     {getPaymentStatusBadge(registration.paymentId)}
