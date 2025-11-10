@@ -117,8 +117,8 @@ const Page = async ({
               <div className="flex items-start">
                 <Users className="h-5 w-5 mr-2 mt-1" />
                 <div>
-                  <p className="font-medium">Club</p>
-                  <p>{event.department}</p>
+                  <p className="font-medium">Department</p>
+                  <p>{event.club}</p>
                 </div>
               </div>
 

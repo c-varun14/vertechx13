@@ -19,6 +19,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Users } from "lucide-react";
 import { RegistrationWithTeamMembersAndEvents } from "@/types/zod/registrationSchema";
+import CheckIn from "./Checkbox";
 
 interface RegistrationsTableProps {
   registrations: RegistrationWithTeamMembersAndEvents[];
@@ -42,6 +43,7 @@ export const RegistrationsTable = ({
             <TableHead className="whitespace-nowrap">Status</TableHead>
             <TableHead className="whitespace-nowrap">Created At</TableHead>
             <TableHead className="whitespace-nowrap">Team</TableHead>
+            <TableHead className="whitespace-nowrap">Checked In</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -153,6 +155,9 @@ export const RegistrationsTable = ({
                       </div>
                     </DialogContent>
                   </Dialog>
+                </TableCell>
+                <TableCell className="text-muted-foreground whitespace-nowrap text-center">
+                  <CheckIn registration={registration} />
                 </TableCell>
               </TableRow>
             ))

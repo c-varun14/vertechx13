@@ -30,7 +30,7 @@ export const ClubSelector = ({
         disabled={disabled}
       >
         <SelectTrigger id="club-select" className="w-full">
-          <SelectValue placeholder="Select a club" />
+          <SelectValue placeholder="Select a department" />
         </SelectTrigger>
         <SelectContent>
           {departmentsNames.map((department) => (
