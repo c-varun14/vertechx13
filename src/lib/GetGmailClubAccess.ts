@@ -10,6 +10,9 @@ const clubEmails = {
     "varun1492006@gmail.com",
     "snarenkumar30@gmail.com",
     "mrsurabhi1704@gmail.com",
+    "k93010217@gmail.com",
+    "shravanramakunja@gmail.com",
+    "raoakshatha4002@gmail.com",
   ],
 };
 
