@@ -85,6 +85,10 @@ const seedData = {
   ],
   "AI&ML": [
     {
+      id: "clw3q9v6e001708l0h6qy7q2i",
+      title: "Bgmi Tournament",
+    },
+    {
       id: "clw3q9v6e001708l0h6qy7q2f",
       title: "AI Pixel Animation Challenge",
     },

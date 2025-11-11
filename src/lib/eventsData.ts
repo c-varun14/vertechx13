@@ -674,6 +674,30 @@ export const eventsData = {
   ],
   "AI&ML": [
     {
+      id: "clw3q9v6e001708l0h6qy7q2i",
+      name: "Bgmi Tournament",
+      image: "",
+      description: "A 2-4 team sized E-Sports event",
+      rules: [""],
+      registration_fee: 300,
+      drive: "",
+      prizes: {
+        first: "5,000",
+        second: "3,000",
+      },
+      minTeamMembers: 2,
+      maxTeamMembers: 4,
+      date_time: null,
+      start_time: null,
+      venue: null,
+      coordinators: [
+        { name: "Bindu Mahanthi", phone: "TBD" },
+        { name: "Gouthami B", phone: "TBD" },
+        { name: "Harsha", phone: "TBD" },
+        { name: "Samanvitha R K", phone: "TBD" },
+      ],
+    },
+    {
       id: "clw3q9v6e001708l0h6qy7q2f",
       name: "AI Pixel Animation Challenge",
       image: "/assets/events/AIML/AI_Pixel_Animation_Challenge.jpg",
