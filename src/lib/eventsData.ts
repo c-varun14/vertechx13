@@ -62,7 +62,7 @@ export const eventsData = {
       ],
       registration_fee: 500,
       drive:
-        "https://drive.google.com/file/d/1kFERBzE_fi29k5H6mLaliSONAuTbbsA-/view?usp=drive_link",
+        "https://drive.google.com/drive/folders/1-bUc09JZwjN4KYQVuQybqrYXGu1RyFx-",
       prizes: {
         first: "7,500",
         second: "3,500",
