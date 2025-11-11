@@ -49,14 +49,16 @@ export const eventsData = {
     {
       id: "clw3q9v6e002a08l0h6qy7q2s",
       name: "Fast & Furious - The Drone Edition",
-      image: "/assets/events/MEGA/Fast_Furious_Drone_Edition.png",
+      image: "/assets/events/AEAS/Drone.jpg",
       description:
-        "The AERODROP is a competitive drone event where participants must demonstrate their skills by flying their drone through a series of obstacle hoops and successfully dropping a given payload onto a designated target zone. Scoring is based on the precision of the payload drop, with higher points awarded for landing closer to the bullseye, while completion time is also factored into scoring of points. This event evaluates critical drone pilot skills including payload management, obstacle navigation, flight precision, target accuracy, and time optimization.",
+        "The “Fast and furious - drone edition” is a competitive drone event where participants must demonstrate their skills by flying their drone through a series of obstacle hoops and successfully dropping a given payload onto a designated target zone. Scoring is based on the precision of the payload drop, with higher points awarded for landing closer to the bullseye, while completion time is also factored into scoring of points. This event evaluates critical drone pilot skills including payload management, obstacle navigation, flight precision, target accuracy, and time optimization.",
       rules: [
-        "Teams of 1-5 participants",
-        "Participants must complete obstacle courses",
-        "Training provided by Drona Aviation",
-        "All teams get a drone to assemble and practice",
+        "A maximum of 550 mm diagonal length of the drone frame.",
+        "Readymade drone is not allowed (eg. Dji )",
+        "Dropping mechanism can be done using Servo or any similar mechanism.",
+        "Only payload will be given from management side.",
+        "Bring extra things like propeller, batteries etc.",
+        "Maximum 5 members per team.",
       ],
       registration_fee: 500,
       drive:
