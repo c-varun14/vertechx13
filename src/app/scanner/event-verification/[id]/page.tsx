@@ -67,6 +67,16 @@ const Page = async ({
         </div>
       </div>
     );
+  if (!registration.isCheckedIn)
+    await prisma.registration.update({
+      where: {
+        id: registration.id,
+      },
+      data: {
+        isCheckedIn: true,
+        checkedInAt: new Date(),
+      },
+    });
 
   const event = getEventDetailsById(registration.eventId);
   if (!event) return redirect("/scanner/event-verification");

@@ -1069,8 +1069,8 @@ export default function EventRegistration({
                   <p className="text-sm text-white/70">Team Size</p>
                   <p className="font-medium">
                     {formData.teamMembers.length
-                      ? "Solo Event"
-                      : `${formData.teamMembers.length + 1} members`}
+                      ? `${formData.teamMembers.length + 1} members`
+                      : "Solo Event"}
                   </p>
                 </div>
                 {!(maxTeamMembers == 1) && (

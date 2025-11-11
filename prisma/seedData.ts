@@ -1,6 +1,10 @@
 const seedData = {
   "AE&AS": [
     {
+      id: "clw3q9v6e002a08l0h6qy7q2s",
+      title: "Fast & Furious - The Drone Edition",
+    },
+    {
       id: "clw3q9v6e000108l0h6qy7q1z",
       title: "DIMENSIO-CRAFT",
     },
@@ -142,10 +146,6 @@ const seedData = {
     },
   ],
   MEGA: [
-    {
-      id: "clw3q9v6e002a08l0h6qy7q2s",
-      title: "Fast & Furious - The Drone Edition",
-    },
     {
       id: "clw3q9v6e002b08l0h6qy7q2t",
       title: "PixelGensis Hackathon",
