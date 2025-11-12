@@ -675,10 +675,17 @@ export const eventsData = {
   "AI&ML": [
     {
       id: "clw3q9v6e001708l0h6qy7q2i",
-      name: "Bgmi Tournament",
-      image: "",
-      description: "A 2-4 team sized E-Sports event",
-      rules: [""],
+      name: "BGMI THE ULTIMATE SHOWDOWN",
+      image: "/assets/events/AIML/BGMI-THE-ULTIMATE-SHOWDOWN.jpg",
+      description:
+        "Join the ultimate BGMI showdown! Compete with top players, showcase your skills, and win exciting prizes in an action-packed gaming battle",
+      rules: [
+        "Rules 1. Hackers not allowed",
+        "2. Tablets or not allowed ",
+        "3. Minimum 2 player's and maximum 4 player's",
+        "4. All players must have BGMI account above level 25",
+        "5. All players must download All the maps before the tournament",
+      ],
       registration_fee: 100,
       drive: "",
       prizes: {
@@ -865,7 +872,7 @@ export const eventsData = {
       ],
       registration_fee: 200,
       drive:
-        "https://drive.google.com/file/d/10ZFPXtCvhloldAJ0xEhVKcC4vMCPM96F/view?usp=drive_link",
+        "https://drive.google.com/file/d/1c5IL83neqc-dbMrslbxYbQA-Sl9Jcpsf/view?usp=drive_link",
       prizes: {
         first: "3,000",
         second: "1,500",
