@@ -20,17 +20,17 @@ const scheduleData = {
       {
         name: "Pixel Animation Challenge",
         time: "11am-2pm",
-        venue: "Seminar Hall 3,Internet Connection",
+        venue: "Seminar Hall 3  ",
       },
       {
         name: "Pixel Gauntlet",
         time: "11am-2pm",
-        venue: "Lab-260(&261 opp to CSE Department),Internet Connection",
+        venue: "Lab-260(&261 opp to CSE Department)  ",
       },
       {
         name: "Traversal Trials",
         time: "12pm-3pm",
-        venue: "Lab-260(&261),Internet Connection",
+        venue: "Lab-260(&261)  ",
       },
       {
         name: "Aromatica",
@@ -40,9 +40,9 @@ const scheduleData = {
       {
         name: "Block by Block",
         time: "11am-2pm",
-        venue: "Seminar Hall 2,Internet Connection",
+        venue: "Seminar Hall 2  ",
       },
-      { name: "Meme Arena", time: "1pm-4pm", venue: "RJSH" },
+      { name: "Meme Arena", time: "1pm-4pm", venue: "Raja Lakshmi Seminar Hall" },
       {
         name: "Cosmo Craze",
         time: "11am-2pm",
@@ -62,12 +62,12 @@ const scheduleData = {
       {
         name: "Algo Fix and Forge",
         time: "11am-2pm",
-        venue: "Lab-226(&227),Internet Connection",
+        venue: "Lab-226(&227)  ",
       },
       {
         name: "Escape Room",
         time: "2pm-5pm",
-        venue: "Lab-226(&227),Internet Connection",
+        venue: "Lab-226(&227)  ",
       },
       { name: "One Piece", time: "10am-1pm", venue: "Mechanical Workshop" },
     ],
@@ -89,17 +89,17 @@ const scheduleData = {
       {
         name: "Tensor A Build-a-thon",
         time: "10am-2pm",
-        venue: "Seminar Hall 1,Internet Connection",
+        venue: "Seminar Hall 1  ",
       },
       {
         name: "Pixel Craft",
         time: "9am-12pm",
-        venue: "Seminar Hall 3,Internet Connection",
+        venue: "Seminar Hall 3  ",
       },
       {
         name: "Binary Build",
         time: "11am-2pm",
-        venue: "Lab-250(&251),Internet Connection",
+        venue: "Lab-250(&251)  ",
       },
       {
         name: "Chemquest",
@@ -110,14 +110,14 @@ const scheduleData = {
       {
         name: "UI Flow",
         time: "9am-12pm",
-        venue: "Seminar Hall 2,Internet Connection",
+        venue: "Seminar Hall 2  ",
       },
       {
         name: "Data Driven Riddles",
         time: "10am-1pm",
         venue: "Lab-Old Block,DS Department",
       },
-      { name: "Line-Xtreme", time: "9am-12pm", venue: "RJSH" },
+      { name: "Line-Xtreme", time: "9am-12pm", venue: "Raja Lakshmi Seminar Hall" },
       { name: "Circutronics", time: "10am-1pm", venue: "Robo Lab" },
       {
         name: "Aqua Bot",
@@ -127,18 +127,18 @@ const scheduleData = {
       {
         name: "Pix Hunter",
         time: "10am-2pm",
-        venue: "Lab-226(&227),Internet Connection",
+        venue: "Lab-226(&227)  ",
       },
       { name: "Pontification", time: "11am-1pm", venue: "CAMD Lab" },
       {
         name: "Block by Block",
         time: "9am-12pm",
-        venue: "Seminar Hall 2,Internet Connection",
+        venue: "Seminar Hall 2  ",
       },
       {
         name: "UI Flow",
         time: "11am-2pm",
-        venue: "Seminar Hall 2,Internet Connection",
+        venue: "Seminar Hall 2  ",
       },
     ],
   },
