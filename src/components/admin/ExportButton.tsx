@@ -35,7 +35,7 @@ export const ExportButton = ({ data, filename }: ExportButtonProps) => {
       reg.paymentAmount,
       reg.paymentId || "Pending",
       new Date(reg.createdAt).toLocaleDateString(),
-      reg.teamMembers.length,
+      reg.teamMembers.map((tm) => `${tm.name} (${tm.usn})`).join("\n"),
     ]);
 
     const worksheetData = [headers, ...rows];
@@ -53,8 +53,35 @@ export const ExportButton = ({ data, filename }: ExportButtonProps) => {
       { wch: 10 }, // Payment Amount
       { wch: 22 }, // Payment ID
       { wch: 12 }, // Created At
-      { wch: 10 }, // Team Members Count
+      { wch: 32 }, // Team Members
     ];
+    // Set row heights - first row is header, then data rows
+    worksheet["!rows"] = [
+      { hpt: 30 }, // Header row height
+      ...data.map((reg) => ({
+        hpt: Math.max(20, 18 + reg.teamMembers.length * 15), // Base height + 15pt per team member
+      })),
+    ];
+
+    // Enable text wrapping for team members column
+    const teamMemberColIndex = 9; // Column J (0-based index of 'TeamMembers' column)
+    const range = XLSX.utils.decode_range(worksheet["!ref"] || "A1");
+    for (let i = range.s.r + 1; i <= range.e.r; i++) {
+      const cellAddress = XLSX.utils.encode_cell({
+        r: i,
+        c: teamMemberColIndex,
+      });
+      const cell = worksheet[cellAddress];
+      if (cell) {
+        cell.s = {
+          ...cell.s,
+          alignment: {
+            wrapText: true,
+            vertical: "top",
+          },
+        };
+      }
+    }
 
     const workbook = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(workbook, worksheet, "Registrations");
