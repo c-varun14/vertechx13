@@ -433,7 +433,9 @@ const ScheduleSection = () => {
                 >
                   <div
                     className="schedule-card-spotlight"
-                    ref={(el) => (spotlightRefs.current[index] = el)}
+                    ref={(el) => {
+                      spotlightRefs.current[index] = el;
+                    }}
                   ></div>
                   <div className="schedule-card-inner">
                     <div className="schedule-event-name">
@@ -454,7 +456,9 @@ const ScheduleSection = () => {
                     {item.finalVenue && (
                       <div className="schedule-detail">
                         <span className="schedule-label">Final Venue:</span>
-                        <span className="schedule-value">{item.finalVenue}</span>
+                        <span className="schedule-value">
+                          {item.finalVenue}
+                        </span>
                       </div>
                     )}
                   </div>

@@ -6,50 +6,146 @@ const scheduleData = {
   day1: {
     date: "14-Nov",
     events: [
-      { name: "Aquanova", time: "11am-3pm", venue: "Room No:045(&40) and Playground" },
-      { name: "Mecha Bird", time: "12pm-3pm", venue: "Room No:041(&042),Double Lobby" },
+      {
+        name: "Aquanova",
+        time: "11am-3pm",
+        venue: "Room No:045(&40) and Playground",
+      },
+      {
+        name: "Mecha Bird",
+        time: "12pm-3pm",
+        venue: "Room No:041(&042),Double Lobby",
+      },
       { name: "Glitch n Glide", time: "2pm-5pm", venue: "Auditorium" },
-      { name: "Pixel Animation Challenge", time: "11am-2pm", venue: "Seminar Hall 3,Internet Connection" },
-      { name: "Pixel Gauntlet", time: "11am-2pm", venue: "Lab-260(&261 opp to CSE Department),Internet Connection" },
-      { name: "Traversal Trials", time: "12pm-3pm", venue: "Lab-260(&261),Internet Connection" },
-      { name: "Aromatica", time: "11am-2pm", venue: "Chemical Reaction Engineering Lab(PU Block-2nd Floor)" },
-      { name: "Block by Block", time: "11am-2pm", venue: "Seminar Hall 2,Internet Connection" },
+      {
+        name: "Pixel Animation Challenge",
+        time: "11am-2pm",
+        venue: "Seminar Hall 3,Internet Connection",
+      },
+      {
+        name: "Pixel Gauntlet",
+        time: "11am-2pm",
+        venue: "Lab-260(&261 opp to CSE Department),Internet Connection",
+      },
+      {
+        name: "Traversal Trials",
+        time: "12pm-3pm",
+        venue: "Lab-260(&261),Internet Connection",
+      },
+      {
+        name: "Aromatica",
+        time: "11am-2pm",
+        venue: "Chemical Reaction Engineering Lab(PU Block-2nd Floor)",
+      },
+      {
+        name: "Block by Block",
+        time: "11am-2pm",
+        venue: "Seminar Hall 2,Internet Connection",
+      },
       { name: "Meme Arena", time: "1pm-4pm", venue: "RJSH" },
-      { name: "Cosmo Craze", time: "11am-2pm", venue: "Ground(next to old block)" },
+      {
+        name: "Cosmo Craze",
+        time: "11am-2pm",
+        venue: "Ground(next to old block)",
+      },
       { name: "Virtual Vista", time: "12pm-3pm", venue: "ROBO Lab" },
-      { name: "Robo Kabaddi", time: "2pm-5pm", venue: "Fountain(Near Double Lobby)" },
-      { name: "Arc Reactor Wars", time: "10am-4pm", venue: "Seminar Hall 1,Room No.127 Internet Connection" },
-      { name: "Algo Fix and Forge", time: "11am-2pm", venue: "Lab-226(&227),Internet Connection" },
-      { name: "Escape Room", time: "2pm-5pm", venue: "Lab-226(&227),Internet Connection" },
+      {
+        name: "Robo Kabaddi",
+        time: "2pm-5pm",
+        venue: "Fountain(Near Double Lobby)",
+      },
+      {
+        name: "Arc Reactor Wars",
+        time: "10am-4pm",
+        venue: "Seminar Hall 1,Room No.127 Internet Connection",
+      },
+      {
+        name: "Algo Fix and Forge",
+        time: "11am-2pm",
+        venue: "Lab-226(&227),Internet Connection",
+      },
+      {
+        name: "Escape Room",
+        time: "2pm-5pm",
+        venue: "Lab-226(&227),Internet Connection",
+      },
       { name: "One Piece", time: "10am-1pm", venue: "Mechanical Workshop" },
-    ]
+    ],
   },
   day2: {
     date: "15-Nov",
     events: [
-      { name: "Fast and Furious-Drone Edition", time: "9am-2pm", venue: "Playground" },
-      { name: "The Para Launch", time: "9am-12pm", venue: "Room No:248(&247),Single Lobby" },
+      {
+        name: "Fast and Furious-Drone Edition",
+        time: "9am-2pm",
+        venue: "Playground",
+      },
+      {
+        name: "The Para Launch",
+        time: "9am-12pm",
+        venue: "Room No:248(&247),Single Lobby",
+      },
       { name: "Dimensio-Craft", time: "10am-1pm", venue: "Room No:44 CAD Lab" },
-      { name: "Tensor A Build-a-thon", time: "10am-2pm", venue: "Seminar Hall 1,Internet Connection" },
-      { name: "Pixel Craft", time: "9am-12pm", venue: "Seminar Hall 3,Internet Connection" },
-      { name: "Binary Build", time: "11am-2pm", venue: "Lab-250(&251),Internet Connection" },
-      { name: "Chemquest", time: "10am-1pm", venue: "Mass Transfer Lab(PU Block 2nd Floor)" },
+      {
+        name: "Tensor A Build-a-thon",
+        time: "10am-2pm",
+        venue: "Seminar Hall 1,Internet Connection",
+      },
+      {
+        name: "Pixel Craft",
+        time: "9am-12pm",
+        venue: "Seminar Hall 3,Internet Connection",
+      },
+      {
+        name: "Binary Build",
+        time: "11am-2pm",
+        venue: "Lab-250(&251),Internet Connection",
+      },
+      {
+        name: "Chemquest",
+        time: "10am-1pm",
+        venue: "Mass Transfer Lab(PU Block 2nd Floor)",
+      },
       { name: "TrafficX", time: "10am-2pm", venue: "Double Lobby" },
-      { name: "UI Flow", time: "9am-12pm", venue: "Seminar Hall 2,Internet Connection" },
-      { name: "Data Driven Riddles", time: "10am-1pm", venue: "Lab-Old Block,DS Department" },
+      {
+        name: "UI Flow",
+        time: "9am-12pm",
+        venue: "Seminar Hall 2,Internet Connection",
+      },
+      {
+        name: "Data Driven Riddles",
+        time: "10am-1pm",
+        venue: "Lab-Old Block,DS Department",
+      },
       { name: "Line-Xtreme", time: "9am-12pm", venue: "RJSH" },
       { name: "Circutronics", time: "10am-1pm", venue: "Robo Lab" },
-      { name: "Aqua Bot", time: "11am-2pm", venue: "Fountain(Near Double Lobby)" },
-      { name: "Pix Hunter", time: "10am-2pm", venue: "Lab-226(&227),Internet Connection" },
+      {
+        name: "Aqua Bot",
+        time: "11am-2pm",
+        venue: "Fountain(Near Double Lobby)",
+      },
+      {
+        name: "Pix Hunter",
+        time: "10am-2pm",
+        venue: "Lab-226(&227),Internet Connection",
+      },
       { name: "Pontification", time: "11am-1pm", venue: "CAMD Lab" },
-      { name: "Block by Block", time: "9am-12pm", venue: "Seminar Hall 2,Internet Connection" },
-      { name: "UI Flow", time: "11am-2pm", venue: "Seminar Hall 2,Internet Connection" },
-    ]
-  }
+      {
+        name: "Block by Block",
+        time: "9am-12pm",
+        venue: "Seminar Hall 2,Internet Connection",
+      },
+      {
+        name: "UI Flow",
+        time: "11am-2pm",
+        venue: "Seminar Hall 2,Internet Connection",
+      },
+    ],
+  },
 };
 
 const ScheduleSection = () => {
-  const [activeDay, setActiveDay] = useState<'day1' | 'day2'>('day1');
+  const [activeDay, setActiveDay] = useState<"day1" | "day2">("day1");
   const spotlightRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   const handleMouseMove = (
@@ -65,7 +161,9 @@ const ScheduleSection = () => {
     const y = ((e.clientY - rect.top) / rect.height) * 100;
 
     spotlightRef.style.transition = "none";
-    spotlightRef.style.transform = `translate(-50%, -50%) translate(${x - 50}%, ${y - 50}%)`;
+    spotlightRef.style.transform = `translate(-50%, -50%) translate(${
+      x - 50
+    }%, ${y - 50}%)`;
   };
 
   const currentSchedule = scheduleData[activeDay];
@@ -75,7 +173,7 @@ const ScheduleSection = () => {
       <style jsx>{`
         @import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;700;900&display=swap");
 
-        @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
 
         .schedule-page {
           position: relative;
@@ -128,7 +226,8 @@ const ScheduleSection = () => {
         }
 
         @keyframes glowPulse {
-          0%, 100% {
+          0%,
+          100% {
             filter: drop-shadow(0 0 15px rgba(255, 107, 107, 0.3));
           }
           50% {
@@ -161,13 +260,18 @@ const ScheduleSection = () => {
         }
 
         .day-button::before {
-          content: '';
+          content: "";
           position: absolute;
           top: 0;
           left: -100%;
           width: 100%;
           height: 100%;
-          background: linear-gradient(90deg, transparent, rgba(255, 155, 38, 0.3), transparent);
+          background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 155, 38, 0.3),
+            transparent
+          );
           transition: left 0.5s ease;
         }
 
@@ -232,7 +336,8 @@ const ScheduleSection = () => {
           transform: translate(-50%, -50%);
           opacity: 0;
           visibility: hidden;
-          transition: opacity 0.5s ease, visibility 0.5s ease, transform 0.3s ease;
+          transition: opacity 0.5s ease, visibility 0.5s ease,
+            transform 0.3s ease;
           z-index: 0;
           will-change: transform, opacity;
           pointer-events: none;
@@ -382,22 +487,20 @@ const ScheduleSection = () => {
 
           <div className="day-selector">
             <button
-              className={`day-button ${activeDay === 'day1' ? 'active' : ''}`}
-              onClick={() => setActiveDay('day1')}
+              className={`day-button ${activeDay === "day1" ? "active" : ""}`}
+              onClick={() => setActiveDay("day1")}
             >
               Day 1 - Nov 14
             </button>
             <button
-              className={`day-button ${activeDay === 'day2' ? 'active' : ''}`}
-              onClick={() => setActiveDay('day2')}
+              className={`day-button ${activeDay === "day2" ? "active" : ""}`}
+              onClick={() => setActiveDay("day2")}
             >
               Day 2 - Nov 15
             </button>
           </div>
 
-          <div className="current-date">
-            {currentSchedule.date}
-          </div>
+          <div className="current-date">{currentSchedule.date}</div>
 
           <div className="schedule-grid">
             {currentSchedule.events.map((event, index) => (
@@ -408,7 +511,9 @@ const ScheduleSection = () => {
               >
                 <div
                   className="schedule-card-spotlight"
-                  ref={(el) => (spotlightRefs.current[index] = el)}
+                  ref={(el) => {
+                    spotlightRefs.current[index] = el;
+                  }}
                 ></div>
                 <div className="schedule-card-inner">
                   <div className="event-name">{event.name}</div>
