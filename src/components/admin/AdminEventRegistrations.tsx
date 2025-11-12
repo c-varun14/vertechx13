@@ -113,7 +113,7 @@ export const AdminEventRegistrations = ({
               />
               {clubName && clubName !== "ALL" ? (
                 <p className="text-sm ml-2 mt-1">
-                  You are not allowed to select a different club
+                  You are not allowed to select a different Department
                 </p>
               ) : (
                 ""

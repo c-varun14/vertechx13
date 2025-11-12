@@ -23,7 +23,7 @@ export const ClubSelector = ({
 }: ClubSelectorProps) => {
   return (
     <div className="space-y-2">
-      <Label htmlFor="club-select">Select Club</Label>
+      <Label htmlFor="club-select">Select Department</Label>
       <Select
         value={selectedClub || ""}
         onValueChange={onSelectClub}
