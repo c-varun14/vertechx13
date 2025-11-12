@@ -604,36 +604,36 @@ export const eventsData = {
       ],
     },
 
-    {
-      id: "clw3q9v6e001508l0h6qy7q1d",
-      name: "ONE-PIECE - Hunt | Gather | Build ",
+    // {
+    //   id: "clw3q9v6e001508l0h6qy7q1d",
+    //   name: "ONE-PIECE - Hunt | Gather | Build ",
 
-      image: "/assets/events/ME/Onepiece.jpg",
-      description:
-        "Where Adventure meets engineering in a race against time and wit. ONE-PIECE challenges brains, instincts, and teamwork where every clue leads to creation.",
+    //   image: "/assets/events/ME/Onepiece.jpg",
+    //   description:
+    //     "Where Adventure meets engineering in a race against time and wit. ONE-PIECE challenges brains, instincts, and teamwork where every clue leads to creation.",
 
-      rules: [
-        " Teams must rely solely on their own efforts, no outside support or assistance is allowed.",
-        "Each team should designate one lead member to coordinate decisions.",
-        "Clues must be solved and tasks must be completed to uncover the hidden components across campus.",
-        " Interdisciplinary groups are welcomed, and strong teamwork may unlock in-game advantages.",
-        "Skipping clues or failing assigned tasks will result in time penalties",
-        " Once the event begins, teams must stay committed until completion and no withdrawals mid challenge will be entertained",
-      ],
-      registration_fee: 200,
-      drive:
-        "https://drive.google.com/file/d/1dBHH4bpYmXZTDX8yToKSBvYDvRksjUyp/view?usp=drive_link",
-      prizes: {
-        first: "3,000",
-        second: "1,500",
-      },
-      minTeamMembers: 4,
-      maxTeamMembers: 5,
-      date_time: null,
-      start_time: null,
-      venue: null,
-      coordinators: [{ name: "TBD", phone: "TBD" }],
-    },
+    //   rules: [
+    //     " Teams must rely solely on their own efforts, no outside support or assistance is allowed.",
+    //     "Each team should designate one lead member to coordinate decisions.",
+    //     "Clues must be solved and tasks must be completed to uncover the hidden components across campus.",
+    //     " Interdisciplinary groups are welcomed, and strong teamwork may unlock in-game advantages.",
+    //     "Skipping clues or failing assigned tasks will result in time penalties",
+    //     " Once the event begins, teams must stay committed until completion and no withdrawals mid challenge will be entertained",
+    //   ],
+    //   registration_fee: 200,
+    //   drive:
+    //     "https://drive.google.com/file/d/1dBHH4bpYmXZTDX8yToKSBvYDvRksjUyp/view?usp=drive_link",
+    //   prizes: {
+    //     first: "3,000",
+    //     second: "1,500",
+    //   },
+    //   minTeamMembers: 4,
+    //   maxTeamMembers: 5,
+    //   date_time: null,
+    //   start_time: null,
+    //   venue: null,
+    //   coordinators: [{ name: "TBD", phone: "TBD" }],
+    // },
   ],
   EEE: [
     {
