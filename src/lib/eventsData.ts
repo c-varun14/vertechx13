@@ -679,7 +679,7 @@ export const eventsData = {
       image: "",
       description: "A 2-4 team sized E-Sports event",
       rules: [""],
-      registration_fee: 200,
+      registration_fee: 100,
       drive: "",
       prizes: {
         first: "3,000",
