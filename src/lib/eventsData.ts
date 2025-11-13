@@ -673,37 +673,37 @@ export const eventsData = {
     },
   ],
   "AI&ML": [
-    {
-      id: "clw3q9v6e001708l0h6qy7q2i",
-      name: "BGMI THE ULTIMATE SHOWDOWN",
-      image: "/assets/events/AIML/BGMI-THE-ULTIMATE-SHOWDOWN.jpg",
-      description:
-        "Join the ultimate BGMI showdown! Compete with top players, showcase your skills, and win exciting prizes in an action-packed gaming battle",
-      rules: [
-        "Rules 1. Hackers not allowed",
-        "2. Tablets or not allowed ",
-        "3. Minimum 2 player's and maximum 4 player's",
-        "4. All players must have BGMI account above level 25",
-        "5. All players must download All the maps before the tournament",
-      ],
-      registration_fee: 100,
-      drive: "",
-      prizes: {
-        first: "3,000",
-        second: "1,500",
-      },
-      minTeamMembers: 2,
-      maxTeamMembers: 4,
-      date_time: null,
-      start_time: null,
-      venue: null,
-      coordinators: [
-        { name: "Bindu Mahanthi", phone: "TBD" },
-        { name: "Gouthami B", phone: "TBD" },
-        { name: "Harsha", phone: "TBD" },
-        { name: "Samanvitha R K", phone: "TBD" },
-      ],
-    },
+    // {
+    //   id: "clw3q9v6e001708l0h6qy7q2i",
+    //   name: "BGMI THE ULTIMATE SHOWDOWN",
+    //   image: "/assets/events/AIML/BGMI-THE-ULTIMATE-SHOWDOWN.jpg",
+    //   description:
+    //     "Join the ultimate BGMI showdown! Compete with top players, showcase your skills, and win exciting prizes in an action-packed gaming battle",
+    //   rules: [
+    //     "Rules 1. Hackers not allowed",
+    //     "2. Tablets or not allowed ",
+    //     "3. Minimum 2 player's and maximum 4 player's",
+    //     "4. All players must have BGMI account above level 25",
+    //     "5. All players must download All the maps before the tournament",
+    //   ],
+    //   registration_fee: 100,
+    //   drive: "",
+    //   prizes: {
+    //     first: "3,000",
+    //     second: "1,500",
+    //   },
+    //   minTeamMembers: 2,
+    //   maxTeamMembers: 4,
+    //   date_time: null,
+    //   start_time: null,
+    //   venue: null,
+    //   coordinators: [
+    //     { name: "Bindu Mahanthi", phone: "TBD" },
+    //     { name: "Gouthami B", phone: "TBD" },
+    //     { name: "Harsha", phone: "TBD" },
+    //     { name: "Samanvitha R K", phone: "TBD" },
+    //   ],
+    // },
     {
       id: "clw3q9v6e001708l0h6qy7q2f",
       name: "AI Pixel Animation Challenge",
