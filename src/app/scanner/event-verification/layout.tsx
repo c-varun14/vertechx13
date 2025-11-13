@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import LoadingSpinner from "@/components/LoadingSpinner";
 
 export const metadata: Metadata = {
-  title: "SWAYAM event verification page",
+  title: "Vertechx 13.0 event verification page",
 };
 
 export default function RootLayout({

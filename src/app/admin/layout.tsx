@@ -8,8 +8,8 @@ import LoadingSpinner from "@/components/LoadingSpinner";
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
-  title: "SWAYAM 2025",
-  description: "This is the home page of the Swayam-2025 fest",
+  title: "Vertchx 13.0",
+  description: "This is the home page of the Vertechx 13.0 fest",
 };
 
 export default function RootLayout({
