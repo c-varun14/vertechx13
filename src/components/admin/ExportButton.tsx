@@ -22,6 +22,7 @@ export const ExportButton = ({ data, filename }: ExportButtonProps) => {
       "Payment Amount",
       "Payment Id",
       "Created At",
+      "Total people",
       "TeamMembers",
     ];
 
@@ -35,6 +36,7 @@ export const ExportButton = ({ data, filename }: ExportButtonProps) => {
       reg.paymentAmount,
       reg.paymentId || "Pending",
       new Date(reg.createdAt).toLocaleDateString(),
+      reg.teamMembers.length + 1,
       reg.teamMembers.map((tm) => `${tm.name} (${tm.usn})`).join("\n"),
     ]);
 
@@ -53,11 +55,12 @@ export const ExportButton = ({ data, filename }: ExportButtonProps) => {
       { wch: 10 }, // Payment Amount
       { wch: 22 }, // Payment ID
       { wch: 12 }, // Created At
+      { wch: 6 }, // Created At
       { wch: 32 }, // Team Members
     ];
     // Set row heights - first row is header, then data rows
     worksheet["!rows"] = [
-      { hpt: 30 }, // Header row height
+      { hpt: 20 }, // Header row height
       ...data.map((reg) => ({
         hpt: Math.max(20, 18 + reg.teamMembers.length * 15), // Base height + 15pt per team member
       })),
