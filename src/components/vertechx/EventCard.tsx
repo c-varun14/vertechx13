@@ -96,27 +96,34 @@ const EventCard = ({
                   </div>
                 )} */}
               </div>
-
-              <div className="event-buttons">
-                <Link
-                  href={`/${event.id}/register?clubName=${department.replace(
-                    "&",
-                    ","
-                  )}`}
-                  className="register-btn text-center"
-                >
-                  Register Now
-                </Link>
-                {/* <button className="know-more-btn" >Know More</button> */}
-                <a
-                  href={event.drive ?? "#"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="know-more-btn text-center"
-                >
-                  Know More
-                </a>
-              </div>
+              {event.start_time && event.start_time > new Date() ? (
+                <div className="event-buttons">
+                  <Link
+                    href={`/${event.id}/register?clubName=${department.replace(
+                      "&",
+                      ","
+                    )}`}
+                    className="register-btn text-center"
+                  >
+                    Register Now
+                  </Link>
+                  {/* <button className="know-more-btn" >Know More</button> */}
+                  <a
+                    href={event.drive ?? "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="know-more-btn text-center"
+                  >
+                    Know More
+                  </a>
+                </div>
+              ) : (
+                <div className="event-buttons">
+                  <h3 className="mx-auto my-6 font-bold text-2xl text-destructive">
+                    Registrations Closed!
+                  </h3>
+                </div>
+              )}
             </div>
           </div>
         </div>

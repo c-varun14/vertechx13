@@ -69,9 +69,9 @@ export const eventsData = {
       },
       minTeamMembers: 1,
       maxTeamMembers: 5,
-      date_time: null,
-      start_time: null,
-      venue: null,
+      date_time: "09:00-14:00 15 Nov",
+      start_time: new Date(2025, 10, 15, 9, 0, 0), // 15 Nov 2025, 09:00:00
+      venue: "Playground",
       coordinators: [{ name: "TBD", phone: "TBD" }],
     },
     {
@@ -79,7 +79,7 @@ export const eventsData = {
       name: "DIMENSIO-CRAFT",
       image: "/assets/events/AEAS/DIMENSIO_CRAFT.jpg",
       description:
-        "DIMENSIO-CRAFT is a high-stakes, It’s your chance to transform 2D blueprints—the top, front, and side views—into a 3D aircraft component model using CAD software. Sharpen your CAD skills and precision to design essential parts like the fuselage, wing, or tail assembly, mirroring real aerospace design. The objective is to accurately and quickly translate technical specifications into a flawless 3D model under a strict time limit.",
+        "DIMENSIO-CRAFT is a high-stakes, It's your chance to transform 2D blueprints—the top, front, and side views—into a 3D aircraft component model using CAD software. Sharpen your CAD skills and precision to design essential parts like the fuselage, wing, or tail assembly, mirroring real aerospace design. The objective is to accurately and quickly translate technical specifications into a flawless 3D model under a strict time limit.",
       rules: [
         "Participants from any engineering  are allowed . Participation is individual ( solo participation).",
         "Each member will be using Fusion360, where they must draft and assemble the component",
@@ -94,9 +94,9 @@ export const eventsData = {
       },
       minTeamMembers: 1,
       maxTeamMembers: 1,
-      date_time: null,
-      start_time: null,
-      venue: null,
+      date_time: "10:00-13:00 15 Nov",
+      start_time: new Date(2025, 10, 15, 10, 0, 0), // 15 Nov 2025, 10:00:00
+      venue: "Room No:44 CAD Lab",
       coordinators: [
         { name: "S Vimal Adithya", phone: "7411688915" },
         { name: "Anna Jovita J", phone: "8310616583" },
@@ -122,20 +122,6 @@ export const eventsData = {
     //   drive:
     //     "https://drive.google.com/file/d/1TtJnTNVuPTU-cZQbOJhet2Tp0pqbPhRc/view?usp=drive_link",
     //   prizes: {
-    //     first: "5,000",
-    //     second: "2,500",
-    //   },
-    //   requirements: "Air pump provided by organizers",
-    //   minTeamMembers: 1,
-    //   maxTeamMembers: 2,
-    //   date_time: null,
-    //   start_time: null,
-    //   venue: null,
-    //   coordinators: [
-    //     { name: "Sambhradha", phone: "8867054035" },
-    //     { name: "Arpita S H", phone: "8073591238" },
-    //     { name: "Amogh Kerur", phone: "8431085574" },
-    //     { name: "Yogitha S", phone: "8431898347" },
     //   ],
     // },
     {
@@ -163,9 +149,9 @@ export const eventsData = {
       },
       minTeamMembers: 1,
       maxTeamMembers: 3,
-      date_time: null,
-      start_time: null,
-      venue: null,
+      date_time: "14:00-17:00 14 Nov",
+      start_time: new Date(2025, 10, 14, 14, 0, 0), // 14 Nov 2025, 14:00:00
+      venue: "Auditorium",
       coordinators: [
         { name: "H K.Hemalatha", phone: "9972571916" },
         { name: "Purvajaa I", phone: "9483204607" },
@@ -198,9 +184,9 @@ export const eventsData = {
       },
       minTeamMembers: 1,
       maxTeamMembers: 2,
-      date_time: null,
-      start_time: null,
-      venue: null,
+      date_time: "09:00-12:00 15 Nov",
+      start_time: new Date(2025, 10, 15, 9, 0, 0), // 15 Nov 2025, 09:00:00
+      venue: "Room No:248(&247),Single Lobby",
       coordinators: [
         { name: "Ranjitha M", phone: "9731556749" },
         { name: "Ayeesha MS", phone: "9019148634" },
@@ -208,41 +194,41 @@ export const eventsData = {
         { name: "Devanshi Bhimta", phone: "6364349089" },
       ],
     },
-    // {
-    //   id: "clw3q9v6e000508l0h6qy7q23",
-    //   name: "MechaBird",
-    //   image: "/assets/events/AEAS/MechaBird.jpg",
-    //   description:
-    //     "Design and construct an Ornithopter (flapping wing aircraft) of monowing configuration within two hours focusing on maximum flight endurance.",
-    //   rules: [
-    //     "Construct using lightweight materials (balsa wood)",
-    //     "Rubber band power only",
-    //     "Maximum wingspan: 45 cm",
-    //     "Carbon fiber, Kevlar, boron materials not allowed",
-    //     "Metal or plastic only in hinges, shafts, rods, hooks",
-    //     "Maximum 4 members per team",
-    //     "No participant in multiple teams",
-    //     "Round 1: Design compliance and construction quality check",
-    //     "Round 2: Hand-launch, 3 timed flights, best counts",
-    //   ],
-    //   registration_fee: 300,
-    //   drive:
-    //     "https://drive.google.com/file/d/1smCs6zi2SLY7XIe0gndOdxJ70HtLYxn4/view?usp=drive_link",
-    //   prizes: {
-    //     first: "5,000",
-    //     second: "2,500",
-    //   },
-    //   minTeamMembers: 2,
-    //   maxTeamMembers: 4,
-    //   date_time: null,
-    //   start_time: null,
-    //   venue: null,
-    //   coordinators: [
-    //     { name: "Swaroop Dinesh Bhat", phone: "8970889676" },
-    //     { name: "Krishnavansh V", phone: "9108650079" },
-    //     { name: "Likith C", phone: "9148315019" },
-    //   ],
-    // },
+    {
+      id: "clw3q9v6e000508l0h6qy7q23",
+      name: "MechaBird",
+      image: "/assets/events/AEAS/MechaBird.jpg",
+      description:
+        "Design and construct an Ornithopter (flapping wing aircraft) of monowing configuration within two hours focusing on maximum flight endurance.",
+      rules: [
+        "Construct using lightweight materials (balsa wood)",
+        "Rubber band power only",
+        "Maximum wingspan: 45 cm",
+        "Carbon fiber, Kevlar, boron materials not allowed",
+        "Metal or plastic only in hinges, shafts, rods, hooks",
+        "Maximum 4 members per team",
+        "No participant in multiple teams",
+        "Round 1: Design compliance and construction quality check",
+        "Round 2: Hand-launch, 3 timed flights, best counts",
+      ],
+      registration_fee: 300,
+      drive:
+        "https://drive.google.com/file/d/1smCs6zi2SLY7XIe0gndOdxJ70HtLYxn4/view?usp=drive_link",
+      prizes: {
+        first: "5,000",
+        second: "2,500",
+      },
+      minTeamMembers: 2,
+      maxTeamMembers: 4,
+      date_time: null,
+      start_time: null,
+      venue: null,
+      coordinators: [
+        { name: "Swaroop Dinesh Bhat", phone: "8970889676" },
+        { name: "Krishnavansh V", phone: "9108650079" },
+        { name: "Likith C", phone: "9148315019" },
+      ],
+    },
   ],
   ECE: [
     {
@@ -270,9 +256,9 @@ export const eventsData = {
       },
       minTeamMembers: 1,
       maxTeamMembers: 4,
-      date_time: null,
-      start_time: null,
-      venue: null,
+      date_time: "11:00-14:00 15 Nov",
+      start_time: new Date(2025, 10, 15, 11, 0, 0), // 15 Nov 2025, 11:00:00
+      venue: "Fountain(Near Double Lobby)",
       coordinators: [
         { name: "David Wiliam Raj", phone: "9790347191" },
         { name: "S.NITIN", phone: "8296090231" },
@@ -307,9 +293,9 @@ export const eventsData = {
       },
       minTeamMembers: 1,
       maxTeamMembers: 5,
-      date_time: null,
-      start_time: null,
-      venue: null,
+      date_time: "14:00-17:00 14 Nov",
+      start_time: new Date(2025, 10, 14, 14, 0, 0), // 14 Nov 2025, 14:00:00
+      venue: "Fountain(Near Double Lobby)",
       coordinators: [
         { name: "David Wiliam Raj", phone: "9790347191" },
         { name: "S.NITIN", phone: "8296090231" },
@@ -341,49 +327,49 @@ export const eventsData = {
       },
       minTeamMembers: 1,
       maxTeamMembers: 2,
-      date_time: null,
-      start_time: null,
-      venue: null,
+      date_time: "11:00-14:00 14 Nov",
+      start_time: new Date(2025, 10, 14, 11, 0, 0), // 14 Nov 2025, 11:00:00
+      venue: "Lab-226(&227)",
       coordinators: [
         { name: "David Wiliam Raj", phone: "9790347191" },
         { name: "S.NITIN", phone: "8296090231" },
         { name: "NITHIN R", phone: "8904444607" },
       ],
     },
-    // {
-    //   id: "clw3q9v6e000908l0h6qy7q27",
-    //   name: "VIRTUAL VISTA",
-    //   image: "/assets/events/ECE/VIRTUAL_VISTA.jpg",
-    //   description:
-    //     "AR/VR competition to design and animate 3D models blending creativity and mixed reality technology. Participants explore mixed reality concepts and present futuristic 3D designs.",
-    //   rules: [
-    //     "Teams of 1-2 members",
-    //     "Prior software experience required",
-    //     "External resources strictly prohibited",
-    //     "Bring college ID cards",
-    //     "Task: Design assigned 3D model",
-    //     "Focus on imagination, accuracy, time management",
-    //     "Any unfair practices lead to disqualification",
-    //     "Judges' decision is final",
-    //   ],
-    //   registration_fee: 300,
-    //   drive:
-    //     "https://drive.google.com/file/d/1uo59a75FgSSsTa07EIKwChgjMpZYi_O1/view?usp=drive_link",
-    //   prizes: {
-    //     first: "5,000",
-    //     second: "2,500",
-    //   },
-    //   minTeamMembers: 1,
-    //   maxTeamMembers: 2,
-    //   date_time: null,
-    //   start_time: null,
-    //   venue: null,
-    //   coordinators: [
-    //     { name: "David Wiliam Raj", phone: "9790347191" },
-    //     { name: "S.NITIN", phone: "8296090231" },
-    //     { name: "NITHIN R", phone: "8904444607" },
-    //   ],
-    // },
+    {
+      id: "clw3q9v6e000908l0h6qy7q27",
+      name: "VIRTUAL VISTA",
+      image: "/assets/events/ECE/VIRTUAL_VISTA.jpg",
+      description:
+        "AR/VR competition to design and animate 3D models blending creativity and mixed reality technology. Participants explore mixed reality concepts and present futuristic 3D designs.",
+      rules: [
+        "Teams of 1-2 members",
+        "Prior software experience required",
+        "External resources strictly prohibited",
+        "Bring college ID cards",
+        "Task: Design assigned 3D model",
+        "Focus on imagination, accuracy, time management",
+        "Any unfair practices lead to disqualification",
+        "Judges' decision is final",
+      ],
+      registration_fee: 300,
+      drive:
+        "https://drive.google.com/file/d/1uo59a75FgSSsTa07EIKwChgjMpZYi_O1/view?usp=drive_link",
+      prizes: {
+        first: "5,000",
+        second: "2,500",
+      },
+      minTeamMembers: 1,
+      maxTeamMembers: 2,
+      date_time: "12:00-15:00 14 Nov",
+      start_time: new Date(2025, 10, 14, 12, 0, 0), // 14 Nov 2025, 12:00:00
+      venue: "ROBO Lab",
+      coordinators: [
+        { name: "David Wiliam Raj", phone: "9790347191" },
+        { name: "S.NITIN", phone: "8296090231" },
+        { name: "NITHIN R", phone: "8904444607" },
+      ],
+    },
     {
       id: "clw3q9v6e001008l0h6qy7q28",
       name: "LINE-XTREME",
@@ -411,9 +397,9 @@ export const eventsData = {
       },
       minTeamMembers: 1,
       maxTeamMembers: 4,
-      date_time: null,
-      start_time: null,
-      venue: null,
+      date_time: "10:00-13:00 15 Nov",
+      start_time: new Date(2025, 10, 15, 10, 0, 0), // 15 Nov 2025, 10:00:00
+      venue: "Room No:041(&042),Double Lobby",
       coordinators: [
         { name: "David Wiliam Raj", phone: "9790347191" },
         { name: "S.NITIN", phone: "8296090231" },
@@ -422,78 +408,44 @@ export const eventsData = {
     },
     // {
     //   id: "clw3q9v6e001108l0h6qy7q29",
-    //   name: "COSMO-CRAZE",
-    //   image: "/assets/events/ECE/COSMO_CRAZE.jpg",
-    //   description:
-    //     "Obstacle-based robot race where wired bots must traverse terrains, earning points per obstacle overcome. Teams design robots to complete the arena in minimum time.",
-    //   rules: [
-    //     "Robot can be wired with RF controllers",
-    //     "Robot dimensions max 30x30 cm",
-    //     "Not autonomous, team-controlled",
-    //     "Microcontroller only",
-    //     "No ready-made robots",
-    //     "Batteries sealed properly",
-    //     "Voltage max 12V DC (2A)",
-    //     "No sensors allowed",
-    //     "Must overcome obstacles",
-    //     "5-second penalty for adjustments",
-    //     "Negative points for leaving track",
-    //   ],
-    //   registration_fee: 300,
-    //   drive:
-    //     "https://drive.google.com/file/d/1WKqzQzRSUMjql4NEtAhZSEEU740apszE/view?usp=drive_link",
-    //   prizes: {
-    //     first: "5,000",
-    //     second: "2,500",
-    //   },
-    //   minTeamMembers: 1,
-    //   maxTeamMembers: 5,
-    //   date_time: null,
-    //   start_time: null,
-    //   venue: null,
-    //   coordinators: [
-    //     { name: "David Wiliam Raj", phone: "9790347191" },
-    //     { name: "S.NITIN", phone: "8296090231" },
-    //     { name: "NITHIN R", phone: "8904444607" },
-    //   ],
     // },
   ],
   CH: [
-    // {
-    //   id: "clw3q9v6e001208l0h6qy7q2a",
-    //   name: "AROMATICA",
-    //   image: "/assets/events/CH/AROMATICA.jpg",
-    //   description:
-    //     "Natural perfume-making competition combining chemistry, creativity, and sensory science. Participants design and produce natural perfumes using natural ingredients.",
-    //   rules: [
-    //     "Only natural ingredients allowed (essential oils, carrier oils, distilled water)",
-    //     "No synthetic fragrance oils or artificial ingredients",
-    //     "Ethanol and mixing utility provided",
-    //     "Participants bring essential oils and natural ingredients",
-    //     "Teams 1-4 members from same institution",
-    //     "Submit ingredient list with quantities",
-    //     "Present in small glass bottles or vials",
-    //     "Round 1: Prepare perfume",
-    //     "Round 2: Present to judges",
-    //     "Judged on smell, presentation, hygiene, materials",
-    //   ],
-    //   registration_fee: 300,
-    //   drive:
-    //     "https://drive.google.com/file/d/1mH3KZ25Mox6lbYqmMZqDT5n6Watc838u/view?usp=drive_link",
-    //   prizes: {
-    //     first: "5,000",
-    //     second: "2,500",
-    //   },
-    //   minTeamMembers: 1,
-    //   maxTeamMembers: 4,
-    //   date_time: null,
-    //   start_time: null,
-    //   venue: null,
-    //   coordinators: [
-    //     { name: "Sheeba", phone: "9310938256" },
-    //     { name: "Veerendra", phone: "8147033902" },
-    //   ],
-    // },
+    {
+      id: "clw3q9v6e001208l0h6qy7q2a",
+      name: "AROMATICA",
+      image: "/assets/events/CH/AROMATICA.jpg",
+      description:
+        "Natural perfume-making competition combining chemistry, creativity, and sensory science. Participants design and produce natural perfumes using natural ingredients.",
+      rules: [
+        "Only natural ingredients allowed (essential oils, carrier oils, distilled water)",
+        "No synthetic fragrance oils or artificial ingredients",
+        "Ethanol and mixing utility provided",
+        "Participants bring essential oils and natural ingredients",
+        "Teams 1-4 members from same institution",
+        "Submit ingredient list with quantities",
+        "Present in small glass bottles or vials",
+        "Round 1: Prepare perfume",
+        "Round 2: Present to judges",
+        "Judged on smell, presentation, hygiene, materials",
+      ],
+      registration_fee: 300,
+      drive:
+        "https://drive.google.com/file/d/1mH3KZ25Mox6lbYqmMZqDT5n6Watc838u/view?usp=drive_link",
+      prizes: {
+        first: "5,000",
+        second: "2,500",
+      },
+      minTeamMembers: 1,
+      maxTeamMembers: 4,
+      date_time: "11:00-14:00 14 Nov",
+      start_time: new Date(2025, 10, 14, 11, 0, 0), // 14 Nov 2025, 11:00:00
+      venue: "Chemical Reaction Engineering Lab(PU Block-2nd Floor)",
+      coordinators: [
+        { name: "Sheeba", phone: "9310938256" },
+        { name: "Veerendra", phone: "8147033902" },
+      ],
+    },
     {
       id: "clw3q9v6e001308l0h6qy7q2b",
       name: "CHEMQUEST",
@@ -604,73 +556,73 @@ export const eventsData = {
       ],
     },
 
-    // {
-    //   id: "clw3q9v6e001508l0h6qy7q1d",
-    //   name: "ONE-PIECE - Hunt | Gather | Build ",
+    {
+      id: "clw3q9v6e001508l0h6qy7q1d",
+      name: "ONE-PIECE - Hunt | Gather | Build ",
 
-    //   image: "/assets/events/ME/Onepiece.jpg",
-    //   description:
-    //     "Where Adventure meets engineering in a race against time and wit. ONE-PIECE challenges brains, instincts, and teamwork where every clue leads to creation.",
+      image: "/assets/events/ME/Onepiece.jpg",
+      description:
+        "Where Adventure meets engineering in a race against time and wit. ONE-PIECE challenges brains, instincts, and teamwork where every clue leads to creation.",
 
-    //   rules: [
-    //     " Teams must rely solely on their own efforts, no outside support or assistance is allowed.",
-    //     "Each team should designate one lead member to coordinate decisions.",
-    //     "Clues must be solved and tasks must be completed to uncover the hidden components across campus.",
-    //     " Interdisciplinary groups are welcomed, and strong teamwork may unlock in-game advantages.",
-    //     "Skipping clues or failing assigned tasks will result in time penalties",
-    //     " Once the event begins, teams must stay committed until completion and no withdrawals mid challenge will be entertained",
-    //   ],
-    //   registration_fee: 200,
-    //   drive:
-    //     "https://drive.google.com/file/d/1dBHH4bpYmXZTDX8yToKSBvYDvRksjUyp/view?usp=drive_link",
-    //   prizes: {
-    //     first: "3,000",
-    //     second: "1,500",
-    //   },
-    //   minTeamMembers: 4,
-    //   maxTeamMembers: 5,
-    //   date_time: null,
-    //   start_time: null,
-    //   venue: null,
-    //   coordinators: [{ name: "TBD", phone: "TBD" }],
-    // },
+      rules: [
+        " Teams must rely solely on their own efforts, no outside support or assistance is allowed.",
+        "Each team should designate one lead member to coordinate decisions.",
+        "Clues must be solved and tasks must be completed to uncover the hidden components across campus.",
+        " Interdisciplinary groups are welcomed, and strong teamwork may unlock in-game advantages.",
+        "Skipping clues or failing assigned tasks will result in time penalties",
+        " Once the event begins, teams must stay committed until completion and no withdrawals mid challenge will be entertained",
+      ],
+      registration_fee: 200,
+      drive:
+        "https://drive.google.com/file/d/1dBHH4bpYmXZTDX8yToKSBvYDvRksjUyp/view?usp=drive_link",
+      prizes: {
+        first: "3,000",
+        second: "1,500",
+      },
+      minTeamMembers: 4,
+      maxTeamMembers: 5,
+      date_time: null,
+      start_time: null,
+      venue: null,
+      coordinators: [{ name: "TBD", phone: "TBD" }],
+    },
   ],
   EEE: [
-    // {
-    //   id: "clw3q9v6e001608l0h6qy7q2e",
-    //   name: "Arc Reactor Wars",
-    //   image: "/assets/events/EEE/Arc_Reactor_Wars.jpg",
-    //   description:
-    //     "Marvel-themed One-day competition teaching practical electronics skills through creating a functional Arc Reactor prototype. Focus on PCB design, soldering, and microcontroller integration.",
-    //   rules: [
-    //     "Teams 4-5 members",
-    //     "Register before event",
-    //     "Valid student ID required",
-    //     "Laptop with KiCad and Arduino IDE",
-    //     "Only provided tools unless approved",
-    //     "Designs must be original, completed during event",
-    //     "Follow safety protocols",
-    //     "Professional behavior expected",
-    //     "Misconduct or plagiarism leads to disqualification",
-    //     "Strict time limit adherence",
-    //   ],
-    //   registration_fee: 300,
-    //   drive:
-    //     "https://drive.google.com/file/d/1kyv2VdFZjmxMdR33yyuNg0fKwUu0Qwwu/view?usp=drive_link",
-    //   prizes: {
-    //     first: "5,000",
-    //     second: "2,500",
-    //   },
-    //   minTeamMembers: 4,
-    //   maxTeamMembers: 5,
-    //   date_time: null,
-    //   start_time: null,
-    //   venue: null,
-    //   coordinators: [
-    //     { name: "Ranganath S", phone: "7019922146" },
-    //     { name: "Nithish N M", phone: "9353636599" },
-    //   ],
-    // },
+    {
+      id: "clw3q9v6e001608l0h6qy7q2e",
+      name: "Arc Reactor Wars",
+      image: "/assets/events/EEE/Arc_Reactor_Wars.jpg",
+      description:
+        "Marvel-themed One-day competition teaching practical electronics skills through creating a functional Arc Reactor prototype. Focus on PCB design, soldering, and microcontroller integration.",
+      rules: [
+        "Teams 4-5 members",
+        "Register before event",
+        "Valid student ID required",
+        "Laptop with KiCad and Arduino IDE",
+        "Only provided tools unless approved",
+        "Designs must be original, completed during event",
+        "Follow safety protocols",
+        "Professional behavior expected",
+        "Misconduct or plagiarism leads to disqualification",
+        "Strict time limit adherence",
+      ],
+      registration_fee: 300,
+      drive:
+        "https://drive.google.com/file/d/1kyv2VdFZjmxMdR33yyuNg0fKwUu0Qwwu/view?usp=drive_link",
+      prizes: {
+        first: "5,000",
+        second: "2,500",
+      },
+      minTeamMembers: 4,
+      maxTeamMembers: 5,
+      date_time: null,
+      start_time: null,
+      venue: null,
+      coordinators: [
+        { name: "Ranganath S", phone: "7019922146" },
+        { name: "Nithish N M", phone: "9353636599" },
+      ],
+    },
   ],
   "AI&ML": [
     {
@@ -842,9 +794,9 @@ export const eventsData = {
       },
       minTeamMembers: 1,
       maxTeamMembers: 2,
-      date_time: null,
-      start_time: null,
-      venue: null,
+      date_time: "13:00-16:00 14 Nov",
+      start_time: new Date(2025, 10, 14, 13, 0, 0), // 14 Nov 2025, 13:00:00
+      venue: "Raja Lakshmi Seminar Hall",
       coordinators: [
         { name: "NITISHKUMAR PATIL", phone: "8123552246" },
         { name: "HARISMITHA G", phone: "7338121844" },
@@ -889,74 +841,74 @@ export const eventsData = {
         { name: "Deeksha", phone: "7019917641" },
       ],
     },
-    // {
-    //   id: "clw3q9v6e002208l0h6qy7q2k",
-    //   name: "Pixel Gauntlet - The Pixel Unlocked",
-    //   image: "/assets/events/CSE/Pixel_Gauntlet_The_Pixel_Unlocked.jpg",
-    //   description:
-    //     "Intense and fast-paced coding adventure where logic, cryptography, and problem-solving collide. Battle through code debugging and puzzle-solving challenges to reconstruct a hidden digital artifact.",
-    //   rules: [
-    //     "Solo or duo participation",
-    //     "Integrates coding, logical reasoning, cryptography",
-    //     "Sequential stages, no skipping allowed",
-    //     "All debugging and solutions performed live",
-    //     "No pre-written code or online solvers",
-    //     "No collaboration between teams",
-    //     "Accuracy and logical deduction crucial",
-    //   ],
-    //   registration_fee: 200,
-    //   drive:
-    //     "https://drive.google.com/file/d/10ZFPXtCvhloldAJ0xEhVKcC4vMCPM96F/view?usp=drive_link",
-    //   prizes: {
-    //     first: "3,000",
-    //     second: "1,500",
-    //   },
-    //   minTeamMembers: 1,
-    //   maxTeamMembers: 2,
-    //   date_time: null,
-    //   start_time: null,
-    //   venue: null,
-    //   coordinators: [
-    //     { name: "Mussarat", phone: "9353801953" },
-    //     { name: "Nikitha", phone: "7975161965" },
-    //     { name: "Arfa", phone: "7019556615" },
-    //     { name: "Danish", phone: "9103742990" },
-    //   ],
-    // },
-    // {
-    //   id: "clw3q9v6e002308l0h6qy7q2l",
-    //   name: "Traversal Trials - The Pixel Path",
-    //   image: "/assets/events/CSE/Traversal_Trials_The_Pixel_Path.jpg",
-    //   description:
-    //     "Step into the world of binary trees with challenges designed to test understanding of tree data structures and traversal techniques. Decode, reconstruct, and traverse trees to unveil final secret.",
-    //   rules: [
-    //     "Solo or duo participation",
-    //     "Revolves around tree traversal (Inorder, Preorder, Postorder)",
-    //     "Derive/reconstruct traversal outputs accurately",
-    //     "Logical reasoning and pattern recognition essential",
-    //     "All solutions original and written during event",
-    //     "No external references",
-    //     "Challenge sequencing with increasing complexity",
-    //   ],
-    //   registration_fee: 300,
-    //   drive:
-    //     "https://drive.google.com/file/d/1MYXq8wUTiFILK47GH_b2fKtVimsp0GUt/view?usp=drive_link",
-    //   prizes: {
-    //     first: "5,000",
-    //     second: "2,500",
-    //   },
-    //   minTeamMembers: 1,
-    //   maxTeamMembers: 2,
-    //   date_time: null,
-    //   start_time: null,
-    //   venue: null,
-    //   coordinators: [
-    //     { name: "Basavaraj", phone: "8073871635" },
-    //     { name: "Ankita", phone: "9243620020" },
-    //     { name: "Mussarrat", phone: "9353801953" },
-    //     { name: "Sanmay", phone: "8088387063" },
-    //   ],
-    // },
+    {
+      id: "clw3q9v6e002208l0h6qy7q2k",
+      name: "Pixel Gauntlet - The Pixel Unlocked",
+      image: "/assets/events/CSE/Pixel_Gauntlet_The_Pixel_Unlocked.jpg",
+      description:
+        "Intense and fast-paced coding adventure where logic, cryptography, and problem-solving collide. Battle through code debugging and puzzle-solving challenges to reconstruct a hidden digital artifact.",
+      rules: [
+        "Solo or duo participation",
+        "Integrates coding, logical reasoning, cryptography",
+        "Sequential stages, no skipping allowed",
+        "All debugging and solutions performed live",
+        "No pre-written code or online solvers",
+        "No collaboration between teams",
+        "Accuracy and logical deduction crucial",
+      ],
+      registration_fee: 200,
+      drive:
+        "https://drive.google.com/file/d/10ZFPXtCvhloldAJ0xEhVKcC4vMCPM96F/view?usp=drive_link",
+      prizes: {
+        first: "3,000",
+        second: "1,500",
+      },
+      minTeamMembers: 1,
+      maxTeamMembers: 2,
+      date_time: null,
+      start_time: null,
+      venue: null,
+      coordinators: [
+        { name: "Mussarat", phone: "9353801953" },
+        { name: "Nikitha", phone: "7975161965" },
+        { name: "Arfa", phone: "7019556615" },
+        { name: "Danish", phone: "9103742990" },
+      ],
+    },
+    {
+      id: "clw3q9v6e002308l0h6qy7q2l",
+      name: "Traversal Trials - The Pixel Path",
+      image: "/assets/events/CSE/Traversal_Trials_The_Pixel_Path.jpg",
+      description:
+        "Step into the world of binary trees with challenges designed to test understanding of tree data structures and traversal techniques. Decode, reconstruct, and traverse trees to unveil final secret.",
+      rules: [
+        "Solo or duo participation",
+        "Revolves around tree traversal (Inorder, Preorder, Postorder)",
+        "Derive/reconstruct traversal outputs accurately",
+        "Logical reasoning and pattern recognition essential",
+        "All solutions original and written during event",
+        "No external references",
+        "Challenge sequencing with increasing complexity",
+      ],
+      registration_fee: 300,
+      drive:
+        "https://drive.google.com/file/d/1MYXq8wUTiFILK47GH_b2fKtVimsp0GUt/view?usp=drive_link",
+      prizes: {
+        first: "5,000",
+        second: "2,500",
+      },
+      minTeamMembers: 1,
+      maxTeamMembers: 2,
+      date_time: null,
+      start_time: null,
+      venue: null,
+      coordinators: [
+        { name: "Basavaraj", phone: "8073871635" },
+        { name: "Ankita", phone: "9243620020" },
+        { name: "Mussarrat", phone: "9353801953" },
+        { name: "Sanmay", phone: "8088387063" },
+      ],
+    },
     {
       id: "clw3q9v6e002408l0h6qy7q2m",
       name: "Binary Build - The Modular Tree Challenge",
@@ -993,39 +945,39 @@ export const eventsData = {
     },
   ],
   ISE: [
-    // {
-    //   id: "clw3q9v6e002508l0h6qy7q2n",
-    //   name: "Algo Fix & Forge",
-    //   image: "/assets/events/ISE/Algo_Fix_Forge.jpg",
-    //   description:
-    //     "Coding challenge where participants repair and optimize broken algorithm implementations. Debug tricky logic, handle edge cases, and transform faulty code into efficient, reliable solutions.",
-    //   rules: [
-    //     "Exactly 3 members per team",
-    //     "Two rounds: Fix & Debug, then Optimize & Forge",
-    //     "Bring college ID, arrive 15 minutes early",
-    //     "Submit code within time limit",
-    //     "Plagiarism or code copying leads to disqualification",
-    //     "Round 1 judged on correctness",
-    //     "Round 2 judged on optimization and efficiency",
-    //     "Unethical behavior prohibited",
-    //   ],
-    //   registration_fee: 200,
-    //   drive:
-    //     "https://drive.google.com/file/d/1rke_2zIDNqzXjkcuOZbEnij22qGUasWN/view?usp=drive_link",
-    //   prizes: {
-    //     first: "3,000",
-    //     second: "1,500",
-    //   },
-    //   minTeamMembers: 1,
-    //   maxTeamMembers: 3,
-    //   date_time: null,
-    //   start_time: null,
-    //   venue: null,
-    //   coordinators: [
-    //     { name: "Lakshaya I", phone: "7892925234" },
-    //     { name: "Nayana D", phone: "8123397879" },
-    //   ],
-    // },
+    {
+      id: "clw3q9v6e002508l0h6qy7q2n",
+      name: "Algo Fix & Forge",
+      image: "/assets/events/ISE/Algo_Fix_Forge.jpg",
+      description:
+        "Coding challenge where participants repair and optimize broken algorithm implementations. Debug tricky logic, handle edge cases, and transform faulty code into efficient, reliable solutions.",
+      rules: [
+        "Exactly 3 members per team",
+        "Two rounds: Fix & Debug, then Optimize & Forge",
+        "Bring college ID, arrive 15 minutes early",
+        "Submit code within time limit",
+        "Plagiarism or code copying leads to disqualification",
+        "Round 1 judged on correctness",
+        "Round 2 judged on optimization and efficiency",
+        "Unethical behavior prohibited",
+      ],
+      registration_fee: 200,
+      drive:
+        "https://drive.google.com/file/d/1rke_2zIDNqzXjkcuOZbEnij22qGUasWN/view?usp=drive_link",
+      prizes: {
+        first: "3,000",
+        second: "1,500",
+      },
+      minTeamMembers: 1,
+      maxTeamMembers: 3,
+      date_time: null,
+      start_time: null,
+      venue: null,
+      coordinators: [
+        { name: "Lakshaya I", phone: "7892925234" },
+        { name: "Nayana D", phone: "8123397879" },
+      ],
+    },
     {
       id: "clw3q9v6e002608l0h6qy7q2o",
       name: "PixHunter",
@@ -1099,42 +1051,42 @@ export const eventsData = {
     },
   ],
   CD: [
-    // {
-    //   id: "clw3q9v6e002808l0h6qy7q2q",
-    //   name: "Block by Block - Power BI Modular Championship",
-    //   image:
-    //     "/assets/events/CD/Block_by_Block_Power_BI_Modular_Championship.jpg",
-    //   description:
-    //     "Data visualization and analytics challenge testing ability to transform raw datasets into meaningful insights using Microsoft Power BI. Build interactive dashboards that effectively communicate stories.",
-    //   rules: [
-    //     "Teams 2-4 members",
-    //     "Bring laptops with Power BI installed",
-    //     "Internet for dataset understanding and documentation only",
-    //     "No pre-built dashboards or templates",
-    //     "Round 1: Analyze dataset, identify trends and patterns",
-    //     "Round 2: Design interactive Power BI dashboard",
-    //     "Use DAX functions, relationships, calculated measures",
-    //     "Include KPIs, charts, slicers for interactivity",
-    //     "All visuals must be original",
-    //     "Include explanation of visualization choices",
-    //   ],
-    //   registration_fee: 200,
-    //   drive:
-    //     "https://drive.google.com/file/d/12dNBzyvQF7p_K7IEroy5BmrEdr3v6M3G/view?usp=drive_link",
-    //   prizes: {
-    //     first: "3,000",
-    //     second: "1,500",
-    //   },
-    //   minTeamMembers: 2,
-    //   maxTeamMembers: 4,
-    //   date_time: null,
-    //   start_time: null,
-    //   venue: null,
-    //   coordinators: [
-    //     { name: "Surabhi", phone: "6363898557" },
-    //     { name: "Abhishek", phone: "9380533700" },
-    //   ],
-    // },
+    {
+      id: "clw3q9v6e002808l0h6qy7q2q",
+      name: "Block by Block - Power BI Modular Championship",
+      image:
+        "/assets/events/CD/Block_by_Block_Power_BI_Modular_Championship.jpg",
+      description:
+        "Data visualization and analytics challenge testing ability to transform raw datasets into meaningful insights using Microsoft Power BI. Build interactive dashboards that effectively communicate stories.",
+      rules: [
+        "Teams 2-4 members",
+        "Bring laptops with Power BI installed",
+        "Internet for dataset understanding and documentation only",
+        "No pre-built dashboards or templates",
+        "Round 1: Analyze dataset, identify trends and patterns",
+        "Round 2: Design interactive Power BI dashboard",
+        "Use DAX functions, relationships, calculated measures",
+        "Include KPIs, charts, slicers for interactivity",
+        "All visuals must be original",
+        "Include explanation of visualization choices",
+      ],
+      registration_fee: 200,
+      drive:
+        "https://drive.google.com/file/d/12dNBzyvQF7p_K7IEroy5BmrEdr3v6M3G/view?usp=drive_link",
+      prizes: {
+        first: "3,000",
+        second: "1,500",
+      },
+      minTeamMembers: 2,
+      maxTeamMembers: 4,
+      date_time: null,
+      start_time: null,
+      venue: null,
+      coordinators: [
+        { name: "Surabhi", phone: "6363898557" },
+        { name: "Abhishek", phone: "9380533700" },
+      ],
+    },
     {
       id: "clw3q9v6e002908l0h6qy7q2r",
       name: "DATA-DRIVEN RIDDLES CONTEST",
