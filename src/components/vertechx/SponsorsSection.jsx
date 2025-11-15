@@ -26,7 +26,7 @@ const SponsorsSection = () => {
       logo: "https://thebelgianwaffle.co/wp-content/uploads/2023/11/bwc-logo-1.png",
     },
     { id: 5, name: "Luxev", logo: "/noidea.png" },
-    // { id: 6, name: 'Sponsor 6', logo: 'https://via.placeholder.com/200x100/3b82f6/ffffff?text=Sponsor+6' },
+    { id: 6, name: 'swish', logo: '/swish.png' },
     // { id: 7, name: 'Sponsor 7', logo: 'https://via.placeholder.com/200x100/ef4444/ffffff?text=Sponsor+7' },
     // { id: 8, name: 'Sponsor 8', logo: 'https://via.placeholder.com/200x100/8b5cf6/ffffff?text=Sponsor+8' },
     // { id: 9, name: 'Sponsor 9', logo: 'https://via.placeholder.com/200x100/8b5cf6/ffffff?text=Sponsor+9' },
