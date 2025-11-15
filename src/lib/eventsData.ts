@@ -70,7 +70,7 @@ export const eventsData = {
       minTeamMembers: 1,
       maxTeamMembers: 5,
       date_time: "09:00-14:00 15 Nov",
-      start_time: new Date(2025, 10, 15, 9, 0, 0), // 15 Nov 2025, 09:00:00
+      start_time: null,
       venue: "Playground",
       coordinators: [{ name: "TBD", phone: "TBD" }],
     },
@@ -95,7 +95,7 @@ export const eventsData = {
       minTeamMembers: 1,
       maxTeamMembers: 1,
       date_time: "10:00-13:00 15 Nov",
-      start_time: new Date(2025, 10, 15, 10, 0, 0), // 15 Nov 2025, 10:00:00
+      start_time: null,
       venue: "Room No:44 CAD Lab",
       coordinators: [
         { name: "S Vimal Adithya", phone: "7411688915" },
@@ -150,7 +150,7 @@ export const eventsData = {
       minTeamMembers: 1,
       maxTeamMembers: 3,
       date_time: "14:00-17:00 14 Nov",
-      start_time: new Date(2025, 10, 14, 14, 0, 0), // 14 Nov 2025, 14:00:00
+      start_time: null,
       venue: "Auditorium",
       coordinators: [
         { name: "H K.Hemalatha", phone: "9972571916" },
@@ -185,7 +185,7 @@ export const eventsData = {
       minTeamMembers: 1,
       maxTeamMembers: 2,
       date_time: "09:00-12:00 15 Nov",
-      start_time: new Date(2025, 10, 15, 9, 0, 0), // 15 Nov 2025, 09:00:00
+      start_time: null,
       venue: "Room No:248(&247),Single Lobby",
       coordinators: [
         { name: "Ranjitha M", phone: "9731556749" },
@@ -221,7 +221,7 @@ export const eventsData = {
       minTeamMembers: 2,
       maxTeamMembers: 4,
       date_time: "12:00-15:00 14 Nov",
-      start_time: new Date(2025, 10, 14, 12, 0, 0), // 14 Nov 2025, 12:00:00
+      start_time: null,
       venue: "Room No:041(&042),Double Lobby",
       coordinators: [
         { name: "Swaroop Dinesh Bhat", phone: "8970889676" },
@@ -257,7 +257,7 @@ export const eventsData = {
       minTeamMembers: 1,
       maxTeamMembers: 4,
       date_time: "11:00-14:00 15 Nov",
-      start_time: new Date(2025, 10, 15, 11, 0, 0), // 15 Nov 2025, 11:00:00
+      start_time: null,
       venue: "Fountain(Near Double Lobby)",
       coordinators: [
         { name: "David Wiliam Raj", phone: "9790347191" },
@@ -294,7 +294,7 @@ export const eventsData = {
       minTeamMembers: 1,
       maxTeamMembers: 5,
       date_time: "14:00-17:00 14 Nov",
-      start_time: new Date(2025, 10, 14, 14, 0, 0), // 14 Nov 2025, 14:00:00
+      start_time: null,
       venue: "Fountain(Near Double Lobby)",
       coordinators: [
         { name: "David Wiliam Raj", phone: "9790347191" },
@@ -328,7 +328,7 @@ export const eventsData = {
       minTeamMembers: 1,
       maxTeamMembers: 2,
       date_time: "10:00-13:00 15 Nov",
-      start_time: new Date(2025, 10, 15, 10, 0, 0), // 15 Nov 2025, 10:00:00
+      start_time: null,
       venue: "Robo Lab",
       coordinators: [
         { name: "David Wiliam Raj", phone: "9790347191" },
@@ -362,7 +362,7 @@ export const eventsData = {
       minTeamMembers: 1,
       maxTeamMembers: 2,
       date_time: "12:00-15:00 14 Nov",
-      start_time: new Date(2025, 10, 14, 12, 0, 0), // 14 Nov 2025, 12:00:00
+      start_time: null,
       venue: "ROBO Lab",
       coordinators: [
         { name: "David Wiliam Raj", phone: "9790347191" },
@@ -398,7 +398,7 @@ export const eventsData = {
       minTeamMembers: 1,
       maxTeamMembers: 4,
       date_time: "09:00-12:00 15 Nov",
-      start_time: new Date(2025, 10, 15, 9, 0, 0), // 15 Nov 2025, 09:00:00
+      start_time: null,
       venue: "Raja Lakshmi Seminar Hall",
       coordinators: [
         { name: "David Wiliam Raj", phone: "9790347191" },
@@ -439,7 +439,7 @@ export const eventsData = {
       minTeamMembers: 1,
       maxTeamMembers: 4,
       date_time: "11:00-14:00 14 Nov",
-      start_time: new Date(2025, 10, 14, 11, 0, 0), // 14 Nov 2025, 11:00:00
+      start_time: null,
       venue: "Chemical Reaction Engineering Lab(PU Block-2nd Floor)",
       coordinators: [
         { name: "Sheeba", phone: "9310938256" },
@@ -473,7 +473,7 @@ export const eventsData = {
       minTeamMembers: 1,
       maxTeamMembers: 4,
       date_time: "10:00-13:00 15 Nov",
-      start_time: new Date(2025, 10, 15, 10, 0, 0), // 15 Nov 2025, 10:00:00
+      start_time: null,
       venue: "Mass Transfer Lab(PU Block 2nd Floor)",
       coordinators: [
         { name: "Kousthub", phone: "7829992205" },
@@ -510,7 +510,7 @@ export const eventsData = {
       minTeamMembers: 2,
       maxTeamMembers: 4,
       date_time: "10:00-14:00 15 Nov",
-      start_time: new Date(2025, 10, 15, 10, 0, 0), // 15 Nov 2025, 10:00:00
+      start_time: null,
       venue: "Double Lobby",
       coordinators: [
         { name: "MOHAMMAD TAMEEM ZAKARIYA", phone: "8105006039" },
@@ -547,7 +547,7 @@ export const eventsData = {
       minTeamMembers: 2,
       maxTeamMembers: 3,
       date_time: "11:00-13:00 15 Nov",
-      start_time: new Date(2025, 10, 15, 11, 0, 0), // 15 Nov 2025, 11:00:00
+      start_time: null,
       venue: "CAMD Lab",
       coordinators: [
         { name: "ASHISH KUMAR TIWARI", phone: "7411826045" },
@@ -582,7 +582,7 @@ export const eventsData = {
       minTeamMembers: 4,
       maxTeamMembers: 5,
       date_time: "10:00-13:00 14 Nov",
-      start_time: new Date(2025, 10, 14, 10, 0, 0), // 14 Nov 2025, 10:00:00
+      start_time: null,
       venue: "Mechanical Workshop",
       coordinators: [{ name: "TBD", phone: "TBD" }],
     },
@@ -616,7 +616,7 @@ export const eventsData = {
       minTeamMembers: 4,
       maxTeamMembers: 5,
       date_time: "10:00-16:00 14 Nov",
-      start_time: new Date(2025, 10, 14, 10, 0, 0), // 14 Nov 2025, 10:00:00
+      start_time: null,
       venue: "Seminar Hall 1,Room No.127 Internet Connection",
       coordinators: [
         { name: "Ranganath S", phone: "7019922146" },
@@ -721,7 +721,7 @@ export const eventsData = {
       minTeamMembers: 2,
       maxTeamMembers: 3,
       date_time: "10:00-14:00 15 Nov",
-      start_time: new Date(2025, 10, 15, 10, 0, 0), // 15 Nov 2025, 10:00:00
+      start_time: null,
       venue: "Seminar Hall 1",
       coordinators: [
         { name: "J Bahulika", phone: "TBD" },
@@ -760,7 +760,7 @@ export const eventsData = {
       minTeamMembers: 2,
       maxTeamMembers: 3,
       date_time: "09:00-12:00 15 Nov",
-      start_time: new Date(2025, 10, 15, 9, 0, 0), // 15 Nov 2025, 09:00:00
+      start_time: null,
       venue: null,
       coordinators: [
         { name: "Harshath R", phone: "7348950177" },
@@ -795,7 +795,7 @@ export const eventsData = {
       minTeamMembers: 1,
       maxTeamMembers: 2,
       date_time: "13:00-16:00 14 Nov",
-      start_time: new Date(2025, 10, 14, 13, 0, 0), // 14 Nov 2025, 13:00:00
+      start_time: null,
       venue: "Raja Lakshmi Seminar Hall",
       coordinators: [
         { name: "NITISHKUMAR PATIL", phone: "8123552246" },
@@ -832,7 +832,7 @@ export const eventsData = {
       minTeamMembers: 2,
       maxTeamMembers: 3,
       date_time: "09:00-12:00 15 Nov",
-      start_time: new Date(2025, 10, 15, 9, 0, 0), // 15 Nov 2025, 09:00:00
+      start_time: null,
       venue: null,
       coordinators: [
         { name: "Prabjyot", phone: "8899640581" },
@@ -866,7 +866,7 @@ export const eventsData = {
       minTeamMembers: 1,
       maxTeamMembers: 2,
       date_time: "11:00-14:00 14 Nov",
-      start_time: new Date(2025, 10, 14, 11, 0, 0), // 14 Nov 2025, 11:00:00
+      start_time: null,
       venue: "Lab-260(&261 opp to CSE Department)",
       coordinators: [
         { name: "Mussarat", phone: "9353801953" },
@@ -900,7 +900,7 @@ export const eventsData = {
       minTeamMembers: 1,
       maxTeamMembers: 2,
       date_time: "12:00-15:00 14 Nov",
-      start_time: new Date(2025, 10, 14, 12, 0, 0), // 14 Nov 2025, 12:00:00
+      start_time: null,
       venue: "Lab-260(&261)",
       coordinators: [
         { name: "Basavaraj", phone: "8073871635" },
@@ -934,7 +934,7 @@ export const eventsData = {
       minTeamMembers: 2,
       maxTeamMembers: 3,
       date_time: "11:00-14:00 15 Nov",
-      start_time: new Date(2025, 10, 15, 11, 0, 0), // 15 Nov 2025, 11:00:00
+      start_time: null,
       venue: "Lab-250(&251)",
       coordinators: [
         { name: "Deeksha", phone: "7019917641" },
@@ -971,7 +971,7 @@ export const eventsData = {
       minTeamMembers: 1,
       maxTeamMembers: 3,
       date_time: "11:00-14:00 14 Nov",
-      start_time: new Date(2025, 10, 14, 11, 0, 0), // 14 Nov 2025, 11:00:00
+      start_time: null,
       venue: "Lab-226(&227)",
       coordinators: [
         { name: "Lakshaya I", phone: "7892925234" },
@@ -1007,7 +1007,7 @@ export const eventsData = {
       minTeamMembers: 1,
       maxTeamMembers: 3,
       date_time: "10:00-14:00 15 Nov",
-      start_time: new Date(2025, 10, 15, 10, 0, 0), // 15 Nov 2025, 10:00:00
+      start_time: null,
       venue: "Lab-226(&227)",
       coordinators: [
         { name: "Naresh M", phone: "7975482136" },
@@ -1042,7 +1042,7 @@ export const eventsData = {
       minTeamMembers: 1,
       maxTeamMembers: 3,
       date_time: "14:00-17:00 14 Nov",
-      start_time: new Date(2025, 10, 14, 14, 0, 0), // 14 Nov 2025, 14:00:00
+      start_time: null,
       venue: "Lab-226(&227)",
       coordinators: [
         { name: "Ananya Bera", phone: "8310458929" },
@@ -1080,7 +1080,7 @@ export const eventsData = {
       minTeamMembers: 2,
       maxTeamMembers: 4,
       date_time: "11:00-14:00 14 Nov",
-      start_time: new Date(2025, 10, 14, 11, 0, 0), // 14 Nov 2025, 11:00:00
+      start_time: null,
       venue: "Seminar Hall 2",
       coordinators: [
         { name: "Surabhi", phone: "6363898557" },
@@ -1115,7 +1115,7 @@ export const eventsData = {
       minTeamMembers: 2,
       maxTeamMembers: 4,
       date_time: "10:00-13:00 15 Nov",
-      start_time: new Date(2025, 10, 15, 10, 0, 0), // 15 Nov 2025, 10:00:00
+      start_time: null,
       venue: "Lab-Old Block,DS Department",
       coordinators: [
         { name: "Rakshitha", phone: "7892316603" },
