@@ -51,12 +51,7 @@ const scheduleData = [
     time: "10am-2pm",
     finalVenue: "Double Lobby",
   },
-  {
-    venue: "Seminar Hall 2,Internet Connection",
-    event: "UI Flow",
-    time: "9am-12pm",
-    finalVenue: "Seminar Hall 2,Internet Connection",
-  },
+  
   {
     venue: "RJSH",
     event: "Data Driven Riddles",

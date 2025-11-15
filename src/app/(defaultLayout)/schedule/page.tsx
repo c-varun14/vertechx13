@@ -37,11 +37,7 @@ const scheduleData = {
         time: "11am-2pm",
         venue: "Chemical Reaction Engineering Lab(PU Block-2nd Floor)",
       },
-      {
-        name: "Block by Block",
-        time: "11am-2pm",
-        venue: "Seminar Hall 2  ",
-      },
+     
       { name: "Meme Arena", time: "1pm-4pm", venue: "Raja Lakshmi Seminar Hall" },
       {
         name: "Cosmo Craze",
@@ -75,11 +71,7 @@ const scheduleData = {
   day2: {
     date: "15-Nov",
     events: [
-      {
-        name: "Fast and Furious-Drone Edition",
-        time: "9am-2pm",
-        venue: "Playground",
-      },
+      
       {
         name: "The Para Launch",
         time: "9am-12pm",
@@ -107,11 +99,7 @@ const scheduleData = {
         venue: "Mass Transfer Lab(PU Block 2nd Floor)",
       },
       { name: "TrafficX", time: "10am-2pm", venue: "Double Lobby" },
-      {
-        name: "UI Flow",
-        time: "9am-12pm",
-        venue: "Seminar Hall 2  ",
-      },
+     
       {
         name: "Data Driven Riddles",
         time: "10am-1pm",
@@ -130,14 +118,10 @@ const scheduleData = {
         venue: "Lab-226(&227)  ",
       },
       { name: "Pontification", time: "11am-1pm", venue: "CAMD Lab" },
-      {
-        name: "Block by Block",
-        time: "9am-12pm",
-        venue: "Seminar Hall 2  ",
-      },
+    
       {
         name: "UI Flow",
-        time: "11am-2pm",
+        time: "9am-12pm",
         venue: "Seminar Hall 2  ",
       },
     ],
